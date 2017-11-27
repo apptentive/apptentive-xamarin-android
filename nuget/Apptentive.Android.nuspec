@@ -9,9 +9,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>C# bindings for Apptentive SDK</description>
     <copyright>Copyright © Apptentive</copyright>
-    <projectUrl>https://github.com/apptentive/apptentive-xamarin/tree/master/Apptentive.Android</projectUrl>
-    <licenseUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin/master/Apptentive.Android/License.txt</licenseUrl>
-    <iconUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin/master/icons/apptentive-android_128x128.png</iconUrl>
+    <projectUrl>https://github.com/apptentive/apptentive-xamarin-android</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin-android/master/License.txt</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin-android/master/icons/apptentive_128x128.png</iconUrl>
     <dependencies>
       <group targetFramework="MonoAndroid70">
         <dependency id="Xamarin.Android.Support.v4" version="25.4.0.2"/>
