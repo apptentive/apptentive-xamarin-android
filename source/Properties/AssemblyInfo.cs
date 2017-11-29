@@ -18,7 +18,7 @@ using Android.App;
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
 
-[assembly: AssemblyVersion("4.1.0")]
+[assembly: AssemblyVersion("4.1.1")]
 [assembly: MetaData("apptentive_sdk_distribution", Value = "Xamarin")]
 [assembly: MetaData("apptentive_sdk_distribution_version", Value = "4.1.0")]
 
