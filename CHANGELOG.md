@@ -4,7 +4,7 @@ This document lets you know what has changed in the Xamarin.Android package. For
 
 - [Android Changelog](https://github.com/apptentive/apptentive-android/blob/master/CHANGELOG.md)
 
-# 2017-11-09 - v4.1.1
+# 2017-11-29 - v4.1.1
 
 - Apptentive Android SDK: 4.1.2
 
