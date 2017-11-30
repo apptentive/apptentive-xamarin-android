@@ -113,8 +113,7 @@ Apptentive can send push notifications to ensure your customers see your replies
 
 ### Firebase Cloud Messaging
 If you are using Firebase Cloud Messaging (FCM) directly, without another push provider layered on top, please follow these instructions.
-- Follow the FCM instructions to [Set Up a Firebase Cloud Messaging Client App.]
-(https://developer.xamarin.com/guides/android/application_fundamentals/notifications/firebase-cloud-messaging/)
+- Follow the FCM instructions to [Set Up a Firebase Cloud Messaging Client App.](https://developer.xamarin.com/guides/android/application_fundamentals/notifications/firebase-cloud-messaging/)
 - Go to [Integrations](https://be.apptentive.com/apps/current/settings/integrations), choose Apptentive Push, and enter your FCM Server Key.
 - In your `FirebaseInstanceIdService`, pass Apptentive your **token**.
 ```
