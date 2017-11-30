@@ -4660,8 +4660,8 @@ namespace ApptentiveSample
 			// aapt resource value: 0x7f080023
 			public const int abc_toolbar_collapse_description = 2131230755;
 			
-			// aapt resource value: 0x7f080074
-			public const int app_name = 2131230836;
+			// aapt resource value: 0x7f08006d
+			public const int app_name = 2131230829;
 			
 			// aapt resource value: 0x7f080032
 			public const int appbar_scrolling_view_behavior = 2131230770;
@@ -4873,29 +4873,8 @@ namespace ApptentiveSample
 			// aapt resource value: 0x7f08000f
 			public const int common_signin_button_text_long = 2131230735;
 			
-			// aapt resource value: 0x7f08006e
-			public const int default_web_client_id = 2131230830;
-			
-			// aapt resource value: 0x7f08006f
-			public const int firebase_database_url = 2131230831;
-			
 			// aapt resource value: 0x7f08006c
-			public const int gcm_defaultSenderId = 2131230828;
-			
-			// aapt resource value: 0x7f080070
-			public const int google_api_key = 2131230832;
-			
-			// aapt resource value: 0x7f08006d
-			public const int google_app_id = 2131230829;
-			
-			// aapt resource value: 0x7f080071
-			public const int google_crash_reporting_api_key = 2131230833;
-			
-			// aapt resource value: 0x7f080072
-			public const int google_storage_bucket = 2131230834;
-			
-			// aapt resource value: 0x7f080073
-			public const int hello = 2131230835;
+			public const int hello = 2131230828;
 			
 			// aapt resource value: 0x7f080035
 			public const int password_toggle_content_description = 2131230773;
