@@ -107,3 +107,99 @@ engageButton.Click += delegate
 ```
 
 You can add an Event almost anywhere in your app, just remember that if you want to show an Interaction at that Event, it needs to be a place where launching an Activity will not cause a problem in your app.
+
+## Push Notifications
+Apptentive can send push notifications to ensure your customers see your replies to their feedback in Message Center.
+
+### Firebase Cloud Messaging
+If you are using Firebase Cloud Messaging (FCM) directly, without another push provider layered on top, please follow these instructions.
+- Follow the FCM instructions to [Set Up a Firebase Cloud Messaging Client App.](https://developer.xamarin.com/guides/android/application_fundamentals/notifications/firebase-cloud-messaging/)
+- Go to [Integrations](https://be.apptentive.com/apps/current/settings/integrations), choose Apptentive Push, and enter your FCM Server Key.
+- In your `FirebaseInstanceIdService`, pass Apptentive your **token**.
+```
+using System;
+using Android.App;
+using Firebase.Iid;
+using Android.Util;
+using ApptentiveSDK.Android;
+
+namespace ApptentiveSample
+{
+    [Service]
+    [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
+    public class MyFirebaseIIDService : FirebaseInstanceIdService
+    {
+        const string TAG = "MyFirebaseIIDService";
+        public override void OnTokenRefresh()
+        {
+            var refreshedToken = FirebaseInstanceId.Instance.Token;
+            Log.Debug(TAG, "Refreshed token: " + refreshedToken);
+            Apptentive.SetPushNotificationIntegration(Apptentive.PushProviderApptentive, refreshedToken);
+        }
+    }
+}
+```
+- In your `FirebaseMessagingService`, get the title, body, and `PendingIntent` from the incoming push, and create a `Notification` to display to your customer. If the returned `PendingIntent` is null, then the push did not come from Apptentive, and you should handle it yourself.
+```
+using System;
+using Android.App;
+using Android.Content;
+using Android.Media;
+using Android.Support.V4.App;
+using Android.Util;
+using ApptentiveSDK.Android;
+using Firebase.Messaging;
+
+namespace ApptentiveSample
+{
+    [Service]
+    [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
+    public class MyFirebaseMessagingService : FirebaseMessagingService
+    {
+        const string TAG = "MyFirebaseMsgService";
+
+        /**
+         * Called when message is received.
+         */
+
+        public override void OnMessageReceived(RemoteMessage message)
+        {
+            var data = message.Data;
+
+            PendingIntent pendingIntent = null;
+            String title = null;
+            String body = null;
+
+            if (Apptentive.IsApptentivePushNotification(data))
+            {
+                Log.Error(TAG, "Apptentive push.");
+                title = Apptentive.GetTitleFromApptentivePush(data);
+                body = Apptentive.GetBodyFromApptentivePush(data);
+                pendingIntent = Apptentive.BuildPendingIntentFromPushNotification(data);
+
+                // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
+                if (pendingIntent == null)
+                {
+                    Log.Error(TAG, "Push notification was not for the active conversation. Doing nothing.");
+                    return;
+                }
+
+                var defaultSoundUri = RingtoneManager.GetDefaultUri(RingtoneType.Notification);
+                var notificationBuilder = new NotificationCompat.Builder(this)
+                    .SetSmallIcon(Resource.Drawable.apptentive_status_gear)
+                    .SetContentTitle(title)
+                    .SetContentText(body)
+                    .SetAutoCancel(true)
+                    .SetSound(defaultSoundUri)
+                    .SetContentIntent(pendingIntent);
+                var notificationManager = (NotificationManager)GetSystemService(Context.NotificationService);
+                notificationManager.Notify(0, notificationBuilder.Build());
+            }
+            else
+            {
+                // Non-Apptentive push
+            }
+        }
+    }
+}
+```

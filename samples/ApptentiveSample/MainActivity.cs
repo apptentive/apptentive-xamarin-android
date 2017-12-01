@@ -4,6 +4,10 @@ using Android.OS;
 using ApptentiveSDK.Android;
 using System;
 using Android.Content;
+using Android.Gms.Common;
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
 
 namespace ApptentiveSample
 {
@@ -71,6 +75,12 @@ namespace ApptentiveSample
             Apptentive.AddUnreadMessagesListener(this);
         }
 
+        protected override void OnResume()
+        {
+            base.OnResume();
+            CheckGooglePlayServicesAvailable();
+        }
+
         void UpdateUnreadMessagesCount()
         {
             unreadMessagesTextView.Text = "Unread messages: " + Apptentive.UnreadMessageCount;
@@ -84,6 +94,39 @@ namespace ApptentiveSample
             {
                 UpdateUnreadMessagesCount();
             });
+        }
+
+        #endregion
+
+        #region GooglePlayServices
+
+        private void CheckGooglePlayServicesAvailable()
+        {
+            int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
+            if (resultCode != ConnectionResult.Success)
+            {
+                if (GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
+                {
+                    ShowToast(GoogleApiAvailability.Instance.GetErrorString(resultCode));
+                }
+                else
+                {
+                    ShowToast("This device is not supported");
+                }
+            }
+            else
+            {
+                ShowToast("Google Play Services is availabl.");
+            }
+        }
+
+        #endregion
+
+        #region Helpers
+
+        private void ShowToast(string message)
+        {
+            Toast.MakeText(this, message, ToastLength.Long).Show();
         }
 
         #endregion
