@@ -43,6 +43,7 @@
     <remove-node path="/api/package[@name='com.apptentive.android.sdk.widget']" />
 
 	<!-- Remove non-public classes -->
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='ApptentiveHelper']" />
     <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='ApptentiveBaseActivity']" />
     <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='ApptentiveInternal']" />
     <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='ApptentiveBaseActivity']" />
