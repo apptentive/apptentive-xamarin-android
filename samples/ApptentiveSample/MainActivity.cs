@@ -29,22 +29,21 @@ namespace ApptentiveSample
             var messageCenterButton = FindViewById<Button>(Resource.Id.messageCenterButton);
             messageCenterButton.Click += delegate
             {
-                Apptentive.ShowMessageCenter(this);
+                Apptentive.ShowMessageCenter(this, (shown) => Console.WriteLine("Message Center shown: " + shown));
             };
 
             var engageButton = FindViewById<Button>(Resource.Id.engageButton);
             engageButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                Apptentive.Engage(this, eventName);
+                Apptentive.Engage(this, eventName, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
             };
 
             var canShowInteractionButton = FindViewById<Button>(Resource.Id.canShowInteractionButton);
             canShowInteractionButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                var canShowInteraction = Apptentive.CanShowInteraction(eventName);
-                Toast.MakeText(this, canShowInteraction ? "Yes" : "No", ToastLength.Long).Show();
+                Apptentive.QueryCanShowInteraction(eventName, (canShowInteraction) => Toast.MakeText(this, canShowInteraction ? "Yes" : "No", ToastLength.Long).Show());
             };
 
             var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
