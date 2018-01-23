@@ -24,7 +24,6 @@ namespace ApptentiveSample
             LogPushBundle(message);
             var data = message.Data;
 
-            PendingIntent pendingIntent = null;
             String title = null;
             String body = null;
 
@@ -33,14 +32,18 @@ namespace ApptentiveSample
                 Log.Error(TAG, "Apptentive push.");
                 title = Apptentive.GetTitleFromApptentivePush(data);
                 body = Apptentive.GetBodyFromApptentivePush(data);
-                pendingIntent = Apptentive.BuildPendingIntentFromPushNotification(data);
-
-                // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
-                if (pendingIntent == null)
+                Apptentive.BuildPendingIntentFromPushNotification((pendingIntent) =>
                 {
-                    Log.Error(TAG, "Push notification was not for the active conversation. Doing nothing.");
-                    return;
-                }
+                    // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
+                    if (pendingIntent == null)
+                    {
+                        Log.Error(TAG, "Push notification was not for the active conversation. Doing nothing.");
+                        return;
+                    }
+
+                    ShowNotification(pendingIntent, title, body);
+                    
+                }, data);
             }
             else
             {
@@ -53,9 +56,13 @@ namespace ApptentiveSample
                     title = pushNotification.Title;
                     body = pushNotification.Body;
                 }
-                pendingIntent = PendingIntent.GetActivity(this, 0 /* Request code */, intent, PendingIntentFlags.OneShot);
+                var pendingIntent = PendingIntent.GetActivity(this, 0 /* Request code */, intent, PendingIntentFlags.OneShot);
+                ShowNotification(pendingIntent, title, body);
             }
+        }
 
+        private void ShowNotification(PendingIntent pendingIntent, string title, string body)
+        {
             Log.Error(TAG, "Title: " + title);
             Log.Error(TAG, "Body: " + body);
 
