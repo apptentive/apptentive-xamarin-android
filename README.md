@@ -48,7 +48,7 @@ Find a place in your app where you can add a button that opens Message Center. Y
 var messageCenterButton = FindViewById<Button>(...);
 messageCenterButton.Click += delegate
 {
-    Apptentive.ShowMessageCenter(context);
+    Apptentive.ShowMessageCenter(context, (shown) => Console.WriteLine("Message Center shown: " + shown));
 };
 ```
 
@@ -102,7 +102,7 @@ Events record user interaction. You can use them to determine if and when an Int
 var engageButton = FindViewById<Button>(...);
 engageButton.Click += delegate
 {
-    Apptentive.Engage(this, "my_event");
+    Apptentive.Engage(this, "my_event", (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
 };
 ```
 
@@ -166,34 +166,32 @@ namespace ApptentiveSample
         {
             var data = message.Data;
 
-            PendingIntent pendingIntent = null;
-            String title = null;
-            String body = null;
-
             if (Apptentive.IsApptentivePushNotification(data))
             {
                 Log.Error(TAG, "Apptentive push.");
-                title = Apptentive.GetTitleFromApptentivePush(data);
-                body = Apptentive.GetBodyFromApptentivePush(data);
-                pendingIntent = Apptentive.BuildPendingIntentFromPushNotification(data);
-
-                // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
-                if (pendingIntent == null)
+                var title = Apptentive.GetTitleFromApptentivePush(data);
+                var body = Apptentive.GetBodyFromApptentivePush(data);
+                Apptentive.BuildPendingIntentFromPushNotification((pendingIntent) =>
                 {
-                    Log.Error(TAG, "Push notification was not for the active conversation. Doing nothing.");
-                    return;
-                }
+                    // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
+                    if (pendingIntent == null)
+                    {
+                        Log.Error(TAG, "Push notification was not for the active conversation. Doing nothing.");
+                        return;
+                    }
 
-                var defaultSoundUri = RingtoneManager.GetDefaultUri(RingtoneType.Notification);
-                var notificationBuilder = new NotificationCompat.Builder(this)
-                    .SetSmallIcon(Resource.Drawable.apptentive_status_gear)
-                    .SetContentTitle(title)
-                    .SetContentText(body)
-                    .SetAutoCancel(true)
-                    .SetSound(defaultSoundUri)
-                    .SetContentIntent(pendingIntent);
-                var notificationManager = (NotificationManager)GetSystemService(Context.NotificationService);
-                notificationManager.Notify(0, notificationBuilder.Build());
+                    var defaultSoundUri = RingtoneManager.GetDefaultUri(RingtoneType.Notification);
+                	var notificationBuilder = new NotificationCompat.Builder(this)
+                    	.SetSmallIcon(Resource.Drawable.apptentive_status_gear)
+                    	.SetContentTitle(title)
+                    	.SetContentText(body)
+                    	.SetAutoCancel(true)
+                    	.SetSound(defaultSoundUri)
+                    	.SetContentIntent(pendingIntent);
+                	var notificationManager = (NotificationManager)GetSystemService(Context.NotificationService);
+                	notificationManager.Notify(0, notificationBuilder.Build());
+                    
+                }, data);
             }
             else
             {
