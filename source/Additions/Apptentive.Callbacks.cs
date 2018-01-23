@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
@@ -61,6 +62,36 @@ namespace ApptentiveSDK.Android
             InvokeMethod("QueryCanShowInteraction", new Type[] { typeof(string), typeof(IBooleanCallback) }, new object[] { eventName, WrapCallback(callback) });
         }
 
+        public static void BuildPendingIntentFromPushNotification(Action<PendingIntent> callback, IDictionary<string, string> data)
+        {
+            if (callback == null)
+            {
+                throw new ArgumentNullException("callback");
+            }
+
+            InvokeMethod("BuildPendingIntentFromPushNotification", new Type[] { typeof(IPendingIntentCallback), typeof(IDictionary<string, string>) }, new object[] { new PendingIntentCallbackWrapper(callback), data });
+        }
+
+        public static void BuildPendingIntentFromPushNotification(Action<PendingIntent> callback, Bundle bundle)
+        {
+            if (callback == null)
+            {
+                throw new ArgumentNullException("callback");
+            }
+
+            InvokeMethod("BuildPendingIntentFromPushNotification", new Type[] { typeof(IPendingIntentCallback), typeof(Bundle) }, new object[] { new PendingIntentCallbackWrapper(callback), bundle });
+        }
+
+        public static void BuildPendingIntentFromPushNotification(Action<PendingIntent> callback, Intent intent)
+        {
+            if (callback == null)
+            {
+                throw new ArgumentNullException("callback");
+            }
+
+            InvokeMethod("BuildPendingIntentFromPushNotification", new Type[] { typeof(IPendingIntentCallback), typeof(Intent) }, new object[] { new PendingIntentCallbackWrapper(callback), intent });
+        }
+
         private static void InvokeMethod(string methodName, Type[] types, object[] parameters)
         {
             try
@@ -80,30 +111,54 @@ namespace ApptentiveSDK.Android
             }
         }
 
-        public partial interface IBooleanCallback
-        {
-        }
-
         static BooleanCallbackWrapper WrapCallback(Action<bool> callback)
         {
             return callback != null ? new BooleanCallbackWrapper(callback) : null;
         }
 
-        internal class BooleanCallbackWrapper : Java.Lang.Object, IBooleanCallback
+        public partial interface IBooleanCallback
+        {
+        }
+
+        internal class BooleanCallbackWrapper : Object, IBooleanCallback
         {
             readonly Action<bool> m_callback;
 
             public BooleanCallbackWrapper(Action<bool> callback)
             {
+                if (callback == null)
+                {
+                    throw new ArgumentNullException("callback");
+                }
                 m_callback = callback;
             }
 
             public void OnFinish(bool result)
             {
-                if (m_callback != null)
+                m_callback(result);
+            }
+        }
+
+        public partial interface IPendingIntentCallback
+        {
+        }
+
+        internal class PendingIntentCallbackWrapper : Object, IPendingIntentCallback
+        {
+            readonly Action<PendingIntent> m_callback;
+
+            public PendingIntentCallbackWrapper(Action<PendingIntent> callback)
+            {
+                if (callback == null)
                 {
-                    m_callback(result);
+                    throw new ArgumentNullException("callback");
                 }
+                m_callback = callback;
+            }
+
+            public void OnPendingIntent(PendingIntent intent)
+            {
+                m_callback(intent);
             }
         }
     }
