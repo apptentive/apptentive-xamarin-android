@@ -92,6 +92,11 @@ namespace ApptentiveSDK.Android
             InvokeMethod("BuildPendingIntentFromPushNotification", new Type[] { typeof(IPendingIntentCallback), typeof(Intent) }, new object[] { new PendingIntentCallbackWrapper(callback), intent });
         }
 
+        public static void Login(string token, Action<bool, string> callback)
+        {
+            InvokeMethod("Login", new Type[] { typeof(string), typeof(ILoginCallback) }, new object[] { token, callback != null ? new LoginCallbackWrapper(callback) : null });
+        }
+
         private static void InvokeMethod(string methodName, Type[] types, object[] parameters)
         {
             try
@@ -120,6 +125,14 @@ namespace ApptentiveSDK.Android
         {
         }
 
+        public partial interface IPendingIntentCallback
+        {
+        }
+
+        public partial interface ILoginCallback
+        {
+        }
+
         internal class BooleanCallbackWrapper : Object, IBooleanCallback
         {
             readonly Action<bool> m_callback;
@@ -139,10 +152,6 @@ namespace ApptentiveSDK.Android
             }
         }
 
-        public partial interface IPendingIntentCallback
-        {
-        }
-
         internal class PendingIntentCallbackWrapper : Object, IPendingIntentCallback
         {
             readonly Action<PendingIntent> m_callback;
@@ -159,6 +168,30 @@ namespace ApptentiveSDK.Android
             public void OnPendingIntent(PendingIntent intent)
             {
                 m_callback(intent);
+            }
+        }
+
+        internal class LoginCallbackWrapper : Object, ILoginCallback
+        {
+            readonly Action<bool, string> m_callback;
+
+            public LoginCallbackWrapper(Action<bool, string> callback)
+            {
+                if (callback == null)
+                {
+                    throw new ArgumentNullException("callback");
+                }
+                m_callback = callback;
+            }
+
+            public void OnLoginFail(string errorMessage)
+            {
+                m_callback(false, errorMessage);
+            }
+
+            void OnLoginFinish()
+            {
+                m_callback(true, null);
             }
         }
     }
