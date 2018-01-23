@@ -4,6 +4,10 @@ using Android.OS;
 using ApptentiveSDK.Android;
 using System;
 using Android.Content;
+using Android.Gms.Common;
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
 
 namespace ApptentiveSample
 {
@@ -25,22 +29,21 @@ namespace ApptentiveSample
             var messageCenterButton = FindViewById<Button>(Resource.Id.messageCenterButton);
             messageCenterButton.Click += delegate
             {
-                Apptentive.ShowMessageCenter(this);
+                Apptentive.ShowMessageCenter(this, (shown) => Console.WriteLine("Message Center shown: " + shown));
             };
 
             var engageButton = FindViewById<Button>(Resource.Id.engageButton);
             engageButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                Apptentive.Engage(this, eventName);
+                Apptentive.Engage(this, eventName, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
             };
 
             var canShowInteractionButton = FindViewById<Button>(Resource.Id.canShowInteractionButton);
             canShowInteractionButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                var canShowInteraction = Apptentive.CanShowInteraction(eventName);
-                Toast.MakeText(this, canShowInteraction ? "Yes" : "No", ToastLength.Long).Show();
+                Apptentive.QueryCanShowInteraction(eventName, (canShowInteraction) => Toast.MakeText(this, canShowInteraction ? "Yes" : "No", ToastLength.Long).Show());
             };
 
             var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
@@ -71,6 +74,12 @@ namespace ApptentiveSample
             Apptentive.AddUnreadMessagesListener(this);
         }
 
+        protected override void OnResume()
+        {
+            base.OnResume();
+            CheckGooglePlayServicesAvailable();
+        }
+
         void UpdateUnreadMessagesCount()
         {
             unreadMessagesTextView.Text = "Unread messages: " + Apptentive.UnreadMessageCount;
@@ -84,6 +93,39 @@ namespace ApptentiveSample
             {
                 UpdateUnreadMessagesCount();
             });
+        }
+
+        #endregion
+
+        #region GooglePlayServices
+
+        private void CheckGooglePlayServicesAvailable()
+        {
+            int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
+            if (resultCode != ConnectionResult.Success)
+            {
+                if (GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
+                {
+                    ShowToast(GoogleApiAvailability.Instance.GetErrorString(resultCode));
+                }
+                else
+                {
+                    ShowToast("This device is not supported");
+                }
+            }
+            else
+            {
+                ShowToast("Google Play Services is availabl.");
+            }
+        }
+
+        #endregion
+
+        #region Helpers
+
+        private void ShowToast(string message)
+        {
+            Toast.MakeText(this, message, ToastLength.Long).Show();
         }
 
         #endregion
