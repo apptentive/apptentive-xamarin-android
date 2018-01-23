@@ -189,7 +189,7 @@ namespace ApptentiveSDK.Android
                 m_callback(false, errorMessage);
             }
 
-            void OnLoginFinish()
+            public void OnLoginFinish()
             {
                 m_callback(true, null);
             }
