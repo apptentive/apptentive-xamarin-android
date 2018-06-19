@@ -14,32 +14,25 @@ using Android.Widget;
 using System.IdentityModel.Tokens;
 using System.Security.Claims;
 
+using ApptentiveSDK.Android;
+
 namespace ApptentiveSample
 {
     [Activity(Label = "LoginActivity")]
     public class LoginActivity : Activity
     {
-        public static readonly string EXTRA_JWT_SECRET = "jwtSecret";
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            var secret = this.Intent.GetStringExtra(EXTRA_JWT_SECRET);
-            if (string.IsNullOrEmpty(secret))
-            {
-                Console.WriteLine("Missing JWT secret. Finishing login activity...");
-                Finish();
-                return;
-            }
 
             // Create your application here
             SetContentView(Resource.Layout.Login);
 
             // Controls
-            SetupLoginButton(Resource.Id.loginAsAlexButton, secret, "Alex");
-            SetupLoginButton(Resource.Id.loginAsFrankButton, secret, "Frank");
-            SetupLoginButton(Resource.Id.loginAsSkyButton, secret, "Sky");
+            var loginButton = FindViewById<Button>(Resource.Id.loginButton);
+            loginButton.Click += delegate {
+                LoginUser();
+            };
 
             var logoutButton = FindViewById<Button>(Resource.Id.logoutButton);
             logoutButton.Click += delegate {
@@ -47,22 +40,22 @@ namespace ApptentiveSample
             };
         }
 
-        private void SetupLoginButton(int buttonId, string secret, string user)
+        private void LoginUser()
         {
-            var button = FindViewById<Button>(buttonId);
-            button.Click += delegate {
-                LoginUser(secret, user);
-            };
-        }
-
-        private void LoginUser(string secret, string user)
-        {
-            Toast.MakeText(this, "Not implemented", ToastLength.Long).Show(); // FIXME: implement login
+            var jwt = FindViewById<TextView>(Resource.Id.jwtField).Text;
+            Apptentive.Login(jwt, (success, error) => {
+                if (success) {
+                    Toast.MakeText(this, "Logged In", ToastLength.Long).Show();
+                } else {
+                    Toast.MakeText(this, "Error logging in: " + error, ToastLength.Long).Show();
+                }
+            });
         }
 
         private void LogoutUser()
         {
-            Toast.MakeText(this, "Not implemented", ToastLength.Long).Show(); // FIXME: implement logout
+            Apptentive.Logout();
+            Toast.MakeText(this, "Logged Out", ToastLength.Long).Show(); // FIXME: implement logout
         }
     }
 }
