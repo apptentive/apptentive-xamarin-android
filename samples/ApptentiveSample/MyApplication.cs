@@ -17,8 +17,10 @@ namespace ApptentiveSample
         {
             base.OnCreate();
 
-            ApptentiveLog.OverrideLogLevel(ApptentiveLog.Level.VeryVerbose);
-            Apptentive.Register(this, "Your Apptentive Key", "Your Apptentive Signature");
+            var configuration = new ApptentiveConfiguration("Your Apptentive Key", "Your Apptentive Signature");
+            configuration.SetLogLevel(ApptentiveLog.Level.Verbose);
+            configuration.SetShouldSanitizeLogMessages(false);
+            Apptentive.Register(this, configuration);
         }
     }
 
