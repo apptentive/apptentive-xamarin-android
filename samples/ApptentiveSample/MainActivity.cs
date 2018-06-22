@@ -64,7 +64,6 @@ namespace ApptentiveSample
             authenticationButton.Click += delegate
             {
                 var intent = new Intent(this, typeof(LoginActivity));
-                intent.PutExtra(LoginActivity.EXTRA_JWT_SECRET, "Your Secret Key");
                 StartActivity(intent);
             };
 
