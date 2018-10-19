@@ -41,46 +41,46 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Xamarin.Android.Support.Annotations">
-      <HintPath>packages\Xamarin.Android.Support.Annotations.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Annotations.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Annotations.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Compat">
-      <HintPath>packages\Xamarin.Android.Support.Compat.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Compat.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Core.UI">
-      <HintPath>packages\Xamarin.Android.Support.Core.UI.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Core.UI.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Core.Utils">
-      <HintPath>packages\Xamarin.Android.Support.Core.Utils.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Core.Utils.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Media.Compat">
-      <HintPath>packages\Xamarin.Android.Support.Media.Compat.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Media.Compat.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Fragment">
-      <HintPath>packages\Xamarin.Android.Support.Fragment.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Fragment.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Transition">
-      <HintPath>packages\Xamarin.Android.Support.Transition.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Transition.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Transition.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Transition.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
-      <HintPath>packages\Xamarin.Android.Support.v4.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.v4.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.CardView">
-      <HintPath>packages\Xamarin.Android.Support.v7.CardView.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.v7.CardView.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.v7.CardView.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
-      <HintPath>packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.v7.RecyclerView.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Vector.Drawable">
-      <HintPath>packages\Xamarin.Android.Support.Vector.Drawable.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Vector.Drawable.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
-      <HintPath>packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Animated.Vector.Drawable.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
-      <HintPath>packages\Xamarin.Android.Support.v7.AppCompat.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.v7.AppCompat.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Design">
-      <HintPath>packages\Xamarin.Android.Support.Design.25.4.0.2\lib\MonoAndroid70\Xamarin.Android.Support.Design.dll</HintPath>
+      <HintPath>packages\Xamarin.Android.Support.Design.4.26.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Design.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -98,20 +98,20 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-android-5.1.3.aar" />
+    <LibraryProjectZip Include="Jars\apptentive-android-5.3.1.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
-  <Import Project="packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Core.UI.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('packages\Xamarin.Android.Support.Core.UI.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Core.Utils.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('packages\Xamarin.Android.Support.Core.Utils.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Media.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('packages\Xamarin.Android.Support.Media.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Media.Compat.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Fragment.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets" Condition="Exists('packages\Xamarin.Android.Support.Fragment.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Transition.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Transition.targets" Condition="Exists('packages\Xamarin.Android.Support.Transition.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Transition.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.v4.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v4.targets" Condition="Exists('packages\Xamarin.Android.Support.v4.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v4.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.v7.CardView.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.CardView.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.RecyclerView.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('packages\Xamarin.Android.Support.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.v7.AppCompat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.AppCompat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets')" />
-  <Import Project="packages\Xamarin.Android.Support.Design.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Design.targets" Condition="Exists('packages\Xamarin.Android.Support.Design.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Design.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Compat.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('packages\Xamarin.Android.Support.Compat.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Core.UI.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('packages\Xamarin.Android.Support.Core.UI.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Core.Utils.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('packages\Xamarin.Android.Support.Core.Utils.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Media.Compat.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('packages\Xamarin.Android.Support.Media.Compat.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Media.Compat.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Fragment.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets" Condition="Exists('packages\Xamarin.Android.Support.Fragment.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Transition.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Transition.targets" Condition="Exists('packages\Xamarin.Android.Support.Transition.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Transition.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.v4.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v4.targets" Condition="Exists('packages\Xamarin.Android.Support.v4.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v4.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.v7.CardView.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.CardView.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.v7.RecyclerView.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.RecyclerView.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Vector.Drawable.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('packages\Xamarin.Android.Support.Vector.Drawable.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Animated.Vector.Drawable.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('packages\Xamarin.Android.Support.Animated.Vector.Drawable.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.v7.AppCompat.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.AppCompat.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Design.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Design.targets" Condition="Exists('packages\Xamarin.Android.Support.Design.4.26.1.0\build\MonoAndroid70\Xamarin.Android.Support.Design.targets')" />
 </Project>
