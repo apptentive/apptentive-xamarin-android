@@ -14,10 +14,10 @@
     <iconUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin-android/master/icons/apptentive_128x128.png</iconUrl>
     <dependencies>
       <group targetFramework="MonoAndroid70">
-        <dependency id="Xamarin.Android.Support.v4" version="25.4.0.2"/>
-        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.4.0.2"/>
-        <dependency id="Xamarin.Android.Support.v7.CardView" version="25.4.0.2"/>
-        <dependency id="Xamarin.Android.Support.Design" version="25.4.0.2"/>
+        <dependency id="Xamarin.Android.Support.v4" version="4:26.1.0"/>
+        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="4:26.1.0"/>
+        <dependency id="Xamarin.Android.Support.v7.CardView" version="4:26.1.0"/>
+        <dependency id="Xamarin.Android.Support.Design" version="4:26.1.0"/>
       </group>
     </dependencies>
   </metadata>
