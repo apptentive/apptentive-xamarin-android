@@ -3,21 +3,21 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:text="Login as Alex"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginAsAlexButton" />
+        android:id="@+id/jwtField"
+        android:hint="JWT" />
     <Button
-        android:text="Login as Frank"
+        android:text="Log In"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginAsFrankButton" />
+        android:id="@+id/loginButton" />
     <Button
-        android:text="Login as Sky"
+        android:text="Log Out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginAsSkyButton" />
+        android:id="@+id/logoutButton" />
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
