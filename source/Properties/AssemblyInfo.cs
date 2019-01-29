@@ -18,9 +18,9 @@ using Android.App;
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
 
-[assembly: AssemblyVersion("5.3.2")]
+[assembly: AssemblyVersion("5.4.0")]
 [assembly: MetaData("apptentive_sdk_distribution", Value = "Xamarin")]
-[assembly: MetaData("apptentive_sdk_distribution_version", Value = "5.3.2")]
+[assembly: MetaData("apptentive_sdk_distribution_version", Value = "5.4.0")]
 
 // The following attributes are used to specify the signing key for the assembly, 
 // if desired. See the Mono documentation for more information about signing.
