@@ -17,7 +17,7 @@ namespace ApptentiveSample
         {
             base.OnCreate();
 
-            var configuration = new ApptentiveConfiguration("ANDROID-XAMARIN-ANDROID", "22527498ae05c9605dd746cd7c5cb33c");
+            var configuration = new ApptentiveConfiguration("Your Apptentive Key", "Your Apptentive Signature");
             configuration.SetLogLevel(ApptentiveLog.Level.Verbose);
             configuration.SetShouldSanitizeLogMessages(false);
             Apptentive.Register(this, configuration);
