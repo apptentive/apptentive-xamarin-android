@@ -207,7 +207,6 @@
     <Compile Include="UserDataActivity.cs" />
     <Compile Include="CustomDataActivity.cs" />
     <Compile Include="LoginActivity.cs" />
-    <Compile Include="MyFirebaseIIDService.cs" />
     <Compile Include="MyFirebaseMessagingService.cs" />
   </ItemGroup>
   <ItemGroup>
