@@ -4,6 +4,10 @@ This document lets you know what has changed in the Xamarin.Android package. For
 
 - [Android Changelog](https://github.com/apptentive/apptentive-android/blob/master/CHANGELOG.md)
 
+# 2020-12-07 - v5.6.1
+
+- Removed deprecated Firebase code.
+
 # 2020-09-28 - v5.6.0
 
 - Apptentive Android SDK: 5.6.0
