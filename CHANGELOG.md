@@ -6,7 +6,7 @@ This document lets you know what has changed in the Xamarin.Android package. For
 
 # 2021-07-07 - v5.6.4
 
-- Apptentive Android SDK: 5.6.4
+- Apptentive Android SDK: 5.6.3
 
 # 2021-02-03 - v5.6.3
 
