@@ -4,6 +4,11 @@ This document lets you know what has changed in the Xamarin.Android package. For
 
 - [Android Changelog](https://github.com/apptentive/apptentive-android/blob/master/CHANGELOG.md)
 
+# 2022-02-18 - v5.8.2
+
+- Apptentive Android SDK: 5.8.1
+- Fix issue with nuget package
+
 # 2022-02-17 - v5.8.1
 
 - Apptentive Android SDK: 5.8.1
