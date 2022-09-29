@@ -4,6 +4,10 @@ This document lets you know what has changed in the Xamarin.Android package. For
 
 - [Android Changelog](https://github.com/apptentive/apptentive-android/blob/master/CHANGELOG.md)
 
+# 2022-09-29 - v5.8.4
+
+- Apptentive Android SDK: 5.8.4
+
 # 2022-03-23 - v5.8.3
 
 - Apptentive Android SDK: 5.8.3
