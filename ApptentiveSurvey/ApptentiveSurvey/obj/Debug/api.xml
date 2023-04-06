@@ -1,0 +1,398 @@
+<api api-source="JavaTypeSystem">
+  <package name="apptentive.com.android.feedback.survey" jni-name="apptentive/com/android/feedback/survey">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.BuildConfig" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LIBRARY_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;apptentive.com.android.feedback.survey&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="DefaultSurveyModelFactory" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/DefaultSurveyModelFactory;">
+      <implements name="apptentive.com.android.feedback.survey.SurveyModelFactory" name-generic-aware="apptentive.com.android.feedback.survey.SurveyModelFactory" jni-type="Lapptentive/com/android/feedback/survey/SurveyModelFactory;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSurveyModel" jni-signature="()Lapptentive/com/android/feedback/survey/model/SurveyModel;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.SurveyModel" jni-return="Lapptentive/com/android/feedback/survey/model/SurveyModel;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SurveyModelFactory" static="false" visibility="" jni-signature="Lapptentive/com/android/feedback/survey/SurveyModelFactory;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="getSurveyModel" jni-signature="()Lapptentive/com/android/feedback/survey/model/SurveyModel;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.SurveyModel" jni-return="Lapptentive/com/android/feedback/survey/model/SurveyModel;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+    </interface>
+  </package>
+  <package name="apptentive.com.android.feedback.survey.interaction" jni-name="apptentive/com/android/feedback/survey/interaction">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="DefaultSurveyQuestionConverter" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/interaction/DefaultSurveyQuestionConverter;">
+      <implements name="apptentive.com.android.feedback.survey.interaction.SurveyQuestionConverter" name-generic-aware="apptentive.com.android.feedback.survey.interaction.SurveyQuestionConverter" jni-type="Lapptentive/com/android/feedback/survey/interaction/SurveyQuestionConverter;" />
+      <constructor deprecated="not deprecated" final="false" name="DefaultSurveyQuestionConverter" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.interaction.DefaultSurveyQuestionConverter" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="convert" jni-signature="(Ljava/util/Map;Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/SurveyQuestion;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;?&gt;" jni-return="Lapptentive/com/android/feedback/survey/model/SurveyQuestion&lt;*&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="config" type="java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;" jni-type="Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;" not-null="true" />
+        <parameter name="requiredTextMessage" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="Companion" jni-signature="Lapptentive/com/android/feedback/survey/interaction/DefaultSurveyQuestionConverter$Companion;" not-null="true" static="true" transient="false" type="apptentive.com.android.feedback.survey.interaction.DefaultSurveyQuestionConverter.Companion" type-generic-aware="apptentive.com.android.feedback.survey.interaction.DefaultSurveyQuestionConverter.Companion" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="DefaultSurveyQuestionConverter.Companion" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/interaction/DefaultSurveyQuestionConverter$Companion;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveyInteractionKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/interaction/SurveyInteractionKt;" />
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SurveyQuestionConverter" static="false" visibility="" jni-signature="Lapptentive/com/android/feedback/survey/interaction/SurveyQuestionConverter;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="convert" jni-signature="(Ljava/util/Map;Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/SurveyQuestion;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;?&gt;" jni-return="Lapptentive/com/android/feedback/survey/model/SurveyQuestion&lt;*&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="p0" type="java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;" jni-type="Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;" not-null="true" />
+        <parameter name="p1" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+    </interface>
+  </package>
+  <package name="apptentive.com.android.feedback.survey.model" jni-name="apptentive/com/android/feedback/survey/model">
+    <class abstract="false" deprecated="not deprecated" extends="apptentive.com.android.feedback.survey.model.SurveyQuestion" extends-generic-aware="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer&gt;" jni-extends="Lapptentive/com/android/feedback/survey/model/SurveyQuestion;" final="true" name="MultiChoiceQuestion" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion;">
+      <constructor deprecated="not deprecated" final="false" name="MultiChoiceQuestion" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;ZIILapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="validationError" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="required" type="boolean" jni-type="Z" />
+        <parameter name="requiredText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="instructionsText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="answerChoiceConfigs" type="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.AnswerChoiceConfiguration&gt;" jni-type="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$AnswerChoiceConfiguration;&gt;;" not-null="true" />
+        <parameter name="allowMultipleAnswers" type="boolean" jni-type="Z" />
+        <parameter name="minSelections" type="int" jni-type="I" />
+        <parameter name="maxSelections" type="int" jni-type="I" />
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAllowMultipleAnswers" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAnswerChoiceConfigs" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.AnswerChoiceConfiguration&gt;" jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$AnswerChoiceConfiguration;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getChoices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice&gt;" jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMaxSelections" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMinSelections" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isAnswered" jni-signature="(Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isValidAnswer" jni-signature="(Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="validateOptionalQuestion" jni-signature="(Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MultiChoiceQuestion.Answer" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;">
+      <implements name="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" name-generic-aware="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" jni-type="Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;" />
+      <constructor deprecated="not deprecated" final="false" name="MultiChoiceQuestion.Answer" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="MultiChoiceQuestion.Answer" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" synthetic="false" visibility="public">
+        <parameter name="choices" type="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice&gt;" jni-type="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;&gt;;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice&gt;" jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/util/List;)Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="choices" type="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice&gt;" jni-type="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getChoices" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice&gt;" jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MultiChoiceQuestion.Answer.Choice" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;">
+      <constructor deprecated="not deprecated" final="false" name="MultiChoiceQuestion.Answer.Choice" jni-signature="(Ljava/lang/String;ZLjava/lang/String;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="checked" type="boolean" jni-type="Z" />
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component3" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/String;ZLjava/lang/String;)Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer.Choice" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer$Choice;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="checked" type="boolean" jni-type="Z" />
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getChecked" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getValue" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MultiChoiceQuestion.AnswerChoiceConfiguration" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$AnswerChoiceConfiguration;">
+      <constructor deprecated="not deprecated" final="false" name="MultiChoiceQuestion.AnswerChoiceConfiguration" jni-signature="(Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.AnswerChoiceConfiguration" synthetic="false" visibility="public">
+        <parameter name="type" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" />
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="hint" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component3" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component4" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$AnswerChoiceConfiguration;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.AnswerChoiceConfiguration" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$AnswerChoiceConfiguration;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="type" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" />
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="hint" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getHint" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTitle" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getType" jni-signature="()Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="MultiChoiceQuestion.ChoiceType" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType[]" jni-return="[Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="true" synchronized="false" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="Companion" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType$Companion;" not-null="true" static="true" transient="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType.Companion" type-generic-aware="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType.Companion" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="select_option" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="true" transient="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" type-generic-aware="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="select_other" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="true" transient="false" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" type-generic-aware="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MultiChoiceQuestion.ChoiceType.Companion" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType$Companion;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="tryParse" jni-signature="(Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.ChoiceType" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$ChoiceType;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MultiChoiceQuestionKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestionKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="update" jni-signature="(Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;Ljava/lang/String;ZZLjava/lang/String;)Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-return="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" static="true" synchronized="false" synthetic="false" visibility="kotlin-internal" return-not-null="true">
+        <parameter name="obj" type="apptentive.com.android.feedback.survey.model.MultiChoiceQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/MultiChoiceQuestion$Answer;" not-null="true" />
+        <parameter name="choiceId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="isChecked" type="boolean" jni-type="Z" />
+        <parameter name="allowMultipleAnswers" type="boolean" jni-type="Z" />
+        <parameter name="text" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="apptentive.com.android.feedback.survey.model.SurveyQuestion" extends-generic-aware="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;apptentive.com.android.feedback.survey.model.RangeQuestion.Answer&gt;" jni-extends="Lapptentive/com/android/feedback/survey/model/SurveyQuestion;" final="true" name="RangeQuestion" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/model/RangeQuestion;">
+      <constructor deprecated="not deprecated" final="false" name="RangeQuestion" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.RangeQuestion" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="validationError" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="required" type="boolean" jni-type="Z" />
+        <parameter name="requiredText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="instructionsText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="min" type="int" jni-type="I" />
+        <parameter name="max" type="int" jni-type="I" />
+        <parameter name="minLabel" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="maxLabel" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.RangeQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMax" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMaxLabel" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMin" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMinLabel" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSelectedValue" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isAnswered" jni-signature="(Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.RangeQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isValidAnswer" jni-signature="(Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.RangeQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="RangeQuestion.Answer" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;">
+      <implements name="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" name-generic-aware="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" jni-type="Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;" />
+      <constructor deprecated="not deprecated" final="false" name="RangeQuestion.Answer" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.RangeQuestion.Answer" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="RangeQuestion.Answer" jni-signature="(Ljava/lang/Integer;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.RangeQuestion.Answer" synthetic="false" visibility="public">
+        <parameter name="selectedIndex" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/Integer;)Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.RangeQuestion.Answer" jni-return="Lapptentive/com/android/feedback/survey/model/RangeQuestion$Answer;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="selectedIndex" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSelectedIndex" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="apptentive.com.android.feedback.survey.model.SurveyQuestion" extends-generic-aware="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer&gt;" jni-extends="Lapptentive/com/android/feedback/survey/model/SurveyQuestion;" final="true" name="SingleLineQuestion" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/model/SingleLineQuestion;">
+      <constructor deprecated="not deprecated" final="false" name="SingleLineQuestion" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.SingleLineQuestion" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="validationError" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="required" type="boolean" jni-type="Z" />
+        <parameter name="requiredText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="instructionsText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="freeFormHint" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="multiline" type="boolean" jni-type="Z" />
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAnswerString" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getFreeFormHint" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMultiline" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isAnswered" jni-signature="(Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isValidAnswer" jni-signature="(Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer" jni-type="Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SingleLineQuestion.Answer" static="true" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;">
+      <implements name="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" name-generic-aware="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" jni-type="Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;" />
+      <constructor deprecated="not deprecated" final="false" name="SingleLineQuestion.Answer" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="SingleLineQuestion.Answer" jni-signature="(Ljava/lang/String;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.model.SingleLineQuestion.Answer" jni-return="Lapptentive/com/android/feedback/survey/model/SingleLineQuestion$Answer;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getValue" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveyModel" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/SurveyModel;">
+      <constructor deprecated="not deprecated" final="false" name="SurveyModel" jni-signature="(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/text/Spanned;Ljava/lang/String;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.SurveyModel" synthetic="false" visibility="public">
+        <parameter name="interactionId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="questions" type="java.util.List&lt;? extends apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;?&gt;&gt;" jni-type="Ljava/util/List&lt;+Lapptentive/com/android/feedback/survey/model/SurveyQuestion&lt;*&gt;;&gt;;" not-null="true" />
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="description" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="submitText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="requiredText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="validationError" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="showSuccessMessage" type="boolean" jni-type="Z" />
+        <parameter name="successMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="closeConfirmTitle" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="closeConfirmMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="closeConfirmCloseText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="closeConfirmBackText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="termsAndConditionsLinkText" type="android.text.Spanned" jni-type="Landroid/text/Spanned;" />
+        <parameter name="disclaimerText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAllRequiredAnswersAreValid" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCloseConfirmBackText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCloseConfirmCloseText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCloseConfirmMessage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCloseConfirmTitle" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDescription" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDisclaimerText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getFirstInvalidRequiredQuestionIndex" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getHasAnyAnswer" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getInteractionId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getQuestion" jni-signature="(Ljava/lang/String;)Lapptentive/com/android/feedback/survey/model/SurveyQuestion;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <typeParameters>
+          <typeParameter name="T" classBound="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;?&gt;" jni-classBound="Lapptentive/com/android/feedback/survey/model/SurveyQuestion&lt;*&gt;;">
+            <genericConstraints>
+              <genericConstraint type="apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;?&gt;" />
+            </genericConstraints>
+          </typeParameter>
+        </typeParameters>
+        <parameter name="questionId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getQuestions" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;apptentive.com.android.feedback.survey.model.SurveyQuestion&lt;?&gt;&gt;" jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/survey/model/SurveyQuestion&lt;*&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getRequiredText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getShowSuccessMessage" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSubmitText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSuccessMessage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTermsAndConditionsLinkText" jni-signature="()Landroid/text/Spanned;" bridge="false" native="false" return="android.text.Spanned" jni-return="Landroid/text/Spanned;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getValidationError" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="updateAnswer" jni-signature="(Ljava/lang/String;Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T" interfaceBounds="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" jni-interfaceBounds="Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;">
+            <genericConstraints>
+              <genericConstraint type="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" />
+            </genericConstraints>
+          </typeParameter>
+        </typeParameters>
+        <parameter name="questionId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="answer" type="T" jni-type="TT;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SurveyQuestion" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/SurveyQuestion;">
+      <typeParameters>
+        <typeParameter name="Answer" interfaceBounds="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" jni-interfaceBounds="Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;">
+          <genericConstraints>
+            <genericConstraint type="apptentive.com.android.feedback.survey.model.SurveyQuestionAnswer" />
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="SurveyQuestion" jni-signature="(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.model.SurveyQuestion" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="isRequired" type="boolean" jni-type="Z" />
+        <parameter name="requiredText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="instructionsText" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="validationError" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="answer" type="Answer" jni-type="TAnswer;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAnswer" jni-signature="()Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;" bridge="false" native="false" return="Answer" jni-return="TAnswer;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCanSubmitOptionalQuestion" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getHasAnswer" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getHasValidAnswer" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getInstructionsText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getRequiredText" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTitle" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getValidationError" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="isAnswered" jni-signature="(Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="Answer" jni-type="TAnswer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="isRequired" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="isValidAnswer" jni-signature="(Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="Answer" jni-type="TAnswer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAnswer" jni-signature="(Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="Answer" jni-type="TAnswer;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="validateOptionalQuestion" jni-signature="(Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="answer" type="Answer" jni-type="TAnswer;" not-null="true" />
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SurveyQuestionAnswer" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/model/SurveyQuestionAnswer;" />
+  </package>
+  <package name="apptentive.com.android.feedback.survey.utils" jni-name="apptentive/com/android/feedback/survey/utils">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveyViewModelUtilsKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/utils/SurveyViewModelUtilsKt;" />
+  </package>
+  <package name="apptentive.com.android.feedback.survey.view" jni-name="apptentive/com/android/feedback/survey/view">
+    <class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" jni-extends="Landroid/widget/FrameLayout;" final="true" name="SurveyQuestionContainerView" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/view/SurveyQuestionContainerView;">
+      <constructor deprecated="not deprecated" final="false" name="SurveyQuestionContainerView" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.view.SurveyQuestionContainerView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="SurveyQuestionContainerView" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.view.SurveyQuestionContainerView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="SurveyQuestionContainerView" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;I)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.view.SurveyQuestionContainerView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;" />
+        <parameter name="defStyleAttr" type="int" jni-type="I" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAccessibilityDescription" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getInstructions" jni-signature="()Ljava/lang/CharSequence;" bridge="false" native="false" return="java.lang.CharSequence" jni-return="Ljava/lang/CharSequence;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTitle" jni-signature="()Ljava/lang/CharSequence;" bridge="false" native="false" return="java.lang.CharSequence" jni-return="Ljava/lang/CharSequence;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAccessibilityDescription" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="&lt;set-?&gt;" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAnswerView" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="layoutId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setErrorMessage" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="errorMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setInstructions" jni-signature="(Ljava/lang/CharSequence;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setQuestionContentDescription" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="cd" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setTitle" jni-signature="(Ljava/lang/CharSequence;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;" />
+      </method>
+    </class>
+  </package>
+  <package name="apptentive.com.android.feedback.survey.viewmodel" jni-name="apptentive/com/android/feedback/survey/viewmodel">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="DefaultSurveyQuestionListItemFactory" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/viewmodel/DefaultSurveyQuestionListItemFactory;">
+      <implements name="apptentive.com.android.feedback.survey.viewmodel.SurveyQuestionListItemFactory" name-generic-aware="apptentive.com.android.feedback.survey.viewmodel.SurveyQuestionListItemFactory" jni-type="Lapptentive/com/android/feedback/survey/viewmodel/SurveyQuestionListItemFactory;" />
+      <constructor deprecated="not deprecated" final="false" name="DefaultSurveyQuestionListItemFactory" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.viewmodel.DefaultSurveyQuestionListItemFactory" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveyCancelConfirmationDisplay" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/viewmodel/SurveyCancelConfirmationDisplay;">
+      <constructor deprecated="not deprecated" final="false" name="SurveyCancelConfirmationDisplay" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.viewmodel.SurveyCancelConfirmationDisplay" synthetic="false" visibility="public">
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="positiveButtonMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="negativeButtonMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component3" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component4" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lapptentive/com/android/feedback/survey/viewmodel/SurveyCancelConfirmationDisplay;" bridge="false" native="false" return="apptentive.com.android.feedback.survey.viewmodel.SurveyCancelConfirmationDisplay" jni-return="Lapptentive/com/android/feedback/survey/viewmodel/SurveyCancelConfirmationDisplay;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="positiveButtonMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="negativeButtonMessage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMessage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getNegativeButtonMessage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getPositiveButtonMessage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTitle" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveyListItemKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/viewmodel/SurveyListItemKt;" />
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SurveyQuestionListItemFactory" static="false" visibility="" jni-signature="Lapptentive/com/android/feedback/survey/viewmodel/SurveyQuestionListItemFactory;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveySubmitMessageState" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/survey/viewmodel/SurveySubmitMessageState;">
+      <constructor deprecated="not deprecated" final="false" name="SurveySubmitMessageState" jni-signature="(Ljava/lang/String;Z)V" bridge="false" static="false" type="apptentive.com.android.feedback.survey.viewmodel.SurveySubmitMessageState" synthetic="false" visibility="public">
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="isValid" type="boolean" jni-type="Z" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/String;Z)Lapptentive/com/android/feedback/survey/viewmodel/SurveySubmitMessageState;" bridge="false" native="false" return="java.lang.Object" jni-return="Lapptentive/com/android/feedback/survey/viewmodel/SurveySubmitMessageState;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="message" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="isValid" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMessage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isValid" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SurveyViewModelKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/survey/viewmodel/SurveyViewModelKt;" />
+  </package>
+</api>

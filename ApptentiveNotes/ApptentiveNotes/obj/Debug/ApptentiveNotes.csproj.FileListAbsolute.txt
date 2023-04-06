@@ -1,0 +1,11 @@
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/bin/Debug/ApptentiveNotes.dll
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/bin/Debug/ApptentiveNotes.pdb
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/__AndroidLibraryProjects__.zip
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/MonoAndroid,Version=v13.0.AssemblyAttributes.cs
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/ApptentiveNotes.csproj.AssemblyReference.cache
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/class-parse.rsp
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/java-resolution-report.log
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/ApptentiveNotes.csproj.CoreCompileInputs.cache
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/ApptentiveNotes.dll
+/Users/luqmaankhan/Desktop/ApptentiveNotes/ApptentiveNotes/obj/Debug/ApptentiveNotes.pdb

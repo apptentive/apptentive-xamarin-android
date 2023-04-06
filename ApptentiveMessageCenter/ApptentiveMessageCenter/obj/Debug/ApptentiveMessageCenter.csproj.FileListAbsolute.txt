@@ -1,0 +1,11 @@
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/bin/Debug/ApptentiveMessageCenter.dll
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/bin/Debug/ApptentiveMessageCenter.pdb
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/__AndroidLibraryProjects__.zip
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/MonoAndroid,Version=v13.0.AssemblyAttributes.cs
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/ApptentiveMessageCenter.csproj.AssemblyReference.cache
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/class-parse.rsp
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/java-resolution-report.log
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/ApptentiveMessageCenter.csproj.CoreCompileInputs.cache
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/ApptentiveMessageCenter.dll
+/Users/luqmaankhan/Desktop/ApptentiveMessageCenter/ApptentiveMessageCenter/obj/Debug/ApptentiveMessageCenter.pdb

@@ -1,0 +1,10 @@
+==== Cycle 1 ====
+
+The class '[Class] apptentive.com.android.feedback.InAppRatingDialogModule' was removed because the Java implemented interface type 'apptentive.com.android.feedback.engagement.interactions.InteractionModule<apptentive.com.android.feedback.rating.interaction.InAppReviewInteraction>' could not be found.
+The class '[Class] apptentive.com.android.feedback.rating.interaction.InAppReviewInteraction' was removed because the Java base type 'apptentive.com.android.feedback.engagement.interactions.Interaction' could not be found.
+The class '[Class] apptentive.com.android.feedback.rating.interaction.InAppReviewInteractionLauncher' was removed because the Java base type 'apptentive.com.android.feedback.platform.AndroidViewInteractionLauncher<apptentive.com.android.feedback.rating.interaction.InAppReviewInteraction>' could not be found.
+The class '[Class] apptentive.com.android.feedback.rating.interaction.InAppReviewInteractionTypeConverter' was removed because the Java implemented interface type 'apptentive.com.android.feedback.engagement.interactions.InteractionTypeConverter<apptentive.com.android.feedback.rating.interaction.InAppReviewInteraction>' could not be found.
+The method '[Method] android.app.Activity access$getActivity$p(apptentive.com.android.feedback.rating.reviewmanager.GooglePlayReviewManager $this)' was removed because its name contains a dollar sign.
+The method '[Method] void access$notifyFailure(apptentive.com.android.feedback.rating.reviewmanager.GooglePlayReviewManager $this, apptentive.com.android.feedback.rating.reviewmanager.InAppReviewCallback callback, java.lang.Exception exception, java.lang.String message)' was removed because its name contains a dollar sign.
+The method '[Method] void access$startReview(apptentive.com.android.feedback.rating.reviewmanager.GooglePlayReviewManager $this, android.app.Activity activity, com.google.android.play.core.review.ReviewInfo reviewInfo, apptentive.com.android.feedback.rating.reviewmanager.InAppReviewCallback callback)' was removed because its name contains a dollar sign.
+

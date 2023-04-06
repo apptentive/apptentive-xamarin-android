@@ -1,0 +1,18 @@
+==== Cycle 1 ====
+
+The class '[Class] apptentive.com.android.feedback.TextModalModule' was removed because the Java implemented interface type 'apptentive.com.android.feedback.engagement.interactions.InteractionModule<apptentive.com.android.feedback.textmodal.TextModalInteraction>' could not be found.
+The method '[Method] apptentive.com.android.feedback.model.InvocationData access$convertInvocation(java.util.Map config)' was removed because its name contains a dollar sign.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalDialogFragment' was removed because the Java base type 'androidx.fragment.app.DialogFragment' could not be found.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalInteraction' was removed because the Java base type 'apptentive.com.android.feedback.engagement.interactions.Interaction' could not be found.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalInteractionLauncher' was removed because the Java base type 'apptentive.com.android.feedback.platform.AndroidViewInteractionLauncher<apptentive.com.android.feedback.textmodal.TextModalInteraction>' could not be found.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalInteractionProvider' was removed because the Java implemented interface type 'apptentive.com.android.core.Provider<apptentive.com.android.feedback.textmodal.TextModalModelFactory>' could not be found.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalInteractionTypeConverter' was removed because the Java implemented interface type 'apptentive.com.android.feedback.engagement.interactions.InteractionTypeConverter<apptentive.com.android.feedback.textmodal.TextModalInteraction>' could not be found.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalModel' was removed because the Java base type 'apptentive.com.android.feedback.engagement.interactions.Interaction' could not be found.
+The class '[Class] apptentive.com.android.feedback.textmodal.TextModalViewModel' was removed because the Java base type 'androidx.lifecycle.ViewModel' could not be found.
+
+==== Cycle 2 ====
+
+The method '[Method] apptentive.com.android.feedback.textmodal.TextModalModel.Action convert(java.util.Map<java.lang.String, ? extends java.lang.Object> config)' was removed because the Java return type 'apptentive.com.android.feedback.textmodal.TextModalModel.Action' could not be found.
+The method '[Method] apptentive.com.android.feedback.textmodal.TextModalModel.Action convert(java.util.Map<java.lang.String, ? extends java.lang.Object> p0)' was removed because the Java return type 'apptentive.com.android.feedback.textmodal.TextModalModel.Action' could not be found.
+The method '[Method] apptentive.com.android.feedback.textmodal.TextModalModel getTextModalModel()' was removed because the Java return type 'apptentive.com.android.feedback.textmodal.TextModalModel' could not be found.
+

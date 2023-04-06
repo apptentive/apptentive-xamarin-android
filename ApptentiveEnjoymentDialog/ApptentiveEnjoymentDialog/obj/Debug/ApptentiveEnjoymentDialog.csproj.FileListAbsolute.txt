@@ -1,0 +1,11 @@
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/bin/Debug/ApptentiveEnjoymentDialog.dll
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/bin/Debug/ApptentiveEnjoymentDialog.pdb
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/__AndroidLibraryProjects__.zip
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/MonoAndroid,Version=v13.0.AssemblyAttributes.cs
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/ApptentiveEnjoymentDialog.csproj.AssemblyReference.cache
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/class-parse.rsp
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/java-resolution-report.log
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/ApptentiveEnjoymentDialog.csproj.CoreCompileInputs.cache
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/ApptentiveEnjoymentDialog.dll
+/Users/luqmaankhan/Desktop/ApptentiveEnjoymentDialog/ApptentiveEnjoymentDialog/obj/Debug/ApptentiveEnjoymentDialog.pdb

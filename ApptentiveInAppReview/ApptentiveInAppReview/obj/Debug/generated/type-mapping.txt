@@ -1,0 +1,6 @@
+apptentive/com/android/feedback/rating/interaction/InAppReviewInteractionLauncherKt = Apptentive.Com.Android.Feedback.Rating.Interaction.InAppReviewInteractionLauncherKt
+com/example/feedback/BuildConfig = Com.Example.Feedback.BuildConfig
+  <init>()V = .ctor()
+  BUILD_TYPE = BuildType
+  DEBUG = Debug
+  LIBRARY_PACKAGE_NAME = LibraryPackageName

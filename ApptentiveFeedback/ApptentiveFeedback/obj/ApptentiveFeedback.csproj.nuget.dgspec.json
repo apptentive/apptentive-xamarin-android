@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj": {}
+  },
+  "projects": {
+    "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
+        "projectName": "ApptentiveFeedback",
+        "projectPath": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
+        "packagesPath": "/Users/luqmaankhan/.nuget/packages/",
+        "outputPath": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/luqmaankhan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid13.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid13.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid13.0": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

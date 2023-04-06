@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api api-source="JavaTypeSystem">
+  <package name="apptentive.com.android" jni-name="apptentive/com/android">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lapptentive/com/android/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.BuildConfig" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LIBRARY_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;apptentive.com.android&quot;" visibility="public" volatile="false" />
+    </class>
+  </package>
+  <package name="apptentive.com.android.core" jni-name="apptentive/com/android/core">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="AsLiveDataKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/core/AsLiveDataKt;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="PostIfChangedKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/core/PostIfChangedKt;" />
+  </package>
+  <package name="apptentive.com.android.ui" jni-name="apptentive/com/android/ui">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="ApptentiveViewModelActivityKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/ApptentiveViewModelActivityKt;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="GetThemeColorKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/GetThemeColorKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getThemeColor" jni-signature="(Landroid/content/Context;I)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="obj" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+        <parameter name="attr" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="HideSoftKeyboardKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/HideSoftKeyboardKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="hideSoftKeyboard" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="obj" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="LayoutViewHolderFactory" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/LayoutViewHolderFactory;">
+      <implements name="apptentive.com.android.ui.ViewHolderFactory" name-generic-aware="apptentive.com.android.ui.ViewHolderFactory" jni-type="Lapptentive/com/android/ui/ViewHolderFactory;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="createItemView" jni-signature="(Landroid/view/ViewGroup;)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="parent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ListViewItem" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/ListViewItem;">
+      <constructor deprecated="not deprecated" final="false" name="ListViewItem" jni-signature="(Ljava/lang/String;I)V" bridge="false" static="false" type="apptentive.com.android.ui.ListViewItem" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="itemType" type="int" jni-type="I" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="areContentsTheSame" jni-signature="(Lapptentive/com/android/ui/ListViewItem;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="other" type="apptentive.com.android.ui.ListViewItem" jni-type="Lapptentive/com/android/ui/ListViewItem;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getChangePayloadMask" jni-signature="(Lapptentive/com/android/ui/ListViewItem;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="oldItem" type="apptentive.com.android.ui.ListViewItem" jni-type="Lapptentive/com/android/ui/ListViewItem;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getItemType" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SetInvalidKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/SetInvalidKt;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="ThemeHelperKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/ThemeHelperKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="overrideTheme" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="kotlin-internal">
+        <parameter name="obj" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ViewHolderFactory" static="false" visibility="public" jni-signature="Lapptentive/com/android/ui/ViewHolderFactory;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="createItemView" jni-signature="(Landroid/view/ViewGroup;)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="parent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" not-null="true" />
+      </method>
+    </interface>
+  </package>
+</api>

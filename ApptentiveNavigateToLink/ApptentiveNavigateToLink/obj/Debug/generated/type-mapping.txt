@@ -1,0 +1,6 @@
+apptentive/com/android/feedback/link/BuildConfig = Apptentive.Com.Android.Feedback.Link.BuildConfig
+  <init>()V = .ctor()
+  BUILD_TYPE = BuildType
+  DEBUG = Debug
+  LIBRARY_PACKAGE_NAME = LibraryPackageName
+apptentive/com/android/feedback/link/LinkNavigatorKt = Apptentive.Com.Android.Feedback.Link.LinkNavigatorKt

@@ -1,0 +1,2778 @@
+<api
+  api-source="class-parse">
+  <package
+    name="apptentive.com.android.feedback"
+    jni-name="apptentive/com/android/feedback">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalModule"
+      jni-signature="Lapptentive/com/android/feedback/TextModalModule;"
+      source-file-name="TextModalModule.kt"
+      static="false"
+      visibility="private">
+      <implements
+        name="apptentive.com.android.feedback.engagement.interactions.InteractionModule"
+        name-generic-aware="apptentive.com.android.feedback.engagement.interactions.InteractionModule&lt;apptentive.com.android.feedback.textmodal.TextModalInteraction&gt;"
+        jni-type="Lapptentive/com/android/feedback/engagement/interactions/InteractionModule&lt;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalModule"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInteractionClass"
+        native="false"
+        return="java.lang.Class&lt;apptentive.com.android.feedback.textmodal.TextModalInteraction&gt;"
+        jni-return="Ljava/lang/Class&lt;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Class;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="provideInteractionLauncher"
+        native="false"
+        return="apptentive.com.android.feedback.engagement.interactions.InteractionLauncher&lt;apptentive.com.android.feedback.textmodal.TextModalInteraction&gt;"
+        jni-return="Lapptentive/com/android/feedback/engagement/interactions/InteractionLauncher&lt;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/engagement/interactions/InteractionLauncher;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="provideInteractionTypeConverter"
+        native="false"
+        return="apptentive.com.android.feedback.engagement.interactions.InteractionTypeConverter&lt;apptentive.com.android.feedback.textmodal.TextModalInteraction&gt;"
+        jni-return="Lapptentive/com/android/feedback/engagement/interactions/InteractionTypeConverter&lt;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/engagement/interactions/InteractionTypeConverter;"
+        return-not-null="true" />
+    </class>
+  </package>
+  <package
+    name="apptentive.com.android.feedback.notes"
+    jni-name="apptentive/com/android/feedback/notes">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lapptentive/com/android/feedback/notes/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LIBRARY_PACKAGE_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;apptentive.com.android.feedback.notes&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+  <package
+    name="apptentive.com.android.feedback.textmodal"
+    jni-name="apptentive/com/android/feedback/textmodal">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="DefaultTextModalActionConverter"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/DefaultTextModalActionConverter;"
+      source-file-name="TextModalActionConverter.kt"
+      static="false"
+      visibility="private">
+      <implements
+        name="apptentive.com.android.feedback.textmodal.TextModalActionConverter"
+        name-generic-aware="apptentive.com.android.feedback.textmodal.TextModalActionConverter"
+        jni-type="Lapptentive/com/android/feedback/textmodal/TextModalActionConverter;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="DefaultTextModalActionConverter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="convert"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/Map;)Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+        return-not-null="true">
+        <parameter
+          name="config"
+          type="java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;"
+          jni-type="Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;"
+          not-null="true" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="TextModalActionConverter"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalActionConverter;"
+      source-file-name="TextModalActionConverter.kt"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="convert"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/Map;)Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+        return-not-null="true">
+        <parameter
+          name="p0"
+          type="java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;"
+          jni-type="Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;"
+          not-null="true" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalActionConverterKt"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalActionConverterKt;"
+      source-file-name="TextModalActionConverter.kt"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$convertInvocation"
+        native="false"
+        return="apptentive.com.android.feedback.model.InvocationData"
+        jni-return="Lapptentive/com/android/feedback/model/InvocationData;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Ljava/util/Map;)Lapptentive/com/android/feedback/model/InvocationData;">
+        <parameter
+          name="config"
+          type="java.util.Map"
+          jni-type="Ljava/util/Map;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroidx/fragment/app/DialogFragment;"
+      extends="androidx.fragment.app.DialogFragment"
+      extends-generic-aware="androidx.fragment.app.DialogFragment"
+      final="true"
+      name="TextModalDialogFragment"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment;"
+      source-file-name="TextModalDialogFragment.kt"
+      static="false"
+      visibility="private">
+      <implements
+        name="apptentive.com.android.feedback.ApptentiveActivityInfo"
+        name-generic-aware="apptentive.com.android.feedback.ApptentiveActivityInfo"
+        jni-type="Lapptentive/com/android/feedback/ApptentiveActivityInfo;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalDialogFragment"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getApptentiveActivityInfo"
+        native="false"
+        return="android.app.Activity"
+        jni-return="Landroid/app/Activity;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/app/Activity;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface;)V">
+        <parameter
+          name="dialog"
+          type="android.content.DialogInterface"
+          jni-type="Landroid/content/DialogInterface;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreateDialog"
+        native="false"
+        return="android.app.Dialog"
+        jni-return="Landroid/app/Dialog;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)Landroid/app/Dialog;"
+        return-not-null="true">
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment;"
+      enclosing-method-name="onCreateDialog"
+      enclosing-method-signature="(Landroid/os/Bundle;)Landroid/app/Dialog;"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalDialogFragment.onCreateDialog.dialog.1.2"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment$onCreateDialog$dialog$1$2;"
+      source-file-name="TextModalDialogFragment.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalDialogFragment.special..inlined.viewModels.default.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment$special$$inlined$viewModels$default$1;"
+      source-file-name="FragmentViewModelLazy.kt"
+      static="true"
+      visibility="public">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;androidx.fragment.app.Fragment&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Landroidx/fragment/app/Fragment;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalDialogFragment.special..inlined.viewModels.default.1"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/fragment/app/Fragment;)V">
+        <parameter
+          name="$receiver"
+          type="androidx.fragment.app.Fragment"
+          jni-type="Landroidx/fragment/app/Fragment;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="androidx.fragment.app.Fragment"
+        jni-return="Landroidx/fragment/app/Fragment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroidx/fragment/app/Fragment;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalDialogFragment.special..inlined.viewModels.default.2"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment$special$$inlined$viewModels$default$2;"
+      source-file-name="FragmentViewModelLazy.kt"
+      static="true"
+      visibility="public">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;androidx.lifecycle.ViewModelStore&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Landroidx/lifecycle/ViewModelStore;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalDialogFragment.special..inlined.viewModels.default.2"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lkotlin/jvm/functions/Function0;)V">
+        <parameter
+          name="$ownerProducer"
+          type="kotlin.jvm.functions.Function0"
+          jni-type="Lkotlin/jvm/functions/Function0;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="androidx.lifecycle.ViewModelStore"
+        jni-return="Landroidx/lifecycle/ViewModelStore;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroidx/lifecycle/ViewModelStore;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalDialogFragment.special..inlined.viewModels.default.3"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalDialogFragment$special$$inlined$viewModels$default$3;"
+      source-file-name="FragmentViewModelLazy.kt"
+      static="true"
+      visibility="public">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;androidx.lifecycle.ViewModelProvider.Factory&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Landroidx/lifecycle/ViewModelProvider$Factory;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalDialogFragment.special..inlined.viewModels.default.3"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lkotlin/jvm/functions/Function0;Landroidx/fragment/app/Fragment;)V">
+        <parameter
+          name="$ownerProducer"
+          type="kotlin.jvm.functions.Function0"
+          jni-type="Lkotlin/jvm/functions/Function0;" />
+        <parameter
+          name="$receiver"
+          type="androidx.fragment.app.Fragment"
+          jni-type="Landroidx/fragment/app/Fragment;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="androidx.lifecycle.ViewModelProvider.Factory"
+        jni-return="Landroidx/lifecycle/ViewModelProvider$Factory;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroidx/lifecycle/ViewModelProvider$Factory;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/engagement/interactions/Interaction;"
+      extends="apptentive.com.android.feedback.engagement.interactions.Interaction"
+      extends-generic-aware="apptentive.com.android.feedback.engagement.interactions.Interaction"
+      final="true"
+      name="TextModalInteraction"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+      source-file-name="TextModalInteraction.kt"
+      static="false"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalInteraction"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="body"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="actions"
+          type="java.util.List&lt;? extends java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;&gt;"
+          jni-type="Ljava/util/List&lt;+Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;&gt;;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="other"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getActions"
+        native="false"
+        return="java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/util/Map&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getBody"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getTitle"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Companion"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="apptentive.com.android.feedback.textmodal.TextModalInteraction.Companion"
+        type-generic-aware="apptentive.com.android.feedback.textmodal.TextModalInteraction.Companion"
+        jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteraction$Companion;"
+        not-null="true"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="TAG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        not-null="true"
+        value="&quot;APPTENTIVE_NOTE_DIALOG&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalInteraction.Companion"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteraction$Companion;"
+      source-file-name="TextModalInteraction.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalInteraction.Companion"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V">
+        <parameter
+          name="$constructor_marker"
+          type="kotlin.jvm.internal.DefaultConstructorMarker"
+          jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalInteractionKt"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteractionKt;"
+      source-file-name="TextModalInteraction.kt"
+      static="false"
+      visibility="public" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/platform/AndroidViewInteractionLauncher;"
+      extends="apptentive.com.android.feedback.platform.AndroidViewInteractionLauncher"
+      extends-generic-aware="apptentive.com.android.feedback.platform.AndroidViewInteractionLauncher&lt;apptentive.com.android.feedback.textmodal.TextModalInteraction&gt;"
+      final="true"
+      name="TextModalInteractionLauncher"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteractionLauncher;"
+      source-file-name="TextModalInteractionLauncher.kt"
+      static="false"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalInteractionLauncher"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="launchInteraction"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/engagement/EngagementContext;Lapptentive/com/android/feedback/engagement/interactions/Interaction;)V">
+        <parameter
+          name="engagementContext"
+          type="apptentive.com.android.feedback.engagement.EngagementContext"
+          jni-type="Lapptentive/com/android/feedback/engagement/EngagementContext;" />
+        <parameter
+          name="interaction"
+          type="apptentive.com.android.feedback.engagement.interactions.Interaction"
+          jni-type="Lapptentive/com/android/feedback/engagement/interactions/Interaction;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="launchInteraction"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lapptentive/com/android/feedback/engagement/EngagementContext;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;)V">
+        <parameter
+          name="engagementContext"
+          type="apptentive.com.android.feedback.engagement.EngagementContext"
+          jni-type="Lapptentive/com/android/feedback/engagement/EngagementContext;"
+          not-null="true" />
+        <parameter
+          name="interaction"
+          type="apptentive.com.android.feedback.textmodal.TextModalInteraction"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+          not-null="true" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalInteractionLauncher;"
+      enclosing-method-name="launchInteraction"
+      enclosing-method-signature="(Lapptentive/com/android/feedback/engagement/EngagementContext;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;)V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalInteractionLauncher.launchInteraction.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteractionLauncher$launchInteraction$1;"
+      source-file-name="TextModalInteractionLauncher.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalInteractionProvider"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteractionProvider;"
+      source-file-name="TextModalModelFactory.kt"
+      static="false"
+      visibility="private">
+      <implements
+        name="apptentive.com.android.core.Provider"
+        name-generic-aware="apptentive.com.android.core.Provider&lt;apptentive.com.android.feedback.textmodal.TextModalModelFactory&gt;"
+        jni-type="Lapptentive/com/android/core/Provider&lt;Lapptentive/com/android/feedback/textmodal/TextModalModelFactory;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalInteractionProvider"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalInteraction;)V">
+        <parameter
+          name="interaction"
+          type="apptentive.com.android.feedback.textmodal.TextModalInteraction"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="get"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalModelFactory"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalModelFactory;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/textmodal/TextModalModelFactory;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="get"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getInteraction"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalInteraction"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalInteractionProvider;"
+      enclosing-method-name="get"
+      enclosing-method-signature="()Lapptentive/com/android/feedback/textmodal/TextModalModelFactory;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalInteractionProvider.get.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteractionProvider$get$1;"
+      source-file-name="TextModalModelFactory.kt"
+      static="true"
+      visibility="private">
+      <implements
+        name="apptentive.com.android.feedback.textmodal.TextModalModelFactory"
+        name-generic-aware="apptentive.com.android.feedback.textmodal.TextModalModelFactory"
+        jni-type="Lapptentive/com/android/feedback/textmodal/TextModalModelFactory;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTextModalModel"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalModel;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/textmodal/TextModalModel;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalInteractionTypeConverter"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalInteractionTypeConverter;"
+      source-file-name="TextModalInteractionTypeConverter.kt"
+      static="false"
+      visibility="private">
+      <implements
+        name="apptentive.com.android.feedback.engagement.interactions.InteractionTypeConverter"
+        name-generic-aware="apptentive.com.android.feedback.engagement.interactions.InteractionTypeConverter&lt;apptentive.com.android.feedback.textmodal.TextModalInteraction&gt;"
+        jni-type="Lapptentive/com/android/feedback/engagement/interactions/InteractionTypeConverter&lt;Lapptentive/com/android/feedback/textmodal/TextModalInteraction;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalInteractionTypeConverter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="convert"
+        native="false"
+        return="apptentive.com.android.feedback.engagement.interactions.Interaction"
+        jni-return="Lapptentive/com/android/feedback/engagement/interactions/Interaction;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/engagement/interactions/InteractionData;)Lapptentive/com/android/feedback/engagement/interactions/Interaction;">
+        <parameter
+          name="data"
+          type="apptentive.com.android.feedback.engagement.interactions.InteractionData"
+          jni-type="Lapptentive/com/android/feedback/engagement/interactions/InteractionData;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="convert"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalInteraction"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lapptentive/com/android/feedback/engagement/interactions/InteractionData;)Lapptentive/com/android/feedback/textmodal/TextModalInteraction;"
+        return-not-null="true">
+        <parameter
+          name="data"
+          type="apptentive.com.android.feedback.engagement.interactions.InteractionData"
+          jni-type="Lapptentive/com/android/feedback/engagement/interactions/InteractionData;"
+          not-null="true" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/engagement/interactions/Interaction;"
+      extends="apptentive.com.android.feedback.engagement.interactions.Interaction"
+      extends-generic-aware="apptentive.com.android.feedback.engagement.interactions.Interaction"
+      final="true"
+      name="TextModalModel"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalModel;"
+      source-file-name="TextModalModel.kt"
+      static="false"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalModel"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="body"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="actions"
+          type="java.util.List&lt;? extends apptentive.com.android.feedback.textmodal.TextModalModel.Action&gt;"
+          jni-type="Ljava/util/List&lt;+Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;&gt;;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="other"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getActions"
+        native="false"
+        return="java.util.List&lt;apptentive.com.android.feedback.textmodal.TextModalModel.Action&gt;"
+        jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getBody"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getTitle"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TextModalModel.Action"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+      source-file-name="TextModalModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalModel.Action"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="label"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="$constructor_marker"
+          type="kotlin.jvm.internal.DefaultConstructorMarker"
+          jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="other"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getLabel"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+      extends="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+      extends-generic-aware="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+      final="true"
+      name="TextModalModel.Action.Dismiss"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action$Dismiss;"
+      source-file-name="TextModalModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalModel.Action.Dismiss"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="label"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </constructor>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+      extends="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+      extends-generic-aware="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+      final="true"
+      name="TextModalModel.Action.Event"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action$Event;"
+      source-file-name="TextModalModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalModel.Action.Event"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Lapptentive/com/android/feedback/engagement/Event;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="label"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="event"
+          type="apptentive.com.android.feedback.engagement.Event"
+          jni-type="Lapptentive/com/android/feedback/engagement/Event;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getEvent"
+        native="false"
+        return="apptentive.com.android.feedback.engagement.Event"
+        jni-return="Lapptentive/com/android/feedback/engagement/Event;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/engagement/Event;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;"
+      extends="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+      extends-generic-aware="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+      final="true"
+      name="TextModalModel.Action.Invoke"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action$Invoke;"
+      source-file-name="TextModalModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalModel.Action.Invoke"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="label"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="invocations"
+          type="java.util.List&lt;apptentive.com.android.feedback.model.InvocationData&gt;"
+          jni-type="Ljava/util/List&lt;Lapptentive/com/android/feedback/model/InvocationData;&gt;;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="other"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getInvocations"
+        native="false"
+        return="java.util.List&lt;apptentive.com.android.feedback.model.InvocationData&gt;"
+        jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/model/InvocationData;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="TextModalModelFactory"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalModelFactory;"
+      source-file-name="TextModalModelFactory.kt"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getTextModalModel"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalModel;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lapptentive/com/android/feedback/textmodal/TextModalModel;"
+        return-not-null="true" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroidx/lifecycle/ViewModel;"
+      extends="androidx.lifecycle.ViewModel"
+      extends-generic-aware="androidx.lifecycle.ViewModel"
+      final="true"
+      name="TextModalViewModel"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      source-file-name="TextModalViewModel.kt"
+      static="false"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalViewModel"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$createActionCallback"
+        native="false"
+        return="kotlin.jvm.functions.Function0"
+        jni-return="Lkotlin/jvm/functions/Function0;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel;Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;I)Lkotlin/jvm/functions/Function0;">
+        <parameter
+          name="$this"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;" />
+        <parameter
+          name="action"
+          type="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;" />
+        <parameter
+          name="index"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$engageCodePoint"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)V">
+        <parameter
+          name="$this"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;" />
+        <parameter
+          name="codePoint"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="data"
+          type="java.util.Map"
+          jni-type="Ljava/util/Map;" />
+        <parameter
+          name="actionId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$getContext$p"
+        native="false"
+        return="apptentive.com.android.feedback.engagement.EngagementContext"
+        jni-return="Lapptentive/com/android/feedback/engagement/EngagementContext;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel;)Lapptentive/com/android/feedback/engagement/EngagementContext;">
+        <parameter
+          name="$this"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$getInteraction$p"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalModel;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel;)Lapptentive/com/android/feedback/textmodal/TextModalModel;">
+        <parameter
+          name="$this"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getActions"
+        native="false"
+        return="java.util.List&lt;apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel&gt;"
+        jni-return="Ljava/util/List&lt;Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getMessage"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getOnDismiss"
+        native="false"
+        return="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-return="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lkotlin/jvm/functions/Function0;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getTitle"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="onCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setOnDismiss"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lkotlin/jvm/functions/Function0;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+          jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CODE_POINT_CANCEL"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        not-null="true"
+        value="&quot;cancel&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CODE_POINT_DISMISS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        not-null="true"
+        value="&quot;dismiss&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CODE_POINT_EVENT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        not-null="true"
+        value="&quot;event&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CODE_POINT_INTERACTION"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        not-null="true"
+        value="&quot;interaction&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Companion"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="apptentive.com.android.feedback.textmodal.TextModalViewModel.Companion"
+        type-generic-aware="apptentive.com.android.feedback.textmodal.TextModalViewModel.Companion"
+        jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$Companion;"
+        not-null="true"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TextModalViewModel.ActionModel"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalViewModel.ActionModel"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/DefaultConstructorMarker;)V">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="callback"
+          type="kotlin.jvm.functions.Function0"
+          jni-type="Lkotlin/jvm/functions/Function0;" />
+        <parameter
+          name="$constructor_marker"
+          type="kotlin.jvm.internal.DefaultConstructorMarker"
+          jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCallback"
+        native="false"
+        return="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-return="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lkotlin/jvm/functions/Function0;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTitle"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel;"
+      extends="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel"
+      extends-generic-aware="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel"
+      final="true"
+      name="TextModalViewModel.ActionModel.DismissActionModel"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalViewModel.ActionModel.DismissActionModel"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="callback"
+          type="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+          jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="component1"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="component2"
+        native="false"
+        return="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-return="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lkotlin/jvm/functions/Function0;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="copy$default"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel.DismissActionModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;">
+        <parameter
+          name="p0"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel.DismissActionModel"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="kotlin.jvm.functions.Function0"
+          jni-type="Lkotlin/jvm/functions/Function0;" />
+        <parameter
+          name="p3"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p4"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="copy"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel.DismissActionModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$DismissActionModel;"
+        return-not-null="true">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="callback"
+          type="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+          jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="other"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCallback"
+        native="false"
+        return="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-return="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lkotlin/jvm/functions/Function0;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTitle"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel;"
+      extends="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel"
+      extends-generic-aware="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel"
+      final="true"
+      name="TextModalViewModel.ActionModel.OtherActionModel"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalViewModel.ActionModel.OtherActionModel"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="callback"
+          type="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+          jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="component1"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="component2"
+        native="false"
+        return="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-return="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lkotlin/jvm/functions/Function0;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="copy$default"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel.OtherActionModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;">
+        <parameter
+          name="p0"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel.OtherActionModel"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="kotlin.jvm.functions.Function0"
+          jni-type="Lkotlin/jvm/functions/Function0;" />
+        <parameter
+          name="p3"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p4"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="copy"
+        native="false"
+        return="apptentive.com.android.feedback.textmodal.TextModalViewModel.ActionModel.OtherActionModel"
+        jni-return="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Lapptentive/com/android/feedback/textmodal/TextModalViewModel$ActionModel$OtherActionModel;"
+        return-not-null="true">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="callback"
+          type="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+          jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="other"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCallback"
+        native="false"
+        return="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-return="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lkotlin/jvm/functions/Function0;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTitle"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;"
+        return-not-null="true" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.actions.1.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$actions$1$1;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.actions.1.2"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$actions$1$2;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TextModalViewModel.Companion"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$Companion;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextModalViewModel.Companion"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V">
+        <parameter
+          name="$constructor_marker"
+          type="kotlin.jvm.internal.DefaultConstructorMarker"
+          jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$createEventData"
+        native="false"
+        return="java.util.Map"
+        jni-return="Ljava/util/Map;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lapptentive/com/android/feedback/textmodal/TextModalViewModel$Companion;Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;ILapptentive/com/android/feedback/EngagementResult;)Ljava/util/Map;">
+        <parameter
+          name="$this"
+          type="apptentive.com.android.feedback.textmodal.TextModalViewModel.Companion"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$Companion;" />
+        <parameter
+          name="action"
+          type="apptentive.com.android.feedback.textmodal.TextModalModel.Action"
+          jni-type="Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;" />
+        <parameter
+          name="actionPosition"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="engagementResult"
+          type="apptentive.com.android.feedback.EngagementResult"
+          jni-type="Lapptentive/com/android/feedback/EngagementResult;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      enclosing-method-name="createActionCallback"
+      enclosing-method-signature="(Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;I)Lkotlin/jvm/functions/Function0;"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.createActionCallback.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$1;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$1;"
+      enclosing-method-name="invoke"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.createActionCallback.1.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$1$1;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      enclosing-method-name="createActionCallback"
+      enclosing-method-signature="(Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;I)Lkotlin/jvm/functions/Function0;"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.createActionCallback.2"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$2;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$2;"
+      enclosing-method-name="invoke"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.createActionCallback.2.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$2$1;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      enclosing-method-name="createActionCallback"
+      enclosing-method-signature="(Lapptentive/com/android/feedback/textmodal/TextModalModel$Action;I)Lkotlin/jvm/functions/Function0;"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.createActionCallback.3"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$3;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$3;"
+      enclosing-method-name="invoke"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.createActionCallback.3.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$createActionCallback$3$1;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lapptentive/com/android/feedback/textmodal/TextModalViewModel;"
+      enclosing-method-name="onCancel"
+      enclosing-method-signature="()V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="TextModalViewModel.onCancel.1"
+      jni-signature="Lapptentive/com/android/feedback/textmodal/TextModalViewModel$onCancel$1;"
+      source-file-name="TextModalViewModel.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Lkotlin/Unit;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+  </package>
+</api>

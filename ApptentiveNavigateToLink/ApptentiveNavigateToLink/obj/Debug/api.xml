@@ -1,0 +1,14 @@
+<api api-source="JavaTypeSystem">
+  <package name="apptentive.com.android.feedback.link" jni-name="apptentive/com/android/feedback/link">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/link/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="apptentive.com.android.feedback.link.BuildConfig" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LIBRARY_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;apptentive.com.android.feedback.link&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="LinkNavigator" static="false" visibility="private" jni-signature="Lapptentive/com/android/feedback/link/LinkNavigator;">
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lapptentive/com/android/feedback/link/LinkNavigator;" not-null="true" static="true" transient="false" type="apptentive.com.android.feedback.link.LinkNavigator" type-generic-aware="apptentive.com.android.feedback.link.LinkNavigator" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="LinkNavigatorKt" static="false" visibility="public" jni-signature="Lapptentive/com/android/feedback/link/LinkNavigatorKt;" />
+  </package>
+</api>

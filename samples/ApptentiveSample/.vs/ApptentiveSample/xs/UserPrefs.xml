@@ -1,25 +1,28 @@
 ﻿<Properties StartupConfiguration="{1D0FD7B6-5A38-40F3-AA08-DD648C47ACFC}|Default">
+  <MonoDevelop.Ide.ItemProperties.ApptentiveSample PreferredExecutionTarget="Android.Pixel_XL_API_33" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="MyFirebaseMessagingService.cs">
     <Files>
-      <File FileName="MyApplication.cs" Line="11" Column="74" />
-      <File FileName="MyFirebaseMessagingService.cs" Line="1" Column="1" />
+      <File FileName="MyApplication.cs" />
+      <File FileName="MyFirebaseMessagingService.cs" Line="20" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApptentiveSample" expanded="True">
-            <Node name="Apptentive.Android" expanded="True" />
-            <Node name="ApptentiveSample" expanded="True" />
+            <Node name="ApptentiveSample" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="CustomDataActivity.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_XL_API_33" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ApptentiveSample PreferredExecutionTarget="Android.Pixel_3a_API_30_x86" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

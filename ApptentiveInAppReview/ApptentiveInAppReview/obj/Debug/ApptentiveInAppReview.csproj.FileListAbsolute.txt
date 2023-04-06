@@ -1,0 +1,11 @@
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/bin/Debug/ApptentiveInAppReview.dll
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/bin/Debug/ApptentiveInAppReview.pdb
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/__AndroidLibraryProjects__.zip
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/MonoAndroid,Version=v13.0.AssemblyAttributes.cs
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/ApptentiveInAppReview.csproj.AssemblyReference.cache
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/class-parse.rsp
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/java-resolution-report.log
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/ApptentiveInAppReview.csproj.CoreCompileInputs.cache
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/ApptentiveInAppReview.dll
+/Users/luqmaankhan/Desktop/ApptentiveInAppReview/ApptentiveInAppReview/obj/Debug/ApptentiveInAppReview.pdb

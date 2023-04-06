@@ -1,0 +1,44 @@
+﻿<metadata>
+
+    <enum name="apptentive.com.android.util.LogLevel, ApptentiveFeedback">
+    <field name="Verbose" javaname="VERBOSE" />
+    <field name="Debug" javaname="DEBUG" />
+    <field name="Info" javaname="INFO" />
+    <field name="Warning" javaname="WARNING" />
+    <field name="Error" javaname="ERROR" />
+    </enum>
+
+ 
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='Version']"/>
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='DateTime']"/>
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk']/interface[@name='Encryption']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback']/interface[@name='ApptentiveClient']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='ApptentiveClientKt']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='ApptentiveDefaultClient']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='ApptentiveNullClient']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='Constants']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='InteractionModuleComponent']"/>
+
+
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk.util']"/>
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk.storage']"/>
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk.serialization']"/>
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk.encryption']"/>
+    <remove-node path="/api/package[@name='com.apptentive.android.sdk.conversation']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.backend']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.conversation']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.engagement']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.lifecycle']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.notifications']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.payload']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.platform']"/>
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.engagement.criteria']" />
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.message']" />
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.model']" />
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.model.payloads']" />
+    <remove-node path="/api/package[@name='apptentive.com.android.feedback.utils']" />
+ 
+     
+    <attr path="/api/package[@name='apptentive.com.android.feedback']" name="managedName">ApptentiveKit.Android</attr>
+
+</metadata>

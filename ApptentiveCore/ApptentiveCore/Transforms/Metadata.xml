@@ -1,0 +1,17 @@
+﻿<metadata>
+=
+         <enum name="apptentive.com.android.util.LogLevel, ApptentiveCore">
+        <field name="Verbose" javaname="VERBOSE" />
+        <field name="Debug" javaname="DEBUG" />
+         <field name="Info" javaname="INFO" />
+         <field name="Warning" javaname="WARNING" />
+         <field name="Error" javaname="ERROR" />
+         </enum>
+  
+       <remove-node path="/api/package[@name='apptentive.com.android.serialization']"/>
+       <remove-node path="/api/package[@name='apptentive.com.android.serialization.json']"/>
+       <remove-node path="/api/package[@name='apptentive.com.android.network']"/>
+
+       <attr path="/api/package[@name='apptentive.com.android.core']" name="managedName">ApptentiveCore</attr>
+
+</metadata>

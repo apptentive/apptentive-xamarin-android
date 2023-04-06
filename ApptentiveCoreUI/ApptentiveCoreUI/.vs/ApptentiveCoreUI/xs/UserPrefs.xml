@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{A76CE21B-7518-4E7B-A9F5-DFB647FF52D6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Transforms/Metadata.xml">
+    <Files>
+      <File FileName="Transforms/Metadata.xml" Line="19" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ApptentiveCoreUI" expanded="True">
+            <Node name="ApptentiveCoreUI" expanded="True">
+              <Node name="Jars" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Transforms" expanded="True">
+                <Node name="Metadata.xml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ApptentiveCoreUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

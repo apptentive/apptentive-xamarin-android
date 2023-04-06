@@ -1,0 +1,7 @@
+apptentive/com/android/feedback/notes/BuildConfig = Apptentive.Com.Android.Feedback.Notes.BuildConfig
+  <init>()V = .ctor()
+  BUILD_TYPE = BuildType
+  DEBUG = Debug
+  LIBRARY_PACKAGE_NAME = LibraryPackageName
+apptentive/com/android/feedback/textmodal/TextModalActionConverterKt = Apptentive.Com.Android.Feedback.Textmodal.TextModalActionConverterKt
+apptentive/com/android/feedback/textmodal/TextModalInteractionKt = Apptentive.Com.Android.Feedback.Textmodal.TextModalInteractionKt

@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{9FEB56A5-44F4-416B-A51D-88C715629AA6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Additions/ApptentiveCallbacks.cs">
+    <Files>
+      <File FileName="Transforms/Metadata.xml" Line="43" Column="1" />
+      <File FileName="Additions/ApptentiveConfiguration.cs" />
+      <File FileName="Additions/ApptentiveCallbacks.cs" Line="17" Column="23" />
+      <File FileName="Transforms/EnumMethods.xml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ApptentiveFeedback" expanded="True">
+            <Node name="ApptentiveFeedback" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Additions" expanded="True">
+                <Node name="ApptentiveCallbacks.cs" selected="True" />
+              </Node>
+              <Node name="Jars" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Transforms" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ApptentiveFeedback PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

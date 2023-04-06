@@ -1,0 +1,23 @@
+==== Cycle 1 ====
+
+The method '[Method] androidx.lifecycle.LiveData<T> asLiveData<T>(apptentive.com.android.core.Observable<T> obj)' was removed because the Java return type 'androidx.lifecycle.LiveData<T>' could not be found.
+The class '[Class] apptentive.com.android.core.LiveEvent' was removed because the Java base type 'androidx.lifecycle.MediatorLiveData<T>' could not be found.
+The class '[Class] apptentive.com.android.core.ObservableLiveData' was removed because the Java base type 'androidx.lifecycle.LiveData<T>' could not be found.
+The method '[Method] void postIfChanged<T>(androidx.lifecycle.MutableLiveData<T> obj, T value)' was removed because the Java parameter type 'androidx.lifecycle.MutableLiveData' could not be found.
+The class '[Class] apptentive.com.android.ui.ApptentiveActivity' was removed because the Java base type 'androidx.appcompat.app.AppCompatActivity' could not be found.
+The class '[Class] apptentive.com.android.ui.ApptentiveGenericDialog' was removed because the Java base type 'androidx.fragment.app.DialogFragment' could not be found.
+The constructor 'Constructor: apptentive.com.android.ui.ApptentiveViewModelActivity.Companion.ApptentiveViewModelActivity.Companion' was removed because the Java parameter type 'kotlin.jvm.internal.DefaultConstructorMarker' could not be found.
+The method '[Method] void startViewModelActivity$default(android.content.Context obj, android.os.Bundle extras, int p2, java.lang.Object p3)' was removed because its name contains a dollar sign.
+The constructor 'Constructor: apptentive.com.android.ui.LayoutViewHolderFactory.LayoutViewHolderFactory' was removed because the Java parameter type 'kotlin.jvm.functions.Function1' could not be found.
+The class '[Class] apptentive.com.android.ui.ListViewAdapter' was removed because the Java base type 'androidx.recyclerview.widget.ListAdapter<apptentive.com.android.ui.ListViewItem, apptentive.com.android.ui.ListViewAdapter.ViewHolder<apptentive.com.android.ui.ListViewItem>>' could not be found.
+The method '[Method] void setInvalid(com.google.android.material.textfield.TextInputLayout obj, boolean isInvalid)' was removed because the Java parameter type 'com.google.android.material.textfield.TextInputLayout' could not be found.
+The method '[Method] void overrideTheme(androidx.appcompat.view.ContextThemeWrapper obj)' was removed because the Java parameter type 'androidx.appcompat.view.ContextThemeWrapper' could not be found.
+The constructor 'Constructor: apptentive.com.android.ui.ViewModelFactory.ViewModelFactory' was removed because the Java parameter type 'kotlin.jvm.functions.Function0' could not be found.
+The class '[Class] apptentive.com.android.ui.ViewModelFactory' was removed because the Java implemented interface type 'androidx.lifecycle.ViewModelProvider.Factory' could not be found.
+
+==== Cycle 2 ====
+
+The class '[Class] apptentive.com.android.ui.ApptentiveViewModelActivity' was removed because the Java base type 'apptentive.com.android.ui.ApptentiveActivity' could not be found.
+The method '[Method] apptentive.com.android.ui.ListViewAdapter.ViewHolder<?> createViewHolder(android.view.View itemView)' was removed because the Java return type 'apptentive.com.android.ui.ListViewAdapter.ViewHolder<?>' could not be found.
+The method '[Method] apptentive.com.android.ui.ListViewAdapter.ViewHolder<?> createViewHolder(android.view.View itemView)' was removed because the Java return type 'apptentive.com.android.ui.ListViewAdapter.ViewHolder<?>' could not be found.
+
