@@ -197,6 +197,36 @@
     <Reference Include="Xamarin.Firebase.Iid.Interop">
       <HintPath>packages\Xamarin.Firebase.Iid.Interop.71.1601.0\lib\monoandroid90\Xamarin.Firebase.Iid.Interop.dll</HintPath>
     </Reference>
+    <Reference Include="ApptentiveCore">
+      <HintPath>..\..\ApptentiveCore\ApptentiveCore\obj\Debug\ApptentiveCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveCoreUI">
+      <HintPath>..\..\ApptentiveCoreUI\ApptentiveCoreUI\obj\Debug\ApptentiveCoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveEnjoymentDialog">
+      <HintPath>..\..\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog\obj\Debug\ApptentiveEnjoymentDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveFeedback">
+      <HintPath>..\..\ApptentiveFeedback\ApptentiveFeedback\obj\Debug\ApptentiveFeedback.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveInAppReview">
+      <HintPath>..\..\ApptentiveInAppReview\ApptentiveInAppReview\obj\Debug\ApptentiveInAppReview.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveMessageCenter">
+      <HintPath>..\..\ApptentiveMessageCenter\ApptentiveMessageCenter\obj\Debug\ApptentiveMessageCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveNavigateToLink">
+      <HintPath>..\..\ApptentiveNavigateToLink\ApptentiveNavigateToLink\obj\Debug\ApptentiveNavigateToLink.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveNotes">
+      <HintPath>..\..\ApptentiveNotes\ApptentiveNotes\obj\Debug\ApptentiveNotes.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveRatings">
+      <HintPath>..\..\ApptentiveRatings\ApptentiveRatings\obj\Debug\ApptentiveRatings.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveSurvey">
+      <HintPath>..\..\ApptentiveSurvey\ApptentiveSurvey\obj\Debug\ApptentiveSurvey.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
