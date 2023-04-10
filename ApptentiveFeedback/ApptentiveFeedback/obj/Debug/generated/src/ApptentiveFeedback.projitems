@@ -5,7 +5,14 @@
   </PropertyGroup>
   <!-- Classes -->
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.DefaultEngagementKt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.EngagementContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Event.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.IEngagementContextFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.IInteractionEngagement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.IInteractionDataConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.IInteractionLauncher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.IInteractionModule.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.IInteractionTypeConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.Interaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.InteractionData.cs" />
@@ -13,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.InteractionResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.InteractionResponseData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.Interactions.InteractionType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apptentive.Com.Android.Feedback.Engagement.InternalEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApptentiveKit.Android.Apptentive.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApptentiveKit.Android.ApptentiveConfiguration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApptentiveKit.Android.BuildConfig.cs" />

@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{1D0FD7B6-5A38-40F3-AA08-DD648C47ACFC}|Default">
-  <MonoDevelop.Ide.ItemProperties.ApptentiveSample PreferredExecutionTarget="Android.Pixel_XL_API_33" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirebaseMessagingService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resources/values/styles.xml">
     <Files>
+      <File FileName="Resources/values/Strings.xml" />
+      <File FileName="Properties/AssemblyInfo.cs" />
+      <File FileName="CustomDataActivity.cs" />
+      <File FileName="MainActivity.cs" Line="33" Column="26" />
+      <File FileName="LoginActivity.cs" />
       <File FileName="MyApplication.cs" />
-      <File FileName="MyFirebaseMessagingService.cs" Line="20" Column="12" />
+      <File FileName="packages/Xamarin.Essentials.1.7.5/readme.txt" />
+      <File FileName="Resources/Resource.designer.cs" />
+      <File FileName="Properties/AndroidManifest.xml" />
+      <File FileName="Resources/values/styles.xml" Line="30" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,13 +22,22 @@
           <Node name="ApptentiveSample" expanded="True">
             <Node name="ApptentiveSample" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="CustomDataActivity.cs" selected="True" />
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True">
+                  <Node name="styles.xml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_XL_API_33" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
+  <MonoDevelop.Ide.ItemProperties.ApptentiveSample AndroidDesignerPreferredTheme="Theme.AppCompat" PreferredExecutionTarget="Android.Pixel_XL_API_33" />
 </Properties>

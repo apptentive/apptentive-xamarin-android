@@ -27,7 +27,6 @@
     <remove-node path="/api/package[@name='com.apptentive.android.sdk.conversation']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.backend']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.conversation']"/>
-    <remove-node path="/api/package[@name='apptentive.com.android.feedback.engagement']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.lifecycle']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.notifications']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.payload']"/>

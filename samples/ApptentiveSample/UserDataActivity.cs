@@ -10,7 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using ApptentiveSDK.Android;
+using ApptentiveKit.Android;
 
 namespace ApptentiveSample
 {
@@ -24,16 +24,16 @@ namespace ApptentiveSample
             SetContentView(Resource.Layout.UserData);
 
             var personNameEditText = FindViewById<EditText>(Resource.Id.personNameEditText);
-            personNameEditText.Text = Apptentive.PersonName;
+            personNameEditText.Text = ApptentiveKit.Apptentive.GetPersonName();
 
             var personEmailEditText = FindViewById<EditText>(Resource.Id.personEmailEditText);
-            personEmailEditText.Text = Apptentive.PersonEmail;
+            personEmailEditText.Text = ApptentiveKit.Apptentive.GetPersonEmail();
 
             var saveButton = FindViewById<Button>(Resource.Id.saveButton);
             saveButton.Click += delegate
             {
-                Apptentive.PersonName = personNameEditText.Text;
-                Apptentive.PersonEmail = personEmailEditText.Text;
+                ApptentiveKit.Apptentive.SetPersonName(personNameEditText.Text);
+                ApptentiveKit.Apptentive.SetPersonEmail(personEmailEditText.Text);
                 Finish();
             };
         }

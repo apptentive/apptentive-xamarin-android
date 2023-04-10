@@ -105,11 +105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
+      "projectUniqueName": "/Users/luqmaankhan/Desktop/Android/apptentive-xamarin-android/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
       "projectName": "ApptentiveFeedback",
-      "projectPath": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
+      "projectPath": "/Users/luqmaankhan/Desktop/Android/apptentive-xamarin-android/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
       "packagesPath": "/Users/luqmaankhan/.nuget/packages/",
-      "outputPath": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/obj/",
+      "outputPath": "/Users/luqmaankhan/Desktop/Android/apptentive-xamarin-android/ApptentiveFeedback/ApptentiveFeedback/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

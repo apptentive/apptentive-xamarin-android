@@ -1,27 +1,33 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using ApptentiveSDK.Android;
+using ApptentiveKit.Android;
 using System;
 using Android.Content;
 using Android.Gms.Common;
-using Firebase.Messaging;
-using Firebase.Iid;
 using Android.Util;
+using Kotlin;
+using Xamarin.Essentials;
+using Android.Support.V7.App;
+using AndroidX.Fragment.App;
+using AndroidX.Lifecycle;
 
 namespace ApptentiveSample
 {
-    [Activity(Label = "ApptentiveSample", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : Activity, IUnreadMessagesListener
+    [Activity(Label = "hi", MainLauncher = true)]
+    public class MainActivity : AppCompatActivity, IApptentiveActivityInfo
     {
         TextView unreadMessagesTextView;
 
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            ApptentiveKit.Apptentive.RegisterActivityInfoCallback(this);
 
             // Controls
             var eventNameEditText = FindViewById<EditText>(Resource.Id.eventEditText);
@@ -29,48 +35,49 @@ namespace ApptentiveSample
             var messageCenterButton = FindViewById<Button>(Resource.Id.messageCenterButton);
             messageCenterButton.Click += delegate
             {
-                Apptentive.ShowMessageCenter(this, (shown) => Console.WriteLine("Message Center shown: " + shown));
+                ApptentiveKit.Apptentive.ShowMessageCenter((shown) => Console.WriteLine("Message Center shown: " + shown));
             };
 
             var engageButton = FindViewById<Button>(Resource.Id.engageButton);
             engageButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                Apptentive.Engage(this, eventName, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
+                Console.WriteLine("Event Name:::::::::::::::::::::::::::::::::::::::::: " + eventName);
+                ApptentiveKit.Apptentive.Engage(eventName, null, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
             };
 
             var canShowInteractionButton = FindViewById<Button>(Resource.Id.canShowInteractionButton);
             canShowInteractionButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                Apptentive.QueryCanShowInteraction(eventName, (canShowInteraction) => Toast.MakeText(this, canShowInteraction ? "Yes" : "No", ToastLength.Long).Show());
+                ApptentiveKit.Apptentive.Engage(eventName,null ,(engaged) => Toast.MakeText(this, engaged ? "Yes" : "No", ToastLength.Long).Show());
             };
 
-            var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
-            userDataButton.Click += delegate
-            {
-                var intent = new Intent(this, typeof(UserDataActivity));
-                StartActivity(intent);
-            };
+            //var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
+            //userDataButton.Click += delegate
+            //{
+            //    var intent = new Intent(this, typeof(UserDataActivity));
+            //    StartActivity(intent);
+            //};
 
-            var customDataButton = FindViewById<Button>(Resource.Id.customDataButton);
-            customDataButton.Click += delegate
-            {
-                var intent = new Intent(this, typeof(CustomDataActivity));
-                StartActivity(intent);
-            };
+            //var customDataButton = FindViewById<Button>(Resource.Id.customDataButton);
+            //customDataButton.Click += delegate
+            //{
+            //    var intent = new Intent(this, typeof(CustomDataActivity));
+            //    StartActivity(intent);
+            //};
 
-            var authenticationButton = FindViewById<Button>(Resource.Id.authenticationButton);
-            authenticationButton.Click += delegate
-            {
-                var intent = new Intent(this, typeof(LoginActivity));
-                StartActivity(intent);
-            };
+            //var authenticationButton = FindViewById<Button>(Resource.Id.authenticationButton);
+            //authenticationButton.Click += delegate
+            //{
+            //    var intent = new Intent(this, typeof(LoginActivity));
+            //    StartActivity(intent);
+            //};
 
             unreadMessagesTextView = FindViewById<TextView>(Resource.Id.unreadMessagesText);
             UpdateUnreadMessagesCount();
 
-            Apptentive.AddUnreadMessagesListener(this);
+           // Apptentive.AddUnreadMessagesListener(this);
         }
 
         protected override void OnResume()
@@ -79,9 +86,22 @@ namespace ApptentiveSample
             CheckGooglePlayServicesAvailable();
         }
 
+        public Activity ApptentiveActivityInfo
+        {
+            get
+            {
+                return this;
+            }
+        }
+
+        public Activity GetApptentiveActivityInfo()
+        {
+            return this;
+        }
+
         void UpdateUnreadMessagesCount()
         {
-            unreadMessagesTextView.Text = "Unread messages: " + Apptentive.UnreadMessageCount;
+            unreadMessagesTextView.Text = "Unread messages: " + ApptentiveKit.Android.Apptentive.UnreadMessageCount;
         }
 
         #region IUnreadMessagesListener
@@ -117,6 +137,8 @@ namespace ApptentiveSample
                 ShowToast("Google Play Services is availabl.");
             }
         }
+
+       
 
         #endregion
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GWuStrLaWb7hPytYZ8e4MRDDozE2fWO9Qd93RhKVeEMwYvREyptX0eBrtDaNkPc7FSwFC3bib/2a+2qCThxOBw==",
+  "dgSpecHash": "+4XacO/4zyJdFpPlIEJSKXoJ/QYbOc7JjrOPuhPHyVW11GTCvjmKzVuCPKIoESK2k1q7EZHilEw23nM4vgRVEA==",
   "success": true,
-  "projectFilePath": "/Users/luqmaankhan/Desktop/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
+  "projectFilePath": "/Users/luqmaankhan/Desktop/Android/apptentive-xamarin-android/ApptentiveFeedback/ApptentiveFeedback/ApptentiveFeedback.csproj",
   "expectedPackageFiles": [
     "/Users/luqmaankhan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],

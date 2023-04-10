@@ -4,7 +4,7 @@
 --enummetadata="obj/Debug/generated/metadata"
 --assembly=ApptentiveFeedback
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll"
---ref="/Users/luqmaankhan/Desktop/ApptentiveCore/ApptentiveCore/obj/Debug/ApptentiveCore.dll"
+--ref="/Users/luqmaankhan/Desktop/Android/apptentive-xamarin-android/ApptentiveCore/ApptentiveCore/obj/Debug/ApptentiveCore.dll"
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Java.Interop.dll"
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v13.0/Mono.Android.dll"
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll"
