@@ -1,5 +1,0 @@
-apptentive/com/android/feedback/ratings/BuildConfig = Apptentive.Com.Android.Feedback.Ratings.BuildConfig
-  <init>()V = .ctor()
-  BUILD_TYPE = BuildType
-  DEBUG = Debug
-  LIBRARY_PACKAGE_NAME = LibraryPackageName

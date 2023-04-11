@@ -192,9 +192,6 @@
     <Reference Include="ApptentiveEnjoymentDialog">
       <HintPath>..\..\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog\obj\Debug\ApptentiveEnjoymentDialog.dll</HintPath>
     </Reference>
-    <Reference Include="ApptentiveInAppReview">
-      <HintPath>..\..\ApptentiveInAppReview\ApptentiveInAppReview\obj\Debug\ApptentiveInAppReview.dll</HintPath>
-    </Reference>
     <Reference Include="ApptentiveMessageCenter">
       <HintPath>..\..\ApptentiveMessageCenter\ApptentiveMessageCenter\obj\Debug\ApptentiveMessageCenter.dll</HintPath>
     </Reference>
@@ -408,9 +405,6 @@
     <Reference Include="Xamarin.AndroidX.ProfileInstaller.ProfileInstaller">
       <HintPath>packages\Xamarin.AndroidX.ProfileInstaller.ProfileInstaller.1.3.0\lib\monoandroid12.0\Xamarin.AndroidX.ProfileInstaller.ProfileInstaller.dll</HintPath>
     </Reference>
-    <Reference Include="ApptentiveFeedback">
-      <HintPath>..\..\ApptentiveFeedback\ApptentiveFeedback\obj\Debug\ApptentiveFeedback.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.IdentityModel.Abstractions">
       <HintPath>packages\Microsoft.IdentityModel.Abstractions.6.28.1\lib\netstandard2.0\Microsoft.IdentityModel.Abstractions.dll</HintPath>
     </Reference>
@@ -466,6 +460,12 @@
     </Reference>
     <Reference Include="Xamarin.AndroidX.Fragment.Ktx">
       <HintPath>packages\Xamarin.AndroidX.Fragment.Ktx.1.5.6\lib\monoandroid12.0\Xamarin.AndroidX.Fragment.Ktx.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveFeedback">
+      <HintPath>..\..\ApptentiveFeedback\ApptentiveFeedback\obj\Debug\ApptentiveFeedback.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveInAppReview">
+      <HintPath>..\..\ApptentiveInAppReview\ApptentiveInAppReview\obj\Debug\ApptentiveInAppReview.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
