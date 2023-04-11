@@ -14,7 +14,7 @@ using AndroidX.Lifecycle;
 
 namespace ApptentiveSample
 {
-    [Activity(Label = "hi", MainLauncher = true)]
+    [Activity(Label = "ApptentiveSample", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, IApptentiveActivityInfo
     {
         TextView unreadMessagesTextView;
