@@ -53,20 +53,29 @@ namespace ApptentiveSample
                 ApptentiveKit.Apptentive.Engage(eventName,null ,(engaged) => Toast.MakeText(this, engaged ? "Yes" : "No", ToastLength.Long).Show());
             };
 
-            //var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
-            //userDataButton.Click += delegate
-            //{
-            //    var intent = new Intent(this, typeof(UserDataActivity));
-            //    StartActivity(intent);
-            //};
+            var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
+            userDataButton.Click += delegate
+            {
+                var intent = new Intent(this, typeof(UserDataActivity));
+                StartActivity(intent);
+            };
 
-            //var customDataButton = FindViewById<Button>(Resource.Id.customDataButton);
-            //customDataButton.Click += delegate
-            //{
-            //    var intent = new Intent(this, typeof(CustomDataActivity));
-            //    StartActivity(intent);
-            //};
+            var customDataButton = FindViewById<Button>(Resource.Id.customDataButton);
+            customDataButton.Click += delegate
+            {
+                var intent = new Intent(this, typeof(CustomDataActivity));
+                StartActivity(intent);
+            };
 
+            var updateUnreadMessageCountButton = FindViewById<Button>(Resource.Id.updateUnreadMessageCount);
+            updateUnreadMessageCountButton.Click += delegate {
+
+                UpdateUnreadMessagesCount();
+            };
+
+          
+
+            //Removed Until Implemented.
             //var authenticationButton = FindViewById<Button>(Resource.Id.authenticationButton);
             //authenticationButton.Click += delegate
             //{
@@ -75,9 +84,9 @@ namespace ApptentiveSample
             //};
 
             unreadMessagesTextView = FindViewById<TextView>(Resource.Id.unreadMessagesText);
-            UpdateUnreadMessagesCount();
 
-           // Apptentive.AddUnreadMessagesListener(this);
+            UpdateUnreadMessagesCount();
+          
         }
 
         protected override void OnResume()
@@ -101,7 +110,7 @@ namespace ApptentiveSample
 
         void UpdateUnreadMessagesCount()
         {
-            unreadMessagesTextView.Text = "Unread messages: " + ApptentiveKit.Android.Apptentive.UnreadMessageCount;
+            unreadMessagesTextView.Text = "Unread messages: " + ApptentiveKit.Apptentive.GetUnreadMessageCount();
         }
 
         #region IUnreadMessagesListener

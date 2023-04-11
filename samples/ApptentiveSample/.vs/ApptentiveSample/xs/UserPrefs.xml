@@ -3,19 +3,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Resources/values/styles.xml">
-    <Files>
-      <File FileName="Resources/values/Strings.xml" />
-      <File FileName="Properties/AssemblyInfo.cs" />
-      <File FileName="CustomDataActivity.cs" />
-      <File FileName="MainActivity.cs" Line="33" Column="26" />
-      <File FileName="LoginActivity.cs" />
-      <File FileName="MyApplication.cs" />
-      <File FileName="packages/Xamarin.Essentials.1.7.5/readme.txt" />
-      <File FileName="Resources/Resource.designer.cs" />
-      <File FileName="Properties/AndroidManifest.xml" />
-      <File FileName="Resources/values/styles.xml" Line="30" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -25,9 +13,10 @@
               <Node name="Assets" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="values" expanded="True">
-                  <Node name="styles.xml" selected="True" />
+                <Node name="layout" expanded="True">
+                  <Node name="CustomData.axml" selected="True" />
                 </Node>
+                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -39,5 +28,5 @@
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_XL_API_33" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
-  <MonoDevelop.Ide.ItemProperties.ApptentiveSample AndroidDesignerPreferredTheme="Theme.AppCompat" PreferredExecutionTarget="Android.Pixel_XL_API_33" />
+  <MonoDevelop.Ide.ItemProperties.ApptentiveSample AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Pixel_XL_API_33" />
 </Properties>
