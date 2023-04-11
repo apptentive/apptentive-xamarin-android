@@ -42,7 +42,7 @@ namespace ApptentiveSample
             engageButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                Console.WriteLine("Event Name:::::::::::::::::::::::::::::::::::::::::: " + eventName);
+                Console.WriteLine("Event Name: " + eventName);
                 ApptentiveKit.Apptentive.Engage(eventName, null, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
             };
 
