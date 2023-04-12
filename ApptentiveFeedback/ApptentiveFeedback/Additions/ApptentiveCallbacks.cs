@@ -22,8 +22,7 @@ namespace ApptentiveKit
 {
     public partial class Apptentive
     {
-        //add and remorve person and device custom data
-
+    
         /// <summary>
         /// Registers the ApptentiveKit.Android SDK.
         /// </summary>
@@ -70,7 +69,6 @@ namespace ApptentiveKit
           return ApptentiveKit.Android.Apptentive.UnreadMessageCount;
         }
 
-
         /// <summary>
         /// This method takes a unique event of type [String], stores a record of that event having been visited, determines if there is an interaction that is able to run for this event, and then
         /// runs it. Only one interaction at most will run per invocation of this method. This task is performed asynchronously.
@@ -82,8 +80,6 @@ namespace ApptentiveKit
         {
             ApptentiveKit.Android.Apptentive.Engage(eventName, customData, new EngagementCallback(onCompletion));
         }
-
-
 
         /// <summary>
         /// Opens the Apptentive Message Center UI Activity, and allows custom data to be sent with the next message the user sends. If the user sends multiple messages, this data will only be sent
@@ -98,7 +94,6 @@ namespace ApptentiveKit
             ApptentiveKit.Android.Apptentive.ShowMessageCenter(customData, new EngagementCallback(onCompletion));
         }
 
-
         /// <summary>
         /// Call this method to see whether or not Message Center can be displayed.
         /// This task is performed asynchronously.
@@ -108,7 +103,6 @@ namespace ApptentiveKit
         {
             ApptentiveKit.Android.Apptentive.CanShowMessageCenter(new BooleanCallback(onCompletion));
         }
-
 
         /// <summary>
         /// Sets the user's name. This name will be sent to the Apptentive server and displayed in
@@ -131,7 +125,6 @@ namespace ApptentiveKit
             return ApptentiveKit.Android.Apptentive.PersonName;
         }
 
-
         /// <summary>
         /// Sets the user's email address. This email address will be sent to the Apptentive server to
         /// allow out of app communication, and to help provide more context about this user.This email
@@ -142,7 +135,6 @@ namespace ApptentiveKit
         public static void SetPersonEmail(String email)
         {
             ApptentiveKit.Android.Apptentive.PersonEmail = email;
-
         }
 
         /// <summary>
@@ -153,7 +145,6 @@ namespace ApptentiveKit
         {
             return ApptentiveKit.Android.Apptentive.PersonEmail;
         }
-
 
         /// <summary>
         /// Add a custom data String to the Person. Custom data will be sent to the server, is displayed
@@ -192,7 +183,6 @@ namespace ApptentiveKit
         {
             Java.Lang.Boolean javaValue = Java.Lang.Boolean.ValueOf(value);
             ApptentiveKit.Android.Apptentive.AddCustomPersonData(key, javaValue);
-
         }
 
         /// <summary>
@@ -204,9 +194,6 @@ namespace ApptentiveKit
             ApptentiveKit.Android.Apptentive.RemoveCustomPersonData(key);
         }
 
-
-
-
         /// <summary>
         /// Add a custom data String to the Person. Custom data will be sent to the server, is displayed
         /// in the Conversation view, and can be used in Interaction targeting.
@@ -216,7 +203,6 @@ namespace ApptentiveKit
         public static void AddCustomDeviceData(String key, String value)
         {
             ApptentiveKit.Android.Apptentive.AddCustomDeviceData(key, value);
-
         }
 
         /// <summary>
@@ -231,7 +217,6 @@ namespace ApptentiveKit
             Java.Lang.Number numberValue = (Java.Lang.Number)intValue;
 
             ApptentiveKit.Android.Apptentive.AddCustomDeviceData(key, numberValue);
-
         }
 
         /// <summary>
@@ -244,7 +229,6 @@ namespace ApptentiveKit
         {
             Java.Lang.Boolean javaValue = Java.Lang.Boolean.ValueOf(value);
             ApptentiveKit.Android.Apptentive.AddCustomDeviceData(key, javaValue);
-
         }
 
         /// <summary>
@@ -256,8 +240,6 @@ namespace ApptentiveKit
             ApptentiveKit.Android.Apptentive.RemoveCustomDeviceData(key);
         }
 
-
-
         internal interface IEngagementCallback : IJavaObject
         {
             void OnComplete(EngagementResult result);
@@ -265,7 +247,6 @@ namespace ApptentiveKit
 
         internal interface IRegisterCallback : IJavaObject
         {
-
             void OnComplete(RegisterResult result);
         }
 
@@ -283,12 +264,10 @@ namespace ApptentiveKit
         public BooleanCallback(Action<bool> onCompletion)
         {
             this.onCompletion = onCompletion;
-
         }
 
         public void OnFinish(Java.Lang.Boolean result)
         {
-
             if (result.BooleanValue())
             {
                 onCompletion?.Invoke(true);
@@ -298,22 +277,16 @@ namespace ApptentiveKit
             {
                 onCompletion?.Invoke(false);
             }
-
         }
     }
 
-
-
     public class  RegisterCallback : Java.Lang.Object, IRegisterCallback
     {
-
         private readonly Action<bool> onCompletion;
 
         public RegisterCallback(Action<bool> onCompletion)
         {
-
             this.onCompletion = onCompletion;
-
         }
 
 
@@ -334,14 +307,11 @@ namespace ApptentiveKit
 
     public class EngagementCallback : Java.Lang.Object, IEngagementCallback
     {
-       
         private readonly Action<bool> onCompletion;
 
         public EngagementCallback(Action<bool> onCompletion)
         {
-            
             this.onCompletion = onCompletion;
-   
         }
 
     
@@ -358,6 +328,4 @@ namespace ApptentiveKit
             }
         }
     }
-
-
 }
