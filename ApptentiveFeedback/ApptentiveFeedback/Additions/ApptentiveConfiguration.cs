@@ -1,7 +1,6 @@
 ﻿using Android.Icu.Util;
 using ApptentiveKit.Android;
 using Java.Util.Logging;
-//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,7 +14,6 @@ namespace ApptentiveKit
     {
 
         public LogLevel LogLevel { get; set; } = LogLevel.Info;
-
         public string ApptentiveKey { get; set; }
         public string ApptentiveSignature { get; set; }
         public bool ShouldInheritAppTheme { get; set; } = true;

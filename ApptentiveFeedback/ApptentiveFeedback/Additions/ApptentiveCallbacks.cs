@@ -33,9 +33,7 @@ namespace ApptentiveKit
 
         public static void Register(Application application, ApptentiveKit.Android.ApptentiveConfiguration configuration, Action<bool> onCompletion = null)
         {
-
             ApptentiveKit.Android.Apptentive.Register(application, configuration, new RegisterCallback(onCompletion));
-
         }
 
         /// <summary>
@@ -69,9 +67,7 @@ namespace ApptentiveKit
         /// <returns>The numnber of unread messages.</returns>
         public static int GetUnreadMessageCount()
         {
-
           return ApptentiveKit.Android.Apptentive.UnreadMessageCount;
-           
         }
 
 
@@ -84,9 +80,7 @@ namespace ApptentiveKit
         /// <param name="eventName">The event's string value</param>
         public static void Engage(String eventName, IDictionary<string, Java.Lang.Object> customData = null, Action<bool> onCompletion = null)
         {
-
             ApptentiveKit.Android.Apptentive.Engage(eventName, customData, new EngagementCallback(onCompletion));
-
         }
 
 
@@ -101,9 +95,7 @@ namespace ApptentiveKit
         /// <param name="customData">A Map of String keys to Object values. Objects may be Strings, Numbers, or Booleans.If any message is sent by the Person, this data is sent with it, and then cleared. If no message is sent, this data is discarded.</param>
         public static void ShowMessageCenter(Action<bool> onCompletion, IDictionary<string, Java.Lang.Object> customData = null)
         {
-            
             ApptentiveKit.Android.Apptentive.ShowMessageCenter(customData, new EngagementCallback(onCompletion));
-          
         }
 
 
@@ -114,9 +106,7 @@ namespace ApptentiveKit
         /// <param name="onCompletion">Called after we check to see if Message Center can be displayed, but before it is displayed. Called with true if an Interaction will be displayed, else false.</param>
         public static void CanShowMessageCenter(Action<bool> onCompletion)
         {
-
             ApptentiveKit.Android.Apptentive.CanShowMessageCenter(new BooleanCallback(onCompletion));
-
         }
 
 
