@@ -155,7 +155,6 @@ namespace ApptentiveKit
         public static void AddCustomPersonData(String key, String value)
         {
             ApptentiveKit.Android.Apptentive.AddCustomPersonData(key, value);
-
         }
 
         /// <summary>
@@ -170,7 +169,6 @@ namespace ApptentiveKit
             Java.Lang.Number numberValue = (Java.Lang.Number)intValue;
 
             ApptentiveKit.Android.Apptentive.AddCustomPersonData(key, numberValue);
-
         }
 
         /// <summary>
@@ -229,6 +227,27 @@ namespace ApptentiveKit
         {
             Java.Lang.Boolean javaValue = Java.Lang.Boolean.ValueOf(value);
             ApptentiveKit.Android.Apptentive.AddCustomDeviceData(key, javaValue);
+        }
+
+        /// <summary>
+        /// Sends a text message to the server. This message will be visible in the conversation view
+        /// on the server, but will not be shown in the client's Message Center.
+        /// </summary>
+        /// <param name="text">The message you wish to send.</param>
+        public static void SendAttachmentText(String text)
+        {
+            ApptentiveKit.Android.Apptentive.SendAttachmentText(text);
+        }
+
+        /// <summary>
+        /// Sends a file to the server. This file will be visible in the conversation view on the server,
+        /// but will not be shown in the client's Message Center. A local copy of this file will be made
+        /// until the message is transmitted, at which point the temporary file will be deleted.
+        /// </summary>
+        /// <param name="uri">The URI path of the local resource file.</param>
+        public static void SendAttachmentFile(String uri)
+        {
+            ApptentiveKit.Android.Apptentive.SendAttachmentFile(uri);
         }
 
         /// <summary>
