@@ -12,7 +12,6 @@ namespace ApptentiveKit
     [Serializable]
     public class ApptentiveConfiguration
     {
-
         public LogLevel LogLevel { get; set; } = LogLevel.Info;
         public string ApptentiveKey { get; set; }
         public string ApptentiveSignature { get; set; }
@@ -21,7 +20,6 @@ namespace ApptentiveKit
         public string CustomAppStoreURL { get; set; } = null;
         public string DistributionName { get; set; } = "";
         public string DistributionVersion { get; set; } = "";
-
     }
 
 
