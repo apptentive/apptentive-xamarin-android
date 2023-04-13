@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Android.App;
@@ -102,6 +102,16 @@ namespace ApptentiveKit
         public static void CanShowMessageCenter(Action<bool> onCompletion)
         {
             ApptentiveKit.Android.Apptentive.CanShowMessageCenter(new BooleanCallback(onCompletion));
+        }
+
+        /// <summary>
+        /// Returns whether or not an engage event will display an Interaction.
+        /// </summary>
+        /// <param name="eventName">The string name of the event.</param>
+        /// <returns></returns>
+        public static bool CanShowInteraction(String eventName)
+        {
+            return ApptentiveKit.Android.Apptentive.CanShowInteraction(eventName);
         }
 
         /// <summary>
