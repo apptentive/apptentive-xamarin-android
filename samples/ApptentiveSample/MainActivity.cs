@@ -50,7 +50,14 @@ namespace ApptentiveSample
             canShowInteractionButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                ApptentiveKit.Apptentive.Engage(eventName,null ,(engaged) => Toast.MakeText(this, engaged ? "Yes" : "No", ToastLength.Long).Show());
+                var canShowInteraction = ApptentiveKit.Apptentive.CanShowInteraction(eventName);
+                if (canShowInteraction)
+                {
+                    Toast.MakeText(this, "Interaction can be shown", ToastLength.Long).Show();
+                }
+                else {
+                    Toast.MakeText(this, "Interaction cannot be shown", ToastLength.Long).Show();
+                }
             };
 
             var userDataButton = FindViewById<Button>(Resource.Id.userDataButton);
