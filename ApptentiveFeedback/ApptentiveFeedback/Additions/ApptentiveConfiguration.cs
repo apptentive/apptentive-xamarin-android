@@ -18,10 +18,9 @@ namespace ApptentiveKit
         public bool ShouldInheritAppTheme { get; set; } = true;
         public bool ShouldSanitizeLogMessages { get; set; } = true;  
         public string CustomAppStoreURL { get; set; } = null;
-        public string DistributionName { get; set; } = "";
-        public string DistributionVersion { get; set; } = "";
+        public string DistributionName { get; } = "Xamarin";
+        public string DistributionVersion { get; } = "";
     }
-
 
     public enum LogLevel
     {
