@@ -7,7 +7,6 @@
     <field name="Warning" javaname="WARNING" />
     <field name="Error" javaname="ERROR" />
     </enum>
-
  
     <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='Version']"/>
     <remove-node path="/api/package[@name='com.apptentive.android.sdk']/class[@name='DateTime']"/>
@@ -18,7 +17,6 @@
     <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='ApptentiveNullClient']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='Constants']"/>
     <remove-node path="/api/package[@name='apptentive.com.android.feedback']/class[@name='InteractionModuleComponent']"/>
-
 
     <remove-node path="/api/package[@name='com.apptentive.android.sdk.util']"/>
     <remove-node path="/api/package[@name='com.apptentive.android.sdk.storage']"/>
@@ -37,7 +35,6 @@
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.model.payloads']" />
     <remove-node path="/api/package[@name='apptentive.com.android.feedback.utils']" />
  
-     
     <attr path="/api/package[@name='apptentive.com.android.feedback']" name="managedName">ApptentiveKit.Android</attr>
 
 </metadata>

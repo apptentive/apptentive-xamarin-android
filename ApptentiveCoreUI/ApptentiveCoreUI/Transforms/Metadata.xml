@@ -1,22 +1,12 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
-
-  <remove-node path="/api/package[@name='apptentive.com.android.serialization']" />
-  <remove-node path="/api/package[@name='apptentive.com.android.serialization.json']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.serialization']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.serialization.json']" />
  <remove-node path="/api/package[@name='com.apptentive.android.sdk']" />
  <remove-node path="/api/package[@name='com.apptentive.android.sdk.util']" />
  <remove-node path="/api/package[@name='apptentive.com.android.network.httpnetworkresponse']" />
-  <remove-node path="/api/package[@name='apptentive.com.android.network']" />
-  <remove-node path="/api/package[@name='apptentive.com.android.feedback.model.payloads']" />
-  <remove-node path="/api/package[@name='apptentive.com.android.feedback']" />
-   <remove-node path="/api/package[@name='com.apptentive.android.sdk.storage']" />
- 
-
+ <remove-node path="/api/package[@name='apptentive.com.android.network']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.feedback.model.payloads']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.feedback']" />
+ <remove-node path="/api/package[@name='com.apptentive.android.sdk.storage']" />
 </metadata>
 

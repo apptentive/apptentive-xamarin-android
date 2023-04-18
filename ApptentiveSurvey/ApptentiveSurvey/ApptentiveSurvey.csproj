@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
-    <None Include="Additions\AboutAdditions.txt" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -54,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\apptentive-survey-6.0.3.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Additions\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

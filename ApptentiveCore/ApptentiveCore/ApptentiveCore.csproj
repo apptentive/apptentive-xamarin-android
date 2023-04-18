@@ -46,8 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
-    <TransformFile Include="Transforms\EnumFields.xml" />
-    <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\apptentive-core-6.0.3 %281%29.aar" />
