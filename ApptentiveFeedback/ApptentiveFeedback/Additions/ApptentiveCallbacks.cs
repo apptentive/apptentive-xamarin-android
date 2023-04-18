@@ -318,7 +318,6 @@ namespace ApptentiveKit
             this.onCompletion = onCompletion;
         }
 
-
         public void OnComplete(RegisterResult result)
         {
             if (result is RegisterResult.Success)
@@ -343,7 +342,6 @@ namespace ApptentiveKit
             this.onCompletion = onCompletion;
         }
 
-    
         public void OnComplete(EngagementResult result)
         {
             if (result is EngagementResult.InteractionShown)

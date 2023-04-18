@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.App;
+using Android.Icu.Util;
 using Android.Runtime;
 using ApptentiveKit.Android;
 

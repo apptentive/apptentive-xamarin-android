@@ -20,6 +20,7 @@ namespace ApptentiveKit
         public string CustomAppStoreURL { get; set; } = null;
         public string DistributionName { get; } = "Xamarin";
         public string DistributionVersion { get; } = "";
+        public long RatingInteractionThrottleLength { get; set; } = ((long)TimeSpan.FromDays(7).TotalMilliseconds);
     }
 
     public enum LogLevel
