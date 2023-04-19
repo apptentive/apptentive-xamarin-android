@@ -77,7 +77,7 @@ namespace ApptentiveSample
 
             var updateUnreadMessageCountButton = FindViewById<Button>(Resource.Id.updateUnreadMessageCount);
             updateUnreadMessageCountButton.Click += delegate {
-
+                
                 UpdateUnreadMessagesCount();
             };
 

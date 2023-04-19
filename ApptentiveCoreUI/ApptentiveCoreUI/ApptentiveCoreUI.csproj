@@ -45,16 +45,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Jars\AboutJars.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-core-ui-6.0.4-public.aar" />
+    <Folder Include="Additions\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Additions\" />
+    <LibraryProjectZip Include="Jars\apptentive-core-ui-6.0.4.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

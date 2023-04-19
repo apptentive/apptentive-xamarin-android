@@ -48,10 +48,11 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-core-6.0.3 %281%29.aar" />
+    <Folder Include="Additions\" />
+    <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Additions\" />
+    <LibraryProjectZip Include="Jars\apptentive-core-6.0.4.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
