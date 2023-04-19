@@ -467,6 +467,57 @@
     <Reference Include="ApptentiveInAppReview">
       <HintPath>..\..\ApptentiveInAppReview\ApptentiveInAppReview\obj\Debug\ApptentiveInAppReview.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Firebase.Annotations">
+      <HintPath>packages\Xamarin.Firebase.Annotations.116.1.0.1\lib\monoandroid12.0\Xamarin.Firebase.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.JavaX.Inject">
+      <HintPath>packages\Xamarin.JavaX.Inject.1.0.0.7\lib\monoandroid12.0\Xamarin.JavaX.Inject.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Components">
+      <HintPath>packages\Xamarin.Firebase.Components.117.0.1.1\lib\monoandroid12.0\Xamarin.Firebase.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Encoders">
+      <HintPath>packages\Xamarin.Firebase.Encoders.117.0.0.8\lib\monoandroid12.0\Xamarin.Firebase.Encoders.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Encoders.JSON">
+      <HintPath>packages\Xamarin.Firebase.Encoders.JSON.118.0.0.8\lib\monoandroid12.0\Xamarin.Firebase.Encoders.JSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Encoders.Proto">
+      <HintPath>packages\Xamarin.Firebase.Encoders.Proto.116.0.0.3\lib\monoandroid12.0\Xamarin.Firebase.Encoders.Proto.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.Android.DataTransport.TransportApi">
+      <HintPath>packages\Xamarin.Google.Android.DataTransport.TransportApi.3.0.0.6\lib\monoandroid12.0\Xamarin.Google.Android.DataTransport.TransportApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.Android.DataTransport.TransportRuntime">
+      <HintPath>packages\Xamarin.Google.Android.DataTransport.TransportRuntime.3.1.8.1\lib\monoandroid12.0\Xamarin.Google.Android.DataTransport.TransportRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.Android.DataTransport.TransportBackendCct">
+      <HintPath>packages\Xamarin.Google.Android.DataTransport.TransportBackendCct.3.1.8.1\lib\monoandroid12.0\Xamarin.Google.Android.DataTransport.TransportBackendCct.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Measurement.Connector">
+      <HintPath>packages\Xamarin.Firebase.Measurement.Connector.120.0.0.1\lib\monoandroid12.0\Xamarin.Firebase.Measurement.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Common">
+      <HintPath>packages\Xamarin.Firebase.Common.120.2.0.1\lib\monoandroid12.0\Xamarin.Firebase.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Datatransport">
+      <HintPath>packages\Xamarin.Firebase.Datatransport.118.1.7.1\lib\monoandroid12.0\Xamarin.Firebase.Datatransport.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Iid.Interop">
+      <HintPath>packages\Xamarin.Firebase.Iid.Interop.117.1.0.8\lib\monoandroid12.0\Xamarin.Firebase.Iid.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Installations.InterOp">
+      <HintPath>packages\Xamarin.Firebase.Installations.InterOp.117.1.0.1\lib\monoandroid12.0\Xamarin.Firebase.Installations.InterOp.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Installations">
+      <HintPath>packages\Xamarin.Firebase.Installations.117.1.0.1\lib\monoandroid12.0\Xamarin.Firebase.Installations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.CloudMessaging">
+      <HintPath>packages\Xamarin.GooglePlayServices.CloudMessaging.117.0.2.3\lib\monoandroid12.0\Xamarin.GooglePlayServices.CloudMessaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Firebase.Messaging">
+      <HintPath>packages\Xamarin.Firebase.Messaging.123.1.1.1\lib\monoandroid12.0\Xamarin.Firebase.Messaging.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -625,4 +676,17 @@
   <Import Project="packages\Xamarin.AndroidX.SavedState.SavedState.Ktx.1.2.1\build\monoandroid12.0\Xamarin.AndroidX.SavedState.SavedState.Ktx.targets" Condition="Exists('packages\Xamarin.AndroidX.SavedState.SavedState.Ktx.1.2.1\build\monoandroid12.0\Xamarin.AndroidX.SavedState.SavedState.Ktx.targets')" />
   <Import Project="packages\Xamarin.AndroidX.Activity.Ktx.1.7.0\build\monoandroid12.0\Xamarin.AndroidX.Activity.Ktx.targets" Condition="Exists('packages\Xamarin.AndroidX.Activity.Ktx.1.7.0\build\monoandroid12.0\Xamarin.AndroidX.Activity.Ktx.targets')" />
   <Import Project="packages\Xamarin.AndroidX.Fragment.Ktx.1.5.6\build\monoandroid12.0\Xamarin.AndroidX.Fragment.Ktx.targets" Condition="Exists('packages\Xamarin.AndroidX.Fragment.Ktx.1.5.6\build\monoandroid12.0\Xamarin.AndroidX.Fragment.Ktx.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Annotations.116.1.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Annotations.targets" Condition="Exists('packages\Xamarin.Firebase.Annotations.116.1.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Annotations.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Components.117.0.1.1\build\MonoAndroid12.0\Xamarin.Firebase.Components.targets" Condition="Exists('packages\Xamarin.Firebase.Components.117.0.1.1\build\MonoAndroid12.0\Xamarin.Firebase.Components.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Encoders.117.0.0.8\build\MonoAndroid12.0\Xamarin.Firebase.Encoders.targets" Condition="Exists('packages\Xamarin.Firebase.Encoders.117.0.0.8\build\MonoAndroid12.0\Xamarin.Firebase.Encoders.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Encoders.JSON.118.0.0.8\build\MonoAndroid12.0\Xamarin.Firebase.Encoders.JSON.targets" Condition="Exists('packages\Xamarin.Firebase.Encoders.JSON.118.0.0.8\build\MonoAndroid12.0\Xamarin.Firebase.Encoders.JSON.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Encoders.Proto.116.0.0.3\build\MonoAndroid12.0\Xamarin.Firebase.Encoders.Proto.targets" Condition="Exists('packages\Xamarin.Firebase.Encoders.Proto.116.0.0.3\build\MonoAndroid12.0\Xamarin.Firebase.Encoders.Proto.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Measurement.Connector.120.0.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Measurement.Connector.targets" Condition="Exists('packages\Xamarin.Firebase.Measurement.Connector.120.0.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Measurement.Connector.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Common.120.2.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Common.targets" Condition="Exists('packages\Xamarin.Firebase.Common.120.2.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Common.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Datatransport.118.1.7.1\build\MonoAndroid12.0\Xamarin.Firebase.Datatransport.targets" Condition="Exists('packages\Xamarin.Firebase.Datatransport.118.1.7.1\build\MonoAndroid12.0\Xamarin.Firebase.Datatransport.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Iid.Interop.117.1.0.8\build\MonoAndroid12.0\Xamarin.Firebase.Iid.Interop.targets" Condition="Exists('packages\Xamarin.Firebase.Iid.Interop.117.1.0.8\build\MonoAndroid12.0\Xamarin.Firebase.Iid.Interop.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Installations.InterOp.117.1.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Installations.InterOp.targets" Condition="Exists('packages\Xamarin.Firebase.Installations.InterOp.117.1.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Installations.InterOp.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Installations.117.1.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Installations.targets" Condition="Exists('packages\Xamarin.Firebase.Installations.117.1.0.1\build\MonoAndroid12.0\Xamarin.Firebase.Installations.targets')" />
+  <Import Project="packages\Xamarin.GooglePlayServices.CloudMessaging.117.0.2.3\build\MonoAndroid12.0\Xamarin.GooglePlayServices.CloudMessaging.targets" Condition="Exists('packages\Xamarin.GooglePlayServices.CloudMessaging.117.0.2.3\build\MonoAndroid12.0\Xamarin.GooglePlayServices.CloudMessaging.targets')" />
+  <Import Project="packages\Xamarin.Firebase.Messaging.123.1.1.1\build\MonoAndroid12.0\Xamarin.Firebase.Messaging.targets" Condition="Exists('packages\Xamarin.Firebase.Messaging.123.1.1.1\build\MonoAndroid12.0\Xamarin.Firebase.Messaging.targets')" />
 </Project>
