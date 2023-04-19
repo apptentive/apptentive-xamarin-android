@@ -497,9 +497,6 @@
     <Reference Include="ApptentiveEnjoymentDialog">
       <HintPath>..\..\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog\obj\Debug\ApptentiveEnjoymentDialog.dll</HintPath>
     </Reference>
-    <Reference Include="ApptentiveFeedback">
-      <HintPath>..\..\ApptentiveFeedback\ApptentiveFeedback\obj\Debug\ApptentiveFeedback.dll</HintPath>
-    </Reference>
     <Reference Include="ApptentiveInAppReview">
       <HintPath>..\..\ApptentiveInAppReview\ApptentiveInAppReview\obj\Debug\ApptentiveInAppReview.dll</HintPath>
     </Reference>
@@ -517,6 +514,9 @@
     </Reference>
     <Reference Include="ApptentiveSurvey">
       <HintPath>..\..\ApptentiveSurvey\ApptentiveSurvey\obj\Debug\ApptentiveSurvey.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveFeedback">
+      <HintPath>..\..\ApptentiveFeedback\ApptentiveFeedback\obj\Debug\ApptentiveFeedback.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

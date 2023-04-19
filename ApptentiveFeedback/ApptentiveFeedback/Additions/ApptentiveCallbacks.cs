@@ -310,8 +310,8 @@ namespace ApptentiveKit
         /// <summary>
         /// Use this method in your push receiver to build a PendingIntent when an Apptentive push
         /// notification is received.Pass the generated PendingIntent to
-        /// [androidx.core.app.NotificationCompat.Builder.setContentIntent] to allow Apptentive
-        /// to display Interactions such as Message Center.Calling this method for a push [Intent] that
+        /// androidx.core.app.NotificationCompat.Builder.setContentIntent to allow Apptentive
+        /// to display Interactions such as Message Center.Calling this method for a push Intent that
         /// did not come from Apptentive will return a null object. If you receive a `null` object, your
         /// app will need to handle this notification itself.
         /// </summary>
@@ -330,7 +330,7 @@ namespace ApptentiveKit
         /// <summary>
         /// Use this method in your push receiver to build a PendingIntent when an Apptentive push
         /// notification is received.Pass the generated PendingIntent to
-        /// [androidx.core.app.NotificationCompat.Builder.setContentIntent] to allow Apptentive
+        /// androidx.core.app.NotificationCompat.Builder.setContentIntent to allow Apptentive
         /// to display Interactions such as Message Center.Calling this method for a push Intent that
         /// did not come from Apptentive will return a null object. If you receive a `null` object, your
         /// app will need to handle this notification itself.
@@ -348,7 +348,7 @@ namespace ApptentiveKit
             ApptentiveKit.Android.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), data);
         }
 
-#nullable enable
+        #nullable enable
         /// <summary>
         /// Use this method in your push receiver to get the notification title you can use to construct
         /// an android.app.Notification object.
