@@ -385,10 +385,40 @@ namespace ApptentiveKit
             return ApptentiveKit.Android.Apptentive.GetTitleFromApptentivePush(bundle);
         }
 
-        //leftoff: comments then continue
+        /// <summary>
+        /// Use this method in your push receiver to get the notification body you can use to construct
+        /// an android.app.Notification object.
+        /// </summary>
+        /// <param name="bundle">An Bundle containing the Apptentive Push data. Pass in what you receive
+        /// in the Service or BroadcastReceiver that is used by your chosen push provider.</param>
+        /// <returns>A String or null.</returns>
         public static string? GetBodyFromApptentivePush(Bundle bundle)
         {
             return ApptentiveKit.Android.Apptentive.GetBodyFromApptentivePush(bundle);
+        }
+
+        /// <summary>
+        /// Use this method in your push receiver to get the notification title you can use to construct
+        /// an android.app.Notification object.
+        /// </summary>
+        /// <param name="data">A Dictionary containing the Apptentive Push data. Pass in what you receive in
+        /// the the or that is used by your chosen push provider.</param>
+        /// <returns>A string or null value.</returns>
+        public static string? GetTitleFromApptentivePush(IDictionary<string, string> data)
+        {
+            return ApptentiveKit.Android.Apptentive.GetTitleFromApptentivePush(data);
+        }
+
+        /// <summary>
+        /// Use this method in your push receiver to get the notification body you can use to construct
+        /// an android.app.Notification object.
+        /// </summary>
+        /// <param name="data">An Dictionary containing the Apptentive Push data. Pass in what you receive
+        /// in the Service or BroadcastReceiver that is used by your chosen push provider.</param>
+        /// <returns>A String or null.</returns>
+        public static string? GetBodyFromApptentivePush(IDictionary<string, string> data)
+        {
+            return ApptentiveKit.Android.Apptentive.GetBodyFromApptentivePush(data);
         }
 
         internal interface IEngagementCallback : IJavaObject
@@ -410,10 +440,10 @@ namespace ApptentiveKit
 
     public class PendingIntentCallback : Java.Lang.Object, IPendingIntentCallback
     {
-        private readonly Action<PendingIntent> onCompletion;
+        private readonly Action<PendingIntent?> onCompletion;
 
 
-        public PendingIntentCallback(Action<PendingIntent> onCompletion)
+        public PendingIntentCallback(Action<PendingIntent?> onCompletion)
         {
             this.onCompletion = onCompletion;
         }
