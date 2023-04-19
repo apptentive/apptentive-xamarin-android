@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:223723034079:android:4045411b61c1174d35a06a",
         "android_client_info": {
-          "package_name": "com.xamarin.android"
+          "package_name": "com.apptentive.xamarin.ApptentiveAndroidSample"
         }
       },
       "oauth_client": [

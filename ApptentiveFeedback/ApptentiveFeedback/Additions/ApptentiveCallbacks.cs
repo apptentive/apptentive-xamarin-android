@@ -17,6 +17,10 @@ using static Android.Provider.Telephony.Sms;
 using static Android.Provider.Contacts.Intents;
 using static Android.Provider.ContactsContract.CommonDataKinds;
 using Apptentive.Com.Android.Feedback.Engagement.Interactions;
+using Android.Telecom;
+using Android.Views;
+using static Android.Graphics.Paint;
+using Android.OS;
 
 namespace ApptentiveKit
 {
@@ -269,6 +273,124 @@ namespace ApptentiveKit
             ApptentiveKit.Android.Apptentive.RemoveCustomDeviceData(key);
         }
 
+        /// <summary>
+        /// Sends push provider information to our server to allow us to send pushes to this device when
+        /// you reply to your customers.Only one push provider is allowed to be active at a time, so you
+        /// should only call this method once.
+        /// </summary>
+        /// <param name="context">The current context of the app.</param>
+        /// <param name="pushProvider">The selected push provider value.</param>
+        /// <param name="token">The token provided by the push provider.</param>
+        public static void SetPushNotificationIntegration(Context context, int pushProvider, String token)
+        {
+            ApptentiveKit.Android.Apptentive.SetPushNotificationIntegration(context, pushProvider, token);
+        }
+
+        /// <summary>
+        /// Determines whether this Intent is a push notification sent from Apptentive.
+        /// </summary>
+        /// <param name="intent">The received intent received in the broadcast receiver.</param>
+        /// <returns>`true` if the intent came from and should be handled by Apptentive.</returns>
+        public static bool IsApptentivePushNotification(Intent intent)
+        {
+            return ApptentiveKit.Android.Apptentive.IsApptentivePushNotification(intent);
+        }
+
+        /// <summary>
+        /// Determines whether push payload data came from an Apptentive Push Notification.
+        /// This method is also used for Urban Airship.
+        /// </summary>
+        /// <param name="data">The push payload data obtained through FCM `onMessageReceived()`, when using FCM</param>
+        /// <returns>`true` if the push came from, and should be handled by Apptentive.</returns>
+        public static bool IsApptentivePushNotification(IDictionary<string, string> data)
+        {
+            return ApptentiveKit.Android.Apptentive.IsApptentivePushNotification(data);
+        }
+
+        /// <summary>
+        /// Use this method in your push receiver to build a PendingIntent when an Apptentive push
+        /// notification is received.Pass the generated PendingIntent to
+        /// [androidx.core.app.NotificationCompat.Builder.setContentIntent] to allow Apptentive
+        /// to display Interactions such as Message Center.Calling this method for a push [Intent] that
+        /// did not come from Apptentive will return a null object. If you receive a `null` object, your
+        /// app will need to handle this notification itself.
+        /// </summary>
+        /// <param name="context">The current context of the app.</param>
+        /// <param name="onCompletion">Called after we check to see Apptentive can launch an Interaction from this
+        /// push. Called with a PendingIntent to launch an Apptentive Interaction
+        /// if the push data came from Apptentive, and an Interaction can be shown, or
+        /// `null`.</param>
+        /// <param name="intent">An Intent containing the Apptentive Push data. Pass in what you receive
+        /// in the Service or BroadcastReceiver that is used by your chosen push provider.</param>
+        public static void BuildPendingIntentFromPushNotification(Context context, Action<PendingIntent> onCompletion, Intent intent)
+        {
+            ApptentiveKit.Android.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), intent);
+        }
+
+        /// <summary>
+        /// Use this method in your push receiver to build a PendingIntent when an Apptentive push
+        /// notification is received.Pass the generated PendingIntent to
+        /// [androidx.core.app.NotificationCompat.Builder.setContentIntent] to allow Apptentive
+        /// to display Interactions such as Message Center.Calling this method for a push Intent that
+        /// did not come from Apptentive will return a null object. If you receive a `null` object, your
+        /// app will need to handle this notification itself.
+        /// </summary>
+        /// <param name="context">The current context of the app.</param>
+        /// <param name="onCompletion">Called after we check to see Apptentive can launch an Interaction from this
+        /// push. Called with a PendingIntent to launch an Apptentive Interaction
+        /// if the push data came from Apptentive, and an Interaction can be shown, or
+        /// `null`.</param>
+        /// <param name="data">Contains the Apptentive
+        /// Push data. Pass in what you receive in the the Service or BroadcastReceiver
+        /// that is used by your chosen push provider.</param>
+        public static void BuildPendingIntentFromPushNotification(Context context, Action<PendingIntent> onCompletion, IDictionary<string, string> data)
+        {
+            ApptentiveKit.Android.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), data);
+        }
+
+#nullable enable
+        /// <summary>
+        /// Use this method in your push receiver to get the notification title you can use to construct
+        /// an android.app.Notification object.
+        /// </summary>
+        /// <param name="intent">An Intent containing the Apptentive Push data. Pass in what you receive
+        /// in the Service or BroadcastReceiver that is used by your chosen push provider.</param>
+        /// <returns>A String or null.</returns>
+        public static string? GetTitleFromApptentivePush(Intent intent)
+        {
+            return ApptentiveKit.Android.Apptentive.GetTitleFromApptentivePush(intent);
+        }
+
+        /// <summary>
+        /// Use this method in your push receiver to get the notification body you can use to construct
+        /// an android.app.Notification object.
+        /// </summary>
+        /// <param name="intent">An Intent containing the Apptentive Push data. Pass in what you receive
+        /// in the Service or BroadcastReceiver that is used by your chosen push provider.</param>
+        /// <returns>A String or null.</returns>
+        public static string? GetBodyFromApptentivePush(Intent intent)
+        {
+            return ApptentiveKit.Android.Apptentive.GetBodyFromApptentivePush(intent);
+        }
+
+        /// <summary>
+        /// Use this method in your push receiver to get the notification title you can use to construct
+        /// an android.app.Notification object.
+        /// </summary>
+        /// <param name="bundle">A Bundle containing the Apptentive Push data. Pass in what you receive in
+        /// the the or that is used by your chosen push provider.</param>
+        /// <returns>A string or null value.</returns>
+        public static string? GetTitleFromApptentivePush(Bundle bundle)
+        {
+            return ApptentiveKit.Android.Apptentive.GetTitleFromApptentivePush(bundle);
+        }
+
+        //leftoff: comments then continue
+        public static string? GetBodyFromApptentivePush(Bundle bundle)
+        {
+            return ApptentiveKit.Android.Apptentive.GetBodyFromApptentivePush(bundle);
+        }
+
         internal interface IEngagementCallback : IJavaObject
         {
             void OnComplete(EngagementResult result);
@@ -282,6 +404,29 @@ namespace ApptentiveKit
        internal interface IBooleanCallback
         {
             void OnFinish(Boolean result);
+        }
+
+    }
+
+    public class PendingIntentCallback : Java.Lang.Object, IPendingIntentCallback
+    {
+        private readonly Action<PendingIntent> onCompletion;
+
+
+        public PendingIntentCallback(Action<PendingIntent> onCompletion)
+        {
+            this.onCompletion = onCompletion;
+        }
+
+        public void OnPendingIntent(PendingIntent pendingIntent)
+        {
+            if (pendingIntent != null)
+            {
+                onCompletion.Invoke(pendingIntent);
+            }
+            else {
+                onCompletion.Invoke(null);
+            }
         }
 
     }

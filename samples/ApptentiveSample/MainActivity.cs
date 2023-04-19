@@ -12,6 +12,7 @@ using Android.Support.V7.App;
 using AndroidX.Fragment.App;
 using AndroidX.Lifecycle;
 using Firebase.Messaging;
+using Firebase;
 
 namespace ApptentiveSample
 {
@@ -80,8 +81,8 @@ namespace ApptentiveSample
                 
                 UpdateUnreadMessagesCount();
             };
+           
 
-          
 
             //Removed Until Implemented.
             //var authenticationButton = FindViewById<Button>(Resource.Id.authenticationButton);
@@ -152,6 +153,7 @@ namespace ApptentiveSample
             else
             {
                 ShowToast("Google Play Services is availabl.");
+                FirebaseApp.InitializeApp(this);
             }
         }
 
