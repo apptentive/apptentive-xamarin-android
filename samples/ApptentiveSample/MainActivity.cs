@@ -11,9 +11,6 @@ using Xamarin.Essentials;
 using Android.Support.V7.App;
 using AndroidX.Fragment.App;
 using AndroidX.Lifecycle;
-using Firebase.Messaging;
-using Firebase.Iid;
-
 
 namespace ApptentiveSample
 {
