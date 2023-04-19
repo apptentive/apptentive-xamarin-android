@@ -18,7 +18,7 @@ namespace ApptentiveSample
             base.OnCreate();
 
             var configuration = new ApptentiveKit.Android.ApptentiveConfiguration("", "");
-            configuration.LogLevel = Apptentive.Com.Android.Util.LogLevel.Verbose;
+            configuration.ShouldInheritAppTheme = false;
             ApptentiveKit.Apptentive.Register(this, configuration);
         }
     }
