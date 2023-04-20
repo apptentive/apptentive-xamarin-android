@@ -17,9 +17,6 @@ using static Android.Provider.Telephony.Sms;
 using static Android.Provider.Contacts.Intents;
 using static Android.Provider.ContactsContract.CommonDataKinds;
 using Apptentive.Com.Android.Feedback.Engagement.Interactions;
-using Android.Telecom;
-using Android.Views;
-using static Android.Graphics.Paint;
 using Android.OS;
 
 namespace ApptentiveKit

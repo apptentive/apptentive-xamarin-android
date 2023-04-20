@@ -152,7 +152,7 @@ namespace ApptentiveSample
             }
             else
             {
-                ShowToast("Google Play Services is availabl.");
+                ShowToast("Google Play Services is available.");
                 FirebaseApp.InitializeApp(this);
             }
         }
