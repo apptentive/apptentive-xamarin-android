@@ -1,7 +1,7 @@
 ﻿using System;
 using Android.App;
 using Android.Runtime;
-using ApptentiveKit.Android;
+using ApptentiveSDK.Android;
 
 namespace ApptentiveSample
 {
@@ -17,9 +17,10 @@ namespace ApptentiveSample
         {
             base.OnCreate();
 
-            var configuration = new ApptentiveKit.Android.ApptentiveConfiguration("", "");
+            var configuration = new ApptentiveConfiguration("ANDROID-XAMARIN-ANDROID", "22527498ae05c9605dd746cd7c5cb33c");
             configuration.ShouldInheritAppTheme = false;
-            ApptentiveKit.Apptentive.Register(this, configuration);
+            configuration.LogLevel = Apptentive.Com.Android.Util.LogLevel.Verbose;
+            ApptentiveSDK.Android.Apptentive.Register(this, configuration);
         }
     }
 

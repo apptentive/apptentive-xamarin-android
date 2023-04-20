@@ -3,14 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using ApptentiveKit.Android;
+using ApptentiveSDK.Android;
 
 namespace ApptentiveSample
 {
@@ -39,38 +38,38 @@ namespace ApptentiveSample
 
             FindViewById<Button>(Resource.Id.addPersonCustomDataButton).Click += delegate {
                 //person string
-                ApptentiveKit.Apptentive.AddCustomPersonData(personStringKey.Text, personStringValue.Text);
+                ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, personStringValue.Text);
                 //person int
                 if (int.TryParse(personIntValue.Text, out int intValue))
                 {
-                    ApptentiveKit.Apptentive.AddCustomPersonData(personStringKey.Text, intValue);
+                    ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, intValue);
                 }
                 //person bool
-                ApptentiveKit.Apptentive.AddCustomPersonData(personStringKey.Text, personBoolValue.Checked);
+                ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, personBoolValue.Checked);
 
             };
 
           
             FindViewById<Button>(Resource.Id.addDeviceDataButton).Click += delegate {
                 //device string
-                ApptentiveKit.Apptentive.AddCustomDeviceData(deviceStringKey.Text, deviceStringValue.Text);
+                ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceStringKey.Text, deviceStringValue.Text);
                 //device int
                 if (int.TryParse(personIntValue.Text, out int deviceIntValue))
                 {
-                    ApptentiveKit.Apptentive.AddCustomDeviceData(deviceIntKey.Text, deviceIntValue);
+                    ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceIntKey.Text, deviceIntValue);
                 }
                 //device bool
-                ApptentiveKit.Apptentive.AddCustomDeviceData(deviceBoolKey.Text, deviceBoolValue.Checked);
+                ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceBoolKey.Text, deviceBoolValue.Checked);
             };
 
            
             FindViewById<Button>(Resource.Id.removeCustomData).Click += delegate {
-                ApptentiveKit.Apptentive.RemoveCustomPersonData(personStringKey.Text);
-                ApptentiveKit.Apptentive.RemoveCustomPersonData(personIntKey.Text);
-                ApptentiveKit.Apptentive.RemoveCustomPersonData(personBoolKey.Text);
-                ApptentiveKit.Apptentive.RemoveCustomDeviceData(deviceStringKey.Text);
-                ApptentiveKit.Apptentive.RemoveCustomDeviceData(deviceIntKey.Text);
-                ApptentiveKit.Apptentive.RemoveCustomDeviceData(deviceBoolKey.Text);
+                ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personStringKey.Text);
+                ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personIntKey.Text);
+                ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personBoolKey.Text);
+                ApptentiveSDK.Android.Apptentive.RemoveCustomDeviceData(deviceStringKey.Text);
+                ApptentiveSDK.Android.Apptentive.RemoveCustomDeviceData(deviceIntKey.Text);
+                ApptentiveSDK.Android.Apptentive.RemoveCustomDeviceData(deviceBoolKey.Text);
             };
 
                 FindViewById<Button>(Resource.Id.saveButton).Click += delegate {

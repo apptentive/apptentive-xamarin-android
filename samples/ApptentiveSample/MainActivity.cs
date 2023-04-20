@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using ApptentiveKit.Android;
+using ApptentiveSDK.Android;
 using System;
 using Android.Content;
 using Android.Gms.Common;
@@ -28,8 +28,8 @@ namespace ApptentiveSample
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-
-            ApptentiveKit.Apptentive.RegisterActivityInfoCallback(this);
+            
+            ApptentiveSDK.Android.Apptentive.RegisterApptentiveActivityInfoCallback(this);
 
             // Controls
             var eventNameEditText = FindViewById<EditText>(Resource.Id.eventEditText);
@@ -37,7 +37,7 @@ namespace ApptentiveSample
             var messageCenterButton = FindViewById<Button>(Resource.Id.messageCenterButton);
             messageCenterButton.Click += delegate
             {
-                ApptentiveKit.Apptentive.ShowMessageCenter((shown) => Console.WriteLine("Message Center shown: " + shown));
+                ApptentiveSDK.Android.Apptentive.ShowMessageCenter((shown) => Console.WriteLine("Message Center shown: " + shown));
             };
 
             var engageButton = FindViewById<Button>(Resource.Id.engageButton);
@@ -45,14 +45,14 @@ namespace ApptentiveSample
             {
                 var eventName = eventNameEditText.Text;
                 Console.WriteLine("Event Name: " + eventName);
-                ApptentiveKit.Apptentive.Engage(eventName, null, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
+                ApptentiveSDK.Android.Apptentive.Engage(eventName, null, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
             };
 
             var canShowInteractionButton = FindViewById<Button>(Resource.Id.canShowInteractionButton);
             canShowInteractionButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                var canShowInteraction = ApptentiveKit.Apptentive.CanShowInteraction(eventName);
+                var canShowInteraction = ApptentiveSDK.Android.Apptentive.CanShowInteraction(eventName);
                 if (canShowInteraction)
                 {
                     Toast.MakeText(this, "Interaction can be shown", ToastLength.Long).Show();
@@ -119,7 +119,7 @@ namespace ApptentiveSample
 
         void UpdateUnreadMessagesCount()
         {
-            unreadMessagesTextView.Text = "Unread messages: " + ApptentiveKit.Apptentive.GetUnreadMessageCount();
+            unreadMessagesTextView.Text = "Unread messages: " + ApptentiveSDK.Android.Apptentive.UnreadMessageCount;
         }
 
         #region IUnreadMessagesListener

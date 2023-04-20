@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Additions\ApptentiveConfiguration.cs" />
     <Compile Include="Additions\ApptentiveCallbacks.cs" />
   </ItemGroup>
   <ItemGroup>
