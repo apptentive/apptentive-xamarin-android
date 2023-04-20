@@ -17,7 +17,7 @@ namespace ApptentiveSample
         {
             base.OnCreate();
 
-            var configuration = new ApptentiveConfiguration("ANDROID-XAMARIN-ANDROID", "22527498ae05c9605dd746cd7c5cb33c");
+            var configuration = new ApptentiveConfiguration("", "");
             configuration.ShouldInheritAppTheme = false;
             configuration.LogLevel = Apptentive.Com.Android.Util.LogLevel.Verbose;
             ApptentiveSDK.Android.Apptentive.Register(this, configuration);
