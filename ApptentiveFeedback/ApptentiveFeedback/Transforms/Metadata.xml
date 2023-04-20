@@ -41,9 +41,8 @@
     <attr path="/api/package[@name='apptentive.com.android.feedback']/class[@name='ApptentiveConfiguration']/method[@name='setDistributionVersion' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="visibility">internal</attr>
     <attr path="/api/package[@name='apptentive.com.android.feedback']/class[@name='Apptentive']/method[@name='register' and count(parameter)=2 and parameter[1][@type='android.app.Application'] and parameter[2][@type='apptentive.com.android.feedback.ApptentiveConfiguration']]" name="visibility">internal</attr>
     <attr path="/api/package[@name='apptentive.com.android.feedback']/class[@name='Apptentive']/method[@name='register' and count(parameter)=3 and parameter[1][@type='android.app.Application'] and parameter[2][@type='apptentive.com.android.feedback.ApptentiveConfiguration'] and parameter[3][@type='apptentive.com.android.feedback.RegisterCallback']]" name="visibility">internal</attr>
-
-
-
+    <attr path="/api/package[@name='apptentive.com.android.feedback']/class[@name='Apptentive']/method[@name='canShowInteraction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="visibility">internal</attr>
+   
     <attr path="/api/package[@name='apptentive.com.android.feedback']" name="managedName">ApptentiveSDK.Android</attr>
 
 </metadata>

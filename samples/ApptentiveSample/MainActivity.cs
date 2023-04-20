@@ -52,7 +52,7 @@ namespace ApptentiveSample
             canShowInteractionButton.Click += delegate
             {
                 var eventName = eventNameEditText.Text;
-                var canShowInteraction = ApptentiveSDK.Android.Apptentive.CanShowInteraction(eventName);
+                var canShowInteraction = ApptentiveSDK.Android.Apptentive.QueryCanShowInteraction(eventName);
                 if (canShowInteraction)
                 {
                     Toast.MakeText(this, "Interaction can be shown", ToastLength.Long).Show();
