@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using System.IdentityModel.Tokens;
 using System.Security.Claims;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 
 namespace ApptentiveSample
 {

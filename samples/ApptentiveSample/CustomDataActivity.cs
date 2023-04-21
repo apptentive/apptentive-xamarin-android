@@ -9,7 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 
 namespace ApptentiveSample
 {
@@ -38,36 +38,36 @@ namespace ApptentiveSample
 
             FindViewById<Button>(Resource.Id.addPersonCustomDataButton).Click += delegate {
                 //person string
-                ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, personStringValue.Text);
+                ApptentiveSDK.Apptentive.AddCustomPersonData(personStringKey.Text, personStringValue.Text);
                 //person int
                 if (double.TryParse(personIntValue.Text, out double intValue))
                 {
-                    ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, (Java.Lang.Number)intValue);
+                    ApptentiveSDK.Apptentive.AddCustomPersonData(personStringKey.Text, (Java.Lang.Number)intValue);
                 }
                 //person bool
-                ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, (Java.Lang.Boolean)personBoolValue.Checked);
+                ApptentiveSDK.Apptentive.AddCustomPersonData(personStringKey.Text, (Java.Lang.Boolean)personBoolValue.Checked);
             };
 
           
             FindViewById<Button>(Resource.Id.addDeviceDataButton).Click += delegate {
                 //device string
-                ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceStringKey.Text, deviceStringValue.Text);
+                ApptentiveSDK.Apptentive.AddCustomDeviceData(deviceStringKey.Text, deviceStringValue.Text);
                 //device int
                 if (int.TryParse(personIntValue.Text, out int deviceIntValue))
                 {
-                    ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceIntKey.Text, (Java.Lang.Number)deviceIntValue);
+                    ApptentiveSDK.Apptentive.AddCustomDeviceData(deviceIntKey.Text, (Java.Lang.Number)deviceIntValue);
                 }
                 //device bool
-                ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceBoolKey.Text, (Java.Lang.Boolean)deviceBoolValue.Checked);
+                ApptentiveSDK.Apptentive.AddCustomDeviceData(deviceBoolKey.Text, (Java.Lang.Boolean)deviceBoolValue.Checked);
             };
            
             FindViewById<Button>(Resource.Id.removeCustomData).Click += delegate {
-                ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personStringKey.Text);
-                ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personIntKey.Text);
-                ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personBoolKey.Text);
-                ApptentiveSDK.Android.Apptentive.RemoveCustomDeviceData(deviceStringKey.Text);
-                ApptentiveSDK.Android.Apptentive.RemoveCustomDeviceData(deviceIntKey.Text);
-                ApptentiveSDK.Android.Apptentive.RemoveCustomDeviceData(deviceBoolKey.Text);
+                ApptentiveSDK.Apptentive.RemoveCustomPersonData(personStringKey.Text);
+                ApptentiveSDK.Apptentive.RemoveCustomPersonData(personIntKey.Text);
+                ApptentiveSDK.Apptentive.RemoveCustomPersonData(personBoolKey.Text);
+                ApptentiveSDK.Apptentive.RemoveCustomDeviceData(deviceStringKey.Text);
+                ApptentiveSDK.Apptentive.RemoveCustomDeviceData(deviceIntKey.Text);
+                ApptentiveSDK.Apptentive.RemoveCustomDeviceData(deviceBoolKey.Text);
             };
 
                 FindViewById<Button>(Resource.Id.saveButton).Click += delegate {

@@ -3,7 +3,7 @@ using Android.App;
 using Android.Media;
 using Firebase.Messaging;
 using System;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 using Android.Content;
 using Android.Support.V4.App;
 using Android.OS;
@@ -19,7 +19,7 @@ namespace ApptentiveSample
 
         public override void OnNewToken(string token)
         {
-            ApptentiveSDK.Android.Apptentive.SetPushNotificationIntegration(this, ApptentiveSDK.Android.Apptentive.PushProviderApptentive, token);
+            ApptentiveSDK.Apptentive.SetPushNotificationIntegration(this, ApptentiveSDK.Apptentive.PushProviderApptentive, token);
         }
 
         public override void OnMessageReceived(RemoteMessage message)
@@ -29,7 +29,7 @@ namespace ApptentiveSample
             String title = null;
             String body = null;
          
-            var isPush = ApptentiveSDK.Android.Apptentive.IsApptentivePushNotification(data);
+            var isPush = ApptentiveSDK.Apptentive.IsApptentivePushNotification(data);
             var channel = new NotificationChannel("channel_id", "channel_name", NotificationImportance.Default)
             {
                 Description = "channel_description"
@@ -37,12 +37,12 @@ namespace ApptentiveSample
             var notificationManager = GetSystemService(NotificationService) as NotificationManager;
             notificationManager.CreateNotificationChannel(channel);
             int notificationId = 1;
-            if (ApptentiveSDK.Android.Apptentive.IsApptentivePushNotification(data))
+            if (ApptentiveSDK.Apptentive.IsApptentivePushNotification(data))
             {
           
-                title = ApptentiveSDK.Android.Apptentive.GetTitleFromApptentivePush(data);
-                body = ApptentiveSDK.Android.Apptentive.GetBodyFromApptentivePush(data);
-                ApptentiveSDK.Android.Apptentive.BuildPendingIntentFromPushNotification(this,(pendingIntent) =>
+                title = ApptentiveSDK.Apptentive.GetTitleFromApptentivePush(data);
+                body = ApptentiveSDK.Apptentive.GetBodyFromApptentivePush(data);
+                ApptentiveSDK.Apptentive.BuildPendingIntentFromPushNotification(this,(pendingIntent) =>
                 {
                     // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
                     if (pendingIntent == null)

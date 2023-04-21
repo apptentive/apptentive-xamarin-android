@@ -1,7 +1,7 @@
 ﻿using System;
 using Android.App;
 using Android.Runtime;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 
 namespace ApptentiveSample
 {
@@ -20,7 +20,7 @@ namespace ApptentiveSample
             var configuration = new ApptentiveConfiguration("", "");
             configuration.ShouldInheritAppTheme = false;
             configuration.LogLevel = Apptentive.Com.Android.Util.LogLevel.Verbose;
-            ApptentiveSDK.Android.Apptentive.Register(this, configuration);
+            ApptentiveSDK.Apptentive.Register(this, configuration);
         }
     }
 }

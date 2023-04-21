@@ -5,7 +5,7 @@ using Android.App;
 using Android.Content;
 using Android.Runtime;
 using Android.Widget;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 using Java.Interop;
 using Apptentive.Com.Android.Util;
 using Apptentive.Com.Android;
@@ -15,7 +15,7 @@ using Apptentive.Com.Android.Feedback.Engagement.Interactions;
 using Android.OS;
 
 
-namespace ApptentiveSDK.Android
+namespace ApptentiveSDK
 {
     public partial class Apptentive
     {
@@ -31,7 +31,7 @@ namespace ApptentiveSDK.Android
         {
             configuration.DistributionName = "Xamarin";
             configuration.DistributionVersion = "6.0.4";
-            ApptentiveSDK.Android.Apptentive.Register(application, configuration, new RegisterCallback(onCompletion));
+            ApptentiveSDK.Apptentive.Register(application, configuration, new RegisterCallback(onCompletion));
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace ApptentiveSDK.Android
         /// <param name="eventName">The event's string value</param>
         public static void Engage(String eventName, IDictionary<string, Java.Lang.Object> customData = null, Action<bool> onCompletion = null)
         {
-            ApptentiveSDK.Android.Apptentive.Engage(eventName, customData, new EngagementCallback(onCompletion));
+            ApptentiveSDK.Apptentive.Engage(eventName, customData, new EngagementCallback(onCompletion));
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace ApptentiveSDK.Android
         /// <param name="customData">A Map of String keys to Object values. Objects may be Strings, Numbers, or Booleans.If any message is sent by the Person, this data is sent with it, and then cleared. If no message is sent, this data is discarded.</param>
         public static void ShowMessageCenter(Action<bool> onCompletion, IDictionary<string, Java.Lang.Object> customData = null)
         {
-            ApptentiveSDK.Android.Apptentive.ShowMessageCenter(customData, new EngagementCallback(onCompletion));
+            ApptentiveSDK.Apptentive.ShowMessageCenter(customData, new EngagementCallback(onCompletion));
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace ApptentiveSDK.Android
         /// <param name="onCompletion">Called after we check to see if Message Center can be displayed, but before it is displayed. Called with true if an Interaction will be displayed, else false.</param>
         public static void CanShowMessageCenter(Action<bool> onCompletion)
         {
-            ApptentiveSDK.Android.Apptentive.CanShowMessageCenter(new BooleanCallback(onCompletion));
+            ApptentiveSDK.Apptentive.CanShowMessageCenter(new BooleanCallback(onCompletion));
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace ApptentiveSDK.Android
         /// <returns></returns>
         public static bool QueryCanShowInteraction(String eventName)
         {
-            return ApptentiveSDK.Android.Apptentive.CanShowInteraction(eventName);
+            return ApptentiveSDK.Apptentive.CanShowInteraction(eventName);
         }
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace ApptentiveSDK.Android
         /// in the Service or BroadcastReceiver that is used by your chosen push provider.</param>
         public static void BuildPendingIntentFromPushNotification(Context context, Action<PendingIntent> onCompletion, Intent intent)
         {
-            ApptentiveSDK.Android.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), intent);
+            ApptentiveSDK.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), intent);
         }
 
         /// <summary>
@@ -117,7 +117,7 @@ namespace ApptentiveSDK.Android
         /// that is used by your chosen push provider.</param>
         public static void BuildPendingIntentFromPushNotification(Context context, Action<PendingIntent> onCompletion, IDictionary<string, string> data)
         {
-            ApptentiveSDK.Android.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), data);
+            ApptentiveSDK.Apptentive.BuildPendingIntentFromPushNotification(context, new PendingIntentCallback(onCompletion), data);
         }
  
         internal interface IEngagementCallback : IJavaObject
