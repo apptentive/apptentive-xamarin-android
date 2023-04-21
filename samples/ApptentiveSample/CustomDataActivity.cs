@@ -40,13 +40,12 @@ namespace ApptentiveSample
                 //person string
                 ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, personStringValue.Text);
                 //person int
-                if (int.TryParse(personIntValue.Text, out int intValue))
+                if (double.TryParse(personIntValue.Text, out double intValue))
                 {
-                    ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, intValue);
+                    ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, (Java.Lang.Number)intValue);
                 }
                 //person bool
-                ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, personBoolValue.Checked);
-
+                ApptentiveSDK.Android.Apptentive.AddCustomPersonData(personStringKey.Text, (Java.Lang.Boolean)personBoolValue.Checked);
             };
 
           
@@ -56,12 +55,11 @@ namespace ApptentiveSample
                 //device int
                 if (int.TryParse(personIntValue.Text, out int deviceIntValue))
                 {
-                    ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceIntKey.Text, deviceIntValue);
+                    ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceIntKey.Text, (Java.Lang.Number)deviceIntValue);
                 }
                 //device bool
-                ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceBoolKey.Text, deviceBoolValue.Checked);
+                ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(deviceBoolKey.Text, (Java.Lang.Boolean)deviceBoolValue.Checked);
             };
-
            
             FindViewById<Button>(Resource.Id.removeCustomData).Click += delegate {
                 ApptentiveSDK.Android.Apptentive.RemoveCustomPersonData(personStringKey.Text);
@@ -75,8 +73,7 @@ namespace ApptentiveSample
                 FindViewById<Button>(Resource.Id.saveButton).Click += delegate {
               Finish();
             };
-
-           }
+       }
   }
 }
 

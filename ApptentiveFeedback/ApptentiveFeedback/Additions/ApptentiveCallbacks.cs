@@ -80,58 +80,6 @@ namespace ApptentiveSDK.Android
         }
 
         /// <summary>
-        /// Add a custom data int to the Person. Custom data will be sent to the server, is displayed
-        /// in the Conversation view, and can be used in Interaction targeting.
-        /// </summary>
-        /// <param name="key">The key to store the data under.</param>
-        /// <param name="value">A int value.</param>
-        public static void AddCustomPersonData(String key, int value)
-        {
-            Java.Lang.Integer intValue = Java.Lang.Integer.ValueOf(value);
-            Java.Lang.Number numberValue = (Java.Lang.Number)intValue;
-
-            ApptentiveSDK.Android.Apptentive.AddCustomPersonData(key, numberValue);
-        }
-
-        /// <summary>
-        /// Add a custom data bool to the Person. Custom data will be sent to the server, is displayed
-        /// in the Conversation view, and can be used in Interaction targeting.
-        /// </summary>
-        /// <param name="key"></param>
-        /// <param name="value"></param>
-        public static void AddCustomPersonData(String key, bool value)
-        {
-            Java.Lang.Boolean javaValue = Java.Lang.Boolean.ValueOf(value);
-            ApptentiveSDK.Android.Apptentive.AddCustomPersonData(key, javaValue);
-        }
-
-        /// <summary>
-        /// Add a custom data int to the Person. Custom data will be sent to the server, is displayed
-        /// in the Conversation view, and can be used in Interaction targeting.
-        /// </summary>
-        /// <param name="key">The key to store the data under.</param>
-        /// <param name="value">A int value.</param>
-        public static void AddCustomDeviceData(String key, int value)
-        {
-            Java.Lang.Integer intValue = Java.Lang.Integer.ValueOf(value);
-            Java.Lang.Number numberValue = (Java.Lang.Number)intValue;
-
-            ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(key, numberValue);
-        }
-
-        /// <summary>
-        /// Add a custom data bool to the Person. Custom data will be sent to the server, is displayed
-        /// in the Conversation view, and can be used in Interaction targeting.
-        /// </summary>
-        /// <param name="key"></param>
-        /// <param name="value"></param>
-        public static void AddCustomDeviceData(String key, bool value)
-        {
-            Java.Lang.Boolean javaValue = Java.Lang.Boolean.ValueOf(value);
-            ApptentiveSDK.Android.Apptentive.AddCustomDeviceData(key, javaValue);
-        }
-
-        /// <summary>
         /// Use this method in your push receiver to build a PendingIntent when an Apptentive push
         /// notification is received.Pass the generated PendingIntent to
         /// androidx.core.app.NotificationCompat.Builder.setContentIntent to allow Apptentive

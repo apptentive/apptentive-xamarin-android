@@ -23,5 +23,4 @@ namespace ApptentiveSample
             ApptentiveSDK.Android.Apptentive.Register(this, configuration);
         }
     }
-
 }
