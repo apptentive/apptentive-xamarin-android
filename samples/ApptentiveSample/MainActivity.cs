@@ -21,7 +21,6 @@ namespace ApptentiveSample
     {
         TextView unreadMessagesTextView;
 
-        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -82,8 +81,6 @@ namespace ApptentiveSample
                 UpdateUnreadMessagesCount();
             };
            
-
-
             //Removed Until Implemented.
             //var authenticationButton = FindViewById<Button>(Resource.Id.authenticationButton);
             //authenticationButton.Click += delegate
