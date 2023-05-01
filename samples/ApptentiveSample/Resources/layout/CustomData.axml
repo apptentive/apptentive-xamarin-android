@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/userDataKeyEditText"
+            android:id="@+id/personStringKey"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Key"
@@ -18,23 +18,65 @@
             android:layout_height="wrap_content"
             android:text=":" />
         <EditText
-            android:id="@+id/userDataValueEditText"
+            android:id="@+id/personStringValue"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Value"
+            android:hint="String Value"
             android:layout_weight="1" />
     </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/personIntKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Key"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":" />
+        <EditText
+            android:id="@+id/personIntValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Int Value"
+            android:layout_weight="1" />
+    </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/personBoolKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Key"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":" />
+      <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/personBoolValue"/>
+    </LinearLayout>
     <Button
-        android:text="Add Custom Data"
+        android:text="Add Person Custom Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/addUserDataButton" />
+        android:id="@+id/addPersonCustomDataButton" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/deviceDataKeyEditText"
+            android:id="@+id/deviceStringKey"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Key"
@@ -44,15 +86,80 @@
             android:layout_height="wrap_content"
             android:text=":" />
         <EditText
-            android:id="@+id/deviceDataValueEditText"
+            android:id="@+id/deviceStringValue"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Value"
+            android:hint="String Value"
             android:layout_weight="1" />
+    </LinearLayout>
+       <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/deviceIntKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Key"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":" />
+        <EditText
+            android:id="@+id/deviceIntValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Int Value"
+            android:layout_weight="1" />
+    </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/deviceBoolKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Key"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":" />
+      <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/deviceBoolValue"/>
     </LinearLayout>
     <Button
         android:text="Add Device Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/addDeviceDataButton" />
+
+      <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveButton" />
+
+
+ <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+  <Button
+        android:text="Remove Custom Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeCustomData" />
 </LinearLayout>
+
+</LinearLayout>
+
+
+
+  

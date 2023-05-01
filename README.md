@@ -7,7 +7,7 @@ Register Apptentive in your Application class.
 using System;
 using Android.App;
 using Android.Runtime;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 
 namespace ApptentiveSample
 {
@@ -22,10 +22,10 @@ namespace ApptentiveSample
         public override void OnCreate()
         {
             base.OnCreate();
-            Apptentive.Register(this, "Your Apptentive Key", "Your Apptentive Signature");
+            var configuration = new ApptentiveConfiguration("Your Apptentive Key", "Your Apptentive Signature");
+            ApptentiveSDK.Apptentive.Register(this, configuration);
         }
     }
-
 }
 ```
 Make sure you use the Apptentive App Key and Signature for the Android app you created in the Apptentive console. Sharing these keys between two apps, or using keys from the wrong platform is not supported, and will lead to incorrect behavior. You can find them [here](https://be.apptentive.com/apps/current/settings/api).
@@ -48,7 +48,7 @@ Find a place in your app where you can add a button that opens Message Center. Y
 var messageCenterButton = FindViewById<Button>(...);
 messageCenterButton.Click += delegate
 {
-    Apptentive.ShowMessageCenter(context, (shown) => Console.WriteLine("Message Center shown: " + shown));
+    ApptentiveSDK.Apptentive.ShowMessageCenter((shown) => Console.WriteLine("Message Center shown: " + shown));
 };
 ```
 
@@ -56,44 +56,12 @@ messageCenterButton.Click += delegate
 
 You can also check to see how many messages are waiting to be read in the customer’s Message Center.
 ```
-var unreadMessageCount = Apptentive.UnreadMessageCount;
+var unreadMessageCount = ApptentiveSDK.Apptentive.UnreadMessageCount;
 if (unreadMessageCount > 0)
 {
     Console.WriteLine("You have {0} unread messages", unreadMessageCount);
 }
 ```
-
-### Unread Message Count Notification
-
-You can receive a callback when a new unread message comes in. You can use this callback to notify your customer, and display a badge letting them know how many unread messages are waiting for them. Because this listener could be called at any time, you should store the value returned from this method, and then perform any user interaction you desire at the appropriate time.
-```
-public class MainActivity : Activity, IUnreadMessagesListener
-{
-    TextView unreadMessagesTextView;
-
-    protected override void OnCreate(Bundle savedInstanceState)
-    {
-        base.OnCreate(savedInstanceState);
-        
-        ...
-
-        unreadMessagesTextView = FindViewById<TextView>(...);
-
-        Apptentive.AddUnreadMessagesListener(this);
-    }
-
-    public void OnUnreadMessageCountChanged(int count)
-    {
-        RunOnUiThread(delegate ()
-        {
-            unreadMessagesTextView.Text = "Unread messages: " + Apptentive.UnreadMessageCount;
-        });
-    }
-}
-```
-
-The listener will not be run on the UI thread, and may be called from a different Activity than the one that is set on the listener. The correct way of setting Apptentive listeners is to create a listener with the same lifecycle as it’s intended usage, then passing it to Apptentive. For example, if the listener is going to be used in a specific activity, make the listener an Activity data member. This way, when the activity is gone, the listener will automatically be garbage collected and Apptentive will know about this through WeakReference (and we’ll stop calling the listener).
-
 ## Events
 
 Events record user interaction. You can use them to determine if and when an Interaction will be shown to your customer. You will use these Events later to target Interactions, and to determine whether an Interaction can be shown. You trigger an Event with the `Engage()` method. This will record the Event, and then check to see if any Interactions targeted to that Event are allowed to be displayed, based on the logic you set up in the Apptentive Dashboard.
@@ -102,7 +70,7 @@ Events record user interaction. You can use them to determine if and when an Int
 var engageButton = FindViewById<Button>(...);
 engageButton.Click += delegate
 {
-    Apptentive.Engage(this, "my_event", (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
+    ApptentiveSDK.Apptentive.Engage(eventName, null, (engaged) => Console.WriteLine("Interaction engaged: " + engaged));
 };
 ```
 
@@ -113,13 +81,13 @@ Apptentive can send push notifications to ensure your customers see your replies
 
 ### Firebase Cloud Messaging
 If you are using Firebase Cloud Messaging (FCM) directly, without another push provider layered on top, please follow these instructions.
-- Follow the FCM instructions to [Set Up a Firebase Cloud Messaging Client App.](https://developer.xamarin.com/guides/android/application_fundamentals/notifications/firebase-cloud-messaging/)
+- Follow the FCM instructions to [Set Up a Firebase Cloud Messaging Client App.](https://learn.apptentive.com/knowledge-base/android-xamarin-plugin/#push-notifications)
 - Go to [Integrations](https://be.apptentive.com/apps/current/settings/integrations), choose Apptentive Push, and enter your FCM Server Key.
 - In your `FirebaseInstanceIdService`, pass Apptentive your **token**.
 ```
 using System;
 using Android.App;
-using Firebase.Iid;
+using Firebase.Messaging;
 using Android.Util;
 using ApptentiveSDK.Android;
 
@@ -134,7 +102,7 @@ namespace ApptentiveSample
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
             Log.Debug(TAG, "Refreshed token: " + refreshedToken);
-            Apptentive.SetPushNotificationIntegration(Apptentive.PushProviderApptentive, refreshedToken);
+            ApptentiveSDK.Apptentive.SetPushNotificationIntegration(this, ApptentiveSDK.Apptentive.PushProviderApptentive, token);
         }
     }
 }
@@ -162,42 +130,38 @@ namespace ApptentiveSample
          * Called when message is received.
          */
 
-        public override void OnMessageReceived(RemoteMessage message)
+         public override void OnMessageReceived(RemoteMessage message)
         {
             var data = message.Data;
 
-            if (Apptentive.IsApptentivePushNotification(data))
+            String title = null;
+            String body = null;
+         
+            var isPush = ApptentiveSDK.Apptentive.IsApptentivePushNotification(data);
+            var channel = new NotificationChannel("channel_id", "channel_name", NotificationImportance.Default)
             {
-                Log.Error(TAG, "Apptentive push.");
-                var title = Apptentive.GetTitleFromApptentivePush(data);
-                var body = Apptentive.GetBodyFromApptentivePush(data);
-                Apptentive.BuildPendingIntentFromPushNotification((pendingIntent) =>
+                Description = "channel_description"
+            };
+            var notificationManager = GetSystemService(NotificationService) as NotificationManager;
+            notificationManager.CreateNotificationChannel(channel);
+            int notificationId = 1;
+            if (ApptentiveSDK.Apptentive.IsApptentivePushNotification(data))
+            {
+                title = ApptentiveSDK.Apptentive.GetTitleFromApptentivePush(data);
+                body = ApptentiveSDK.Apptentive.GetBodyFromApptentivePush(data);
+                ApptentiveSDK.Apptentive.BuildPendingIntentFromPushNotification(this,(pendingIntent) =>
                 {
                     // This push is from Apptentive, but not for the active conversation, so we can't safely display it.
                     if (pendingIntent == null)
                     {
-                        Log.Error(TAG, "Push notification was not for the active conversation. Doing nothing.");
+                        Console.WriteLine(TAG, "Push notification was not for the active conversation. Doing nothing.");
                         return;
                     }
-
-                    var defaultSoundUri = RingtoneManager.GetDefaultUri(RingtoneType.Notification);
-                	var notificationBuilder = new NotificationCompat.Builder(this)
-                    	.SetSmallIcon(Resource.Drawable.apptentive_status_gear)
-                    	.SetContentTitle(title)
-                    	.SetContentText(body)
-                    	.SetAutoCancel(true)
-                    	.SetSound(defaultSoundUri)
-                    	.SetContentIntent(pendingIntent);
-                	var notificationManager = (NotificationManager)GetSystemService(Context.NotificationService);
-                	notificationManager.Notify(0, notificationBuilder.Build());
-                    
+                    ShowNotification(pendingIntent, title, body, notificationId, notificationManager);
                 }, data);
-            }
-            else
-            {
-                // Non-Apptentive push
-            }
-        }
+            } else {
+              non-apptentive push...
+         }
     }
 }
 ```
