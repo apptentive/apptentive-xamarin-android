@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Android.App;
@@ -7,9 +7,9 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ApptentiveFeedback")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Xamarin ApptentiveFeedback")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Apptentive")]
 [assembly: AssemblyProduct("ApptentiveFeedback")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
@@ -23,6 +23,4 @@ using Android.App;
 //      Build Number
 //      Revision
 [assembly: AssemblyVersion("6.0.0")]
-[assembly: MetaData("apptentive_sdk_distribution", Value = "Xamarin")]
-[assembly: MetaData("apptentive_sdk_distribution_version", Value = "6.0.0")]
 
