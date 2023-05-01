@@ -1,0 +1,12 @@
+﻿<metadata>
+ <remove-node path="/api/package[@name='apptentive.com.android.serialization']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.serialization.json']" />
+ <remove-node path="/api/package[@name='com.apptentive.android.sdk']" />
+ <remove-node path="/api/package[@name='com.apptentive.android.sdk.util']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.network.httpnetworkresponse']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.network']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.feedback.model.payloads']" />
+ <remove-node path="/api/package[@name='apptentive.com.android.feedback']" />
+ <remove-node path="/api/package[@name='com.apptentive.android.sdk.storage']" />
+</metadata>
+

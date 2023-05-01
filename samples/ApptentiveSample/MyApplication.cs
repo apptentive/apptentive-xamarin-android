@@ -1,7 +1,7 @@
 ﻿using System;
 using Android.App;
 using Android.Runtime;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 
 namespace ApptentiveSample
 {
@@ -17,11 +17,10 @@ namespace ApptentiveSample
         {
             base.OnCreate();
 
-            var configuration = new ApptentiveConfiguration("Your Apptentive Key", "Your Apptentive Signature");
-            configuration.SetLogLevel(ApptentiveLog.Level.Verbose);
-            configuration.SetShouldSanitizeLogMessages(false);
-            Apptentive.Register(this, configuration);
+            var configuration = new ApptentiveConfiguration("", "");
+            configuration.ShouldInheritAppTheme = false;
+            configuration.LogLevel = Apptentive.Com.Android.Util.LogLevel.Verbose;
+            ApptentiveSDK.Apptentive.Register(this, configuration);
         }
     }
-
 }

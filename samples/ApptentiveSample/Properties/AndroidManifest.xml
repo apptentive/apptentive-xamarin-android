@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.apptentive.xamarin.ApptentiveAndroidSample">
-	<uses-sdk android:minSdkVersion="28" />
-	<application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name">
-		<activity android:name=".UserDataActivity" android:label="User Data" android:theme="@style/ApptentiveTheme.Base.Versioned" />
-		<activity android:name=".CustomDataActivity" android:label="Custom Data" android:theme="@style/ApptentiveTheme.Base.Versioned" />
-		<activity android:name=".LoginActivity" android:label="Login/Logout" android:theme="@style/ApptentiveTheme.Base.Versioned" />
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
+	<application android:allowBackup="true" android:enableOnBackInvokedCallback="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+		<activity android:name=".UserDataActivity" android:label="User Data" />
+		<activity android:name=".CustomDataActivity" android:label="Custom Data" />
+		<activity android:name=".LoginActivity" android:label="Login/Logout" />
 		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
 		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
 			<intent-filter>
@@ -13,5 +13,10 @@
 				<category android:name="${applicationId}" />
 			</intent-filter>
 		</receiver>
+		<service android:name="crc64f9bb65e81b419fe1.MyFirebaseMessagingService" android:exported="true">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
 	</application>
 </manifest>
