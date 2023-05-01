@@ -22,6 +22,7 @@ using Android.App;
 //      Minor Version 
 //      Build Number
 //      Revision
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("6.0.0")]
+[assembly: MetaData("apptentive_sdk_distribution", Value = "Xamarin")]
+[assembly: MetaData("apptentive_sdk_distribution_version", Value = "6.0.0")]
 
