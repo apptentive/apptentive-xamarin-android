@@ -3,14 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using ApptentiveSDK.Android;
+using ApptentiveSDK;
 
 namespace ApptentiveSample
 {
@@ -24,16 +23,17 @@ namespace ApptentiveSample
             SetContentView(Resource.Layout.UserData);
 
             var personNameEditText = FindViewById<EditText>(Resource.Id.personNameEditText);
-            personNameEditText.Text = Apptentive.PersonName;
+            personNameEditText.Text = ApptentiveSDK.Apptentive.PersonName;
 
             var personEmailEditText = FindViewById<EditText>(Resource.Id.personEmailEditText);
-            personEmailEditText.Text = Apptentive.PersonEmail;
+            personEmailEditText.Text = ApptentiveSDK.Apptentive.PersonEmail;
 
             var saveButton = FindViewById<Button>(Resource.Id.saveButton);
             saveButton.Click += delegate
             {
-                Apptentive.PersonName = personNameEditText.Text;
-                Apptentive.PersonEmail = personEmailEditText.Text;
+           
+                ApptentiveSDK.Apptentive.PersonName = personNameEditText.Text;
+                ApptentiveSDK.Apptentive.PersonEmail = personEmailEditText.Text;
                 Finish();
             };
         }

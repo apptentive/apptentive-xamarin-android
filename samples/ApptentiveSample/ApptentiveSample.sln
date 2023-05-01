@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveSample", "ApptentiveSample.csproj", "{1D0FD7B6-5A38-40F3-AA08-DD648C47ACFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apptentive.Android", "..\..\source\Apptentive.Android.csproj", "{42BDBB53-FC01-4241-B8BE-EF2454835C0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveFeedback", "..\..\ApptentiveFeedback\ApptentiveFeedback\ApptentiveFeedback.csproj", "{9FEB56A5-44F4-416B-A51D-88C715629AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveCore", "..\..\ApptentiveCore\ApptentiveCore\ApptentiveCore.csproj", "{291E799E-F3F7-452B-BA2D-47EE5D43FD88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveCoreUI", "..\..\ApptentiveCoreUI\ApptentiveCoreUI\ApptentiveCoreUI.csproj", "{A76CE21B-7518-4E7B-A9F5-DFB647FF52D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveEnjoymentDialog", "..\..\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog.csproj", "{E9968A27-31ED-4C2C-A531-695E722C968A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveInAppReview", "..\..\ApptentiveInAppReview\ApptentiveInAppReview\ApptentiveInAppReview.csproj", "{D635A4F1-5572-4743-8362-65A06E23626E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveMessageCenter", "..\..\ApptentiveMessageCenter\ApptentiveMessageCenter\ApptentiveMessageCenter.csproj", "{E46FBD70-810B-48CC-A278-4BCCCAC2DC3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveNavigateToLink", "..\..\ApptentiveNavigateToLink\ApptentiveNavigateToLink\ApptentiveNavigateToLink.csproj", "{99533E38-4A69-4460-A505-D245740B7720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveNotes", "..\..\ApptentiveNotes\ApptentiveNotes\ApptentiveNotes.csproj", "{FBDF755D-4A26-40EB-B853-EA82D5AA96C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveRatings", "..\..\ApptentiveRatings\ApptentiveRatings\ApptentiveRatings.csproj", "{13D9FD94-F76F-4992-8711-259056F863B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApptentiveSurvey", "..\..\ApptentiveSurvey\ApptentiveSurvey\ApptentiveSurvey.csproj", "{F8347DC7-3DD5-4210-9330-C2B89BD3E43F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,45 @@ Global
 		{1D0FD7B6-5A38-40F3-AA08-DD648C47ACFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D0FD7B6-5A38-40F3-AA08-DD648C47ACFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D0FD7B6-5A38-40F3-AA08-DD648C47ACFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42BDBB53-FC01-4241-B8BE-EF2454835C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42BDBB53-FC01-4241-B8BE-EF2454835C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42BDBB53-FC01-4241-B8BE-EF2454835C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42BDBB53-FC01-4241-B8BE-EF2454835C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FEB56A5-44F4-416B-A51D-88C715629AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FEB56A5-44F4-416B-A51D-88C715629AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FEB56A5-44F4-416B-A51D-88C715629AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FEB56A5-44F4-416B-A51D-88C715629AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291E799E-F3F7-452B-BA2D-47EE5D43FD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291E799E-F3F7-452B-BA2D-47EE5D43FD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291E799E-F3F7-452B-BA2D-47EE5D43FD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291E799E-F3F7-452B-BA2D-47EE5D43FD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76CE21B-7518-4E7B-A9F5-DFB647FF52D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76CE21B-7518-4E7B-A9F5-DFB647FF52D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76CE21B-7518-4E7B-A9F5-DFB647FF52D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76CE21B-7518-4E7B-A9F5-DFB647FF52D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9968A27-31ED-4C2C-A531-695E722C968A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9968A27-31ED-4C2C-A531-695E722C968A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9968A27-31ED-4C2C-A531-695E722C968A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9968A27-31ED-4C2C-A531-695E722C968A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D635A4F1-5572-4743-8362-65A06E23626E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D635A4F1-5572-4743-8362-65A06E23626E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D635A4F1-5572-4743-8362-65A06E23626E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D635A4F1-5572-4743-8362-65A06E23626E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46FBD70-810B-48CC-A278-4BCCCAC2DC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46FBD70-810B-48CC-A278-4BCCCAC2DC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46FBD70-810B-48CC-A278-4BCCCAC2DC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46FBD70-810B-48CC-A278-4BCCCAC2DC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99533E38-4A69-4460-A505-D245740B7720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99533E38-4A69-4460-A505-D245740B7720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99533E38-4A69-4460-A505-D245740B7720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99533E38-4A69-4460-A505-D245740B7720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDF755D-4A26-40EB-B853-EA82D5AA96C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDF755D-4A26-40EB-B853-EA82D5AA96C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDF755D-4A26-40EB-B853-EA82D5AA96C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDF755D-4A26-40EB-B853-EA82D5AA96C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D9FD94-F76F-4992-8711-259056F863B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D9FD94-F76F-4992-8711-259056F863B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D9FD94-F76F-4992-8711-259056F863B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D9FD94-F76F-4992-8711-259056F863B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8347DC7-3DD5-4210-9330-C2B89BD3E43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8347DC7-3DD5-4210-9330-C2B89BD3E43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8347DC7-3DD5-4210-9330-C2B89BD3E43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8347DC7-3DD5-4210-9330-C2B89BD3E43F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

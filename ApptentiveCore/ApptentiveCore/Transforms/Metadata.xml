@@ -1,0 +1,9 @@
+﻿<metadata>
+ 
+<remove-node path="/api/package[@name='apptentive.com.android.serialization']"/>
+<remove-node path="/api/package[@name='apptentive.com.android.serialization.json']"/>
+<remove-node path="/api/package[@name='apptentive.com.android.network']"/>
+
+<attr path="/api/package[@name='apptentive.com.android.core']" name="managedName">ApptentiveCore</attr>
+
+</metadata>
