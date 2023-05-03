@@ -41,7 +41,31 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="ApptentiveCore">
-      <HintPath>..\..\ApptentiveCore\ApptentiveCore\obj\Debug\ApptentiveCore.dll</HintPath>
+      <HintPath>..\..\ApptentiveCore\ApptentiveCore\bin\Release\ApptentiveCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveCoreUI">
+      <HintPath>..\..\ApptentiveCoreUI\ApptentiveCoreUI\bin\Release\ApptentiveCoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveEnjoymentDialog">
+      <HintPath>..\..\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog\bin\Release\ApptentiveEnjoymentDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveInAppReview">
+      <HintPath>..\..\ApptentiveInAppReview\ApptentiveInAppReview\bin\Release\ApptentiveInAppReview.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveMessageCenter">
+      <HintPath>..\..\ApptentiveMessageCenter\ApptentiveMessageCenter\bin\Release\ApptentiveMessageCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveNavigateToLink">
+      <HintPath>..\..\ApptentiveNavigateToLink\ApptentiveNavigateToLink\bin\Release\ApptentiveNavigateToLink.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveNotes">
+      <HintPath>..\..\ApptentiveNotes\ApptentiveNotes\bin\Release\ApptentiveNotes.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveRatings">
+      <HintPath>..\..\ApptentiveRatings\ApptentiveRatings\bin\Release\ApptentiveRatings.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveSurvey">
+      <HintPath>..\..\ApptentiveSurvey\ApptentiveSurvey\bin\Release\ApptentiveSurvey.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\apptentive-feedback-6.0.4.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Additions\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
