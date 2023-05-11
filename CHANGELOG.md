@@ -4,6 +4,10 @@ This document lets you know what has changed in the Xamarin.Android package. For
 
 - [Android Changelog](https://github.com/apptentive/apptentive-android/blob/master/CHANGELOG.md)
 
+# 2023-05-11 - v6.0.1
+
+- Add nuspec file to combine modules into one package
+
 # 2023-05-01 - v6.0.0
 
 - Apptentive Android SDK: 6.0.4
