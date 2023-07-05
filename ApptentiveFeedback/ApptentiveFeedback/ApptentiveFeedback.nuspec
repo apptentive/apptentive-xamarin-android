@@ -21,6 +21,16 @@
       <dependency id="ApptentiveNotes" version="6.0.1" />
       <dependency id="ApptentiveRatings" version="6.0.1" />
       <dependency id="ApptentiveMessageCenter" version="6.0.1" />
+      <dependency id="GoogleGson" version="2.10.1.1"/>
+      <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.16"/>
+      <dependency id="Xamarin.Kotlin.StdLib" version="1.8.10"/>
+      <dependency id="Xamarin.AndroidX.Fragment" version="1.5.5.1"/>
+      <dependency id="Xamarin.AndroidX.Fragment.Ktx" version="1.5.5.1"/>
+      <dependency id="Xamarin.AndroidX.AppCompat" version="1.6.0.1"/>
+      <dependency id="Xamarin.AndroidX.Lifecycle.Common" version="2.5.1.2"/>
+      <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.5.1.2"/>
+      <dependency id="Xamarin.Google.Android.Material" version="1.8.0"/>
+      <dependency id="Xamarin.GooglePlayServices.Base" version="118.1.0.1"/>
     </dependencies>
   </metadata>
   <files>
