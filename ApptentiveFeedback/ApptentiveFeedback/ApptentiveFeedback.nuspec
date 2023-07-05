@@ -2,7 +2,7 @@
   <metadata>
     <id>Apptentive.Android</id>
     <title>Apptentive SDK for Xamarin Android</title>
-    <version>6.0.1</version>
+    <version>6.0.2</version>
     <authors>Apptentive</authors>
     <owners>Apptentive</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,15 +12,15 @@
     <licenseUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin-android/master/License.txt</licenseUrl>
     <iconUrl>https://raw.githubusercontent.com/apptentive/apptentive-xamarin-android/master/icons/apptentive_128x128.png</iconUrl>
     <dependencies>
-      <dependency id="ApptentiveCore" version="6.0.1" />
-      <dependency id="ApptentiveCoreUI" version="6.0.1" />
-      <dependency id="ApptentiveInAppReview" version="6.0.1" />
-      <dependency id="ApptentiveNavigateToLink" version="6.0.1" />
-      <dependency id="ApptentiveEnjoymentDialog" version="6.0.1" />
-      <dependency id="ApptentiveSurvey" version="6.0.1" />
-      <dependency id="ApptentiveNotes" version="6.0.1" />
-      <dependency id="ApptentiveRatings" version="6.0.1" />
-      <dependency id="ApptentiveMessageCenter" version="6.0.1" />
+      <dependency id="ApptentiveCore" version="6.0.2" />
+      <dependency id="ApptentiveCoreUI" version="6.0.2" />
+      <dependency id="ApptentiveInAppReview" version="6.0.2" />
+      <dependency id="ApptentiveNavigateToLink" version="6.0.2" />
+      <dependency id="ApptentiveEnjoymentDialog" version="6.0.2" />
+      <dependency id="ApptentiveSurvey" version="6.0.2" />
+      <dependency id="ApptentiveNotes" version="6.0.2" />
+      <dependency id="ApptentiveRatings" version="6.0.2" />
+      <dependency id="ApptentiveMessageCenter" version="6.0.2" />
       <dependency id="GoogleGson" version="2.10.1.1"/>
       <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.16"/>
       <dependency id="Xamarin.Kotlin.StdLib" version="1.8.10"/>
