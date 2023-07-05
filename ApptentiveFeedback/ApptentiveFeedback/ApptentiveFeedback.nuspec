@@ -34,6 +34,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="../Apptentivefeedback/bin/release/ApptentiveFeedback.dll" />
+    <file src="../ApptentiveFeedback/bin/release/ApptentiveFeedback.dll" />
   </files>
 </package>
