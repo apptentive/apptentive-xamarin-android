@@ -50,7 +50,7 @@
     <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-survey-6.1.0.aar" />
+    <LibraryProjectZip Include="Jars\apptentive-survey-6.1.0-xamarin.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
