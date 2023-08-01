@@ -52,7 +52,12 @@
     <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-core-6.0.4.aar" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.9.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\apptentive-core-6.1.0-xamarin-fixes03.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

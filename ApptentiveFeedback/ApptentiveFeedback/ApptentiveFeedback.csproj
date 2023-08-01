@@ -40,12 +40,6 @@
     <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="ApptentiveCore">
-      <HintPath>..\..\ApptentiveCore\ApptentiveCore\bin\Release\ApptentiveCore.dll</HintPath>
-    </Reference>
-    <Reference Include="ApptentiveCoreUI">
-      <HintPath>..\..\ApptentiveCoreUI\ApptentiveCoreUI\bin\Release\ApptentiveCoreUI.dll</HintPath>
-    </Reference>
     <Reference Include="ApptentiveEnjoymentDialog">
       <HintPath>..\..\ApptentiveEnjoymentDialog\ApptentiveEnjoymentDialog\bin\Release\ApptentiveEnjoymentDialog.dll</HintPath>
     </Reference>
@@ -63,6 +57,12 @@
     </Reference>
     <Reference Include="ApptentiveRatings">
       <HintPath>..\..\ApptentiveRatings\ApptentiveRatings\bin\Release\ApptentiveRatings.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveCore">
+      <HintPath>..\..\ApptentiveCore\ApptentiveCore\bin\Release\ApptentiveCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ApptentiveCoreUI">
+      <HintPath>..\..\ApptentiveCoreUI\ApptentiveCoreUI\bin\Release\ApptentiveCoreUI.dll</HintPath>
     </Reference>
     <Reference Include="ApptentiveSurvey">
       <HintPath>..\..\ApptentiveSurvey\ApptentiveSurvey\bin\Release\ApptentiveSurvey.dll</HintPath>
@@ -111,10 +111,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-feedback-6.0.4.aar" />
+    <Folder Include="Additions\" />
+    <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Additions\" />
+    <LibraryProjectZip Include="Jars\apptentive-feedback-6.1.0.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
