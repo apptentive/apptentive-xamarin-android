@@ -49,9 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Additions\" />
+    <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\apptentive-core-ui-6.0.4.aar" />
+    <LibraryProjectZip Include="Jars\apptentive-core-ui-6.1.0-xamarin-fixes03.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
